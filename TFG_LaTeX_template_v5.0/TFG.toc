@@ -1,0 +1,39 @@
+\babel@toc {catalan}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {catalan}{}
+\contentsline {section}{Resum }{2}{Doc-Start}%
+\contentsline {section}{Agraïments}{4}{chapter*.1}%
+\contentsline {section}{Historial de revisió i aprovació}{5}{chapter*.2}%
+\contentsline {section}{Índex}{6}{chapter*.2}%
+\contentsline {section}{Índex de figures }{7}{chapter*.4}%
+\contentsline {section}{Índex de taules }{8}{chapter*.5}%
+\contentsline {section}{Sigles i acrònims}{9}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introducció}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objectius del treball}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Requisits i especificacions}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Mètodes i procediments}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Pla de treball}{12}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Estat de l'art}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Internet of Medical Things (IoMT)}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Message Queuing Telemetry Transport (MQTT)}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Altres protocols en l'entorn IoMT}{17}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Metodologia / desenvolupament del projecte}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introducció d'expressions matemàtiques}{18}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Matemàtiques en línia i aïllades}{18}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Numeració i agrupació d'equacions}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Introducció de matrius}{19}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Taules}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Diagrames}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Gràfiques}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Llistats de codi}{22}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Unitats}{23}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Resultats}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Experiments i proves}{24}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Visualització de les dades}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Limitacions}{24}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Anàlisi de sostenibilitat i implicacions ètiques}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions i Línies Futures}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conclusions}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Línies Futures}{26}{section.6.2}%
+\contentsline {chapter}{Bibliografia}{27}{chapter*.12}%
+\contentsline {chapter}{\numberline {A}Un apèndix}{29}{appendix.A}%
