@@ -19,6 +19,68 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{dockerexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c29ccd00bc6f3b6047fafa5e62e0c084}{%
+           family={Chuck},
+           familyi={C\bibinitperiod},
+           given={Newtowk},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \strng{fullhash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \strng{bibnamehash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \strng{authorbibnamehash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \strng{authornamehash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \strng{authorfullhash}{c29ccd00bc6f3b6047fafa5e62e0c084}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Tutorials - NetworkChuck}
+      \field{urlday}{9}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watchv=eGz9DSaIeY&list=PLIhvC56v63IJlnU4k60d0oFIrsbXEivQo&index=2
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watchv=eGz9DSaIeY&list=PLIhvC56v63IJlnU4k60d0oFIrsbXEivQo&index=2
+      \endverb
+    \endentry
+    \entry{wtfexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=50f68e2a3ac35c6ccad5d1d298d7e4b0}{%
+           family={Developers},
+           familyi={D\bibinitperiod},
+           given={TCPDump},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \strng{fullhash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \strng{bibnamehash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \strng{authorbibnamehash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \strng{authornamehash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \strng{authorfullhash}{50f68e2a3ac35c6ccad5d1d298d7e4b0}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TCPDump: Manual and Documentation}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.tcpdump.org/
+      \endverb
+      \verb{url}
+      \verb https://www.tcpdump.org/
+      \endverb
+    \endentry
     \entry{einstein}{article}{}
       \name{author}{1}{}{%
         {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
@@ -43,8 +105,40 @@
       \field{volume}{322}
       \field{year}{1905}
       \field{dateera}{ce}
+      \true{nocite}
       \field{pages}{891\bibrangedash 921}
       \range{pages}{31}
+    \endentry
+    \entry{IoMTexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a1a1b270944d3b5bb50f0f1c18a46044}{%
+           family={Elsevier\bibnamedelimb BV\bibnamedelimb on\bibnamedelimb behalf\bibnamedelimb of\bibnamedelimb Faculty\bibnamedelimb of\bibnamedelima Engineering},
+           familyi={E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim b\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Alexandria\bibnamedelima University},
+           giveni={A\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \strng{fullhash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \strng{bibnamehash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \strng{authorbibnamehash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \strng{authornamehash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \strng{authorfullhash}{a1a1b270944d3b5bb50f0f1c18a46044}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The internet of things healthcare monitoring system based on MQTT protocol}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1110016823000881
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1110016823000881
+      \endverb
     \endentry
     \entry{booktabs}{online}{}
       \name{author}{1}{}{%
@@ -64,7 +158,7 @@
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{\texttt{booktabs} – Publication quality tables in \LaTeX}
+      \field{title}{\texttt{booktabs} Publication quality tables in \LaTeX}
       \field{urlday}{1}
       \field{urlmonth}{11}
       \field{urlyear}{2023}
@@ -147,6 +241,37 @@
       \field{volume}{I-III}
       \field{year}{1963}
       \true{nocite}
+    \endentry
+    \entry{Mosquittoexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c29e9dd4709b3acadeef395a1b0997ed}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Eclipse},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{bibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mosquitto MQTT Broker Documentation}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mosquitto.org/documentation/
+      \endverb
+      \verb{url}
+      \verb https://mosquitto.org/documentation/
+      \endverb
     \endentry
     \entry{biblatex}{online}{}
       \name{author}{3}{}{%
@@ -336,7 +461,7 @@
       \field{edition}{3}
       \field{title}{The \LaTeX{} Companion}
       \field{volumes}{2}
-      \field{year}{2023}
+      \true{nocite}
     \endentry
     \entry{notsoshort}{online}{}
       \name{author}{5}{}{%
@@ -386,6 +511,37 @@
       \endverb
       \verb{url}
       \verb https://tobi.oetiker.ch/lshort/lshort.pdf
+      \endverb
+    \endentry
+    \entry{Nmapexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e9eb17f8eefed40dd38e40464dd63aba}{%
+           family={Project},
+           familyi={P\bibinitperiod},
+           given={Nmap},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \strng{fullhash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \strng{bibnamehash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \strng{authorbibnamehash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \strng{authornamehash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \strng{authorfullhash}{e9eb17f8eefed40dd38e40464dd63aba}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nmap Reference Guide}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nmap.org/book/man.html#man-description/
+      \endverb
+      \verb{url}
+      \verb https://nmap.org/book/man.html#man-description/
       \endverb
     \endentry
     \entry{shannon1948}{article}{}
