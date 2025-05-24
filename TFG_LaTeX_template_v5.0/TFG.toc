@@ -5,40 +5,47 @@
 \contentsline {section}{Agraïments}{4}{chapter*.1}%
 \contentsline {section}{Historial de revisió i aprovació}{5}{chapter*.2}%
 \contentsline {section}{Índex}{6}{chapter*.2}%
-\contentsline {section}{Índex de figures }{8}{chapter*.4}%
-\contentsline {section}{Índex de taules }{9}{chapter*.5}%
-\contentsline {section}{Sigles i acrònims}{10}{chapter*.5}%
-\contentsline {chapter}{\numberline {1}Introducció}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Objectius del treball}{11}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Requisits i especificacions}{12}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Mètodes i procediments}{12}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Pla de treball}{13}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Estat de l'art}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Internet of Medical Things (IoMT)}{14}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Message Queuing Telemetry Transport (MQTT)}{15}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Altres protocols en l'entorn IoMT}{17}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Eines per a la simulació i anàlisi de trànsit en entorns IoMT}{18}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Mosquitto}{18}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Docker}{19}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Nmap}{19}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}TCPDump}{19}{subsection.2.4.4}%
+\contentsline {section}{Índex de figures }{7}{chapter*.4}%
+\contentsline {section}{Índex de taules }{8}{chapter*.5}%
+\contentsline {section}{Sigles i acrònims}{9}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introducció}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objectius del treball}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Requisits i especificacions}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Mètodes i procediments}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Pla de treball}{12}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Estat de l'art}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Internet of Medical Things (IoMT)}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Message Queuing Telemetry Transport (MQTT)}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Altres protocols en l'entorn IoMT}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Eines per a la simulació i anàlisi de trànsit en entorns IoMT}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Mosquitto}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Docker}{18}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Kali Linux}{18}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Nmap}{18}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}TCPDump}{19}{subsection.2.4.5}%
 \contentsline {chapter}{\numberline {3}Metodologia / desenvolupament del projecte}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introducció d'expressions matemàtiques}{20}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Matemàtiques en línia i aïllades}{20}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Numeració i agrupació d'equacions}{21}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Introducció de matrius}{21}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Taules}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Diagrames}{22}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Gràfiques}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Llistats de codi}{24}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Unitats}{25}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Resultats}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Experiments i proves}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Visualització de les dades}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Limitacions}{26}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Anàlisi de sostenibilitat i implicacions ètiques}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions i Línies Futures}{28}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Conclusions}{28}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Línies Futures}{28}{section.6.2}%
-\contentsline {chapter}{Bibliografia}{29}{chapter*.12}%
-\contentsline {chapter}{\numberline {A}Un apèndix}{31}{appendix.A}%
+\contentsline {section}{\numberline {3.1}Escenari utilitzat}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Topologia general}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ús del protocol MQTT}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Ús de Docker per al desplegament de dispositius}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Introducció d'expressions matemàtiques}{24}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Matemàtiques en línia i aïllades}{24}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Numeració i agrupació d'equacions}{24}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Introducció de matrius}{25}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Taules}{25}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Diagrames}{25}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Gràfiques}{26}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Llistats de codi}{27}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Unitats}{28}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Desenvolupament d’un entorn IoMT simulat}{30}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Atacs de reconeixmenet}{32}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Resultats}{33}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Experiments i proves}{33}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Visualització de les dades}{33}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Limitacions}{33}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Anàlisi de sostenibilitat i implicacions ètiques}{34}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusions i Línies Futures}{35}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusions}{35}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Línies Futures}{35}{section.8.2}%
+\contentsline {chapter}{Bibliografia}{36}{chapter*.14}%
+\contentsline {chapter}{\numberline {A}Un apèndix}{39}{appendix.A}%

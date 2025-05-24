@@ -125,18 +125,3 @@
 \else
   Normally the figures and tables are put in \verb|\figure| and \verb|\table| environments, that can float freely in the document. You can identify each float with a \verb|\label|
 \fi
-
-\begin{figure}[ht]
-  \centering
-  \input{img/gantt_diagrama}
-  \ifcase\doclanguage
-  \or
-    \caption[Diagrama de Gantt del projecte]{\footnotesize{Diagrama de Gantt del projecte. Per a més informació, llegiu el manual \cite{skalagantt} de Skala.}}
-  \or
-    \caption[Diagrama de Gantt del proyecto]{\footnotesize{Diagrama de Gantt del proyecto. Para más información, leer el manual \cite{skalagantt} de Skala.}}
-  \else
-    \caption[Project's Gantt diagram]{\footnotesize{Gantt diagram of the project. For more information read the manual \cite{skalagantt} of Skala.}}
-  \fi
-  \label{fig:gantt}
-\end{figure}
-

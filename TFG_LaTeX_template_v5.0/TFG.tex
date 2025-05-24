@@ -10,10 +10,10 @@
 \documentclass[a4paper,twoside,12pt]{report}
 
 % Load auxiliary package for various tasks
-\input{config/packages.tex}
+\input{config/packages}
 
 % Document style definitions. GHANGE STYLES THERE.
-\input{config/styles.tex}
+\input{config/styles}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                                                %%%
@@ -31,13 +31,13 @@
 \newcommand{\doclanguage}{1}
 
 % Set-up language and load language-related cover page macros
-\input{config/lang.tex}
+\input{config/lang}
 
 %%% Thesis Title / Títol del TFG
 \setTitle{Testbed}
 
 %%% Name of the Thesis Author / Nom de l'autor del TFG
-\setAuthor{Joel Otero Masplà xdd}
+\setAuthor{Joel Otero Masplà}
 
 %%% Degree's name. Uncomment the "setDegree" macro and set its argument to one:
 %%% Nom del Grau. Descomenteu la macro «setDegree» i passeu-li un d'aquests paràmetres:
@@ -47,7 +47,7 @@
 \setDegree{\GRETST}
 
 %%% Name of the Thesis Advisor / Director
-\setAdvisor{Olga León}
+\setAdvisor{Olga León Abarca}
 
 %%% Name of the Thesis Rewiewer / «Ponent»
 %\setReviewer{Mary Major}
@@ -136,6 +136,9 @@
 \input{methodology}
 
 
+\input{entorn}
+
+\input{recon}
 %%%% RESULTS %%%%
 % Results chapter. Please replace "results.tex" entirely with your own content written in the desired language.
 \input{results}
@@ -192,7 +195,6 @@
 %%%% FINAL CLOSING BLANK PAGE %%%%
 \clearpage
 \thispagestyle{empty}
-~
 
 \end{document}
 

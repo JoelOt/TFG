@@ -81,6 +81,38 @@
       \verb https://www.tcpdump.org/
       \endverb
     \endentry
+    \entry{dockerfig}{online}{}
+      \name{author}{1}{}{%
+        {{hash=81cd50d3708a4d833337cceebc2655f6}{%
+           family={Echeverri},
+           familyi={E\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{81cd50d3708a4d833337cceebc2655f6}
+      \strng{fullhash}{81cd50d3708a4d833337cceebc2655f6}
+      \strng{bibnamehash}{81cd50d3708a4d833337cceebc2655f6}
+      \strng{authorbibnamehash}{81cd50d3708a4d833337cceebc2655f6}
+      \strng{authornamehash}{81cd50d3708a4d833337cceebc2655f6}
+      \strng{authorfullhash}{81cd50d3708a4d833337cceebc2655f6}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Stack: Cómo desplegar servicios de Docker Compose en Docker Swarm}
+      \field{urlday}{21}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://thehackerway.es/2021/11/22/docker-stack-como-desplegar-servicios-de-docker-compose-en-docker-swarm/
+      \endverb
+      \verb{url}
+      \verb https://thehackerway.es/2021/11/22/docker-stack-como-desplegar-servicios-de-docker-compose-en-docker-swarm/
+      \endverb
+    \endentry
     \entry{einstein}{article}{}
       \name{author}{1}{}{%
         {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
@@ -256,6 +288,7 @@
       \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
       \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
       \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{extraname}{1}
       \field{sortinit}{F}
       \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
       \field{labelnamesource}{author}
@@ -271,6 +304,102 @@
       \endverb
       \verb{url}
       \verb https://mosquitto.org/documentation/
+      \endverb
+    \endentry
+    \entry{pahoexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9688a568902e4b07b60557b566bdd820}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Python\bibnamedelima Software},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{fullhash}{9688a568902e4b07b60557b566bdd820}
+      \strng{bibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorbibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authornamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorfullhash}{9688a568902e4b07b60557b566bdd820}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Paho MQTT Python Packaging Survey}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pypi.org/project/paho-mqtt/
+      \endverb
+      \verb{url}
+      \verb https://pypi.org/project/paho-mqtt/
+      \endverb
+    \endentry
+    \entry{mosquittoimg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0a6e82dfd0df55343233c1768adf738c}{%
+           family={Inc},
+           familyi={I\bibinitperiod},
+           given={Docker},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{fullhash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{bibnamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authorbibnamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authornamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authorfullhash}{0a6e82dfd0df55343233c1768adf738c}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Hub: eclipse-mosquitto}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://hub.docker.com/_/eclipse-mosquitto
+      \endverb
+      \verb{url}
+      \verb https://hub.docker.com/_/eclipse-mosquitto
+      \endverb
+    \endentry
+    \entry{kaliimg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0a6e82dfd0df55343233c1768adf738c}{%
+           family={Inc},
+           familyi={I\bibinitperiod},
+           given={Docker},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{fullhash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{bibnamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authorbibnamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authornamehash}{0a6e82dfd0df55343233c1768adf738c}
+      \strng{authorfullhash}{0a6e82dfd0df55343233c1768adf738c}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Hub: kalilinux/kali-last-release}
+      \field{urlday}{23}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://hub.docker.com/r/kalilinux/kali-last-release
+      \endverb
+      \verb{url}
+      \verb https://hub.docker.com/r/kalilinux/kali-last-release
       \endverb
     \endentry
     \entry{biblatex}{online}{}
@@ -506,6 +635,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2023}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://tobi.oetiker.ch/lshort/lshort.pdf
       \endverb
@@ -542,6 +672,37 @@
       \endverb
       \verb{url}
       \verb https://nmap.org/book/man.html#man-description/
+      \endverb
+    \endentry
+    \entry{kaliexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0a38434088250e09812c32d68bb704c6}{%
+           family={Security},
+           familyi={S\bibinitperiod},
+           given={Offensive},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a38434088250e09812c32d68bb704c6}
+      \strng{fullhash}{0a38434088250e09812c32d68bb704c6}
+      \strng{bibnamehash}{0a38434088250e09812c32d68bb704c6}
+      \strng{authorbibnamehash}{0a38434088250e09812c32d68bb704c6}
+      \strng{authornamehash}{0a38434088250e09812c32d68bb704c6}
+      \strng{authorfullhash}{0a38434088250e09812c32d68bb704c6}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kali Linux Documentation}
+      \field{urlday}{11}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.kali.org/docs/introduction/what-is-kali-linux/
+      \endverb
+      \verb{url}
+      \verb https://www.kali.org/docs/introduction/what-is-kali-linux/
       \endverb
     \endentry
     \entry{shannon1948}{article}{}
@@ -593,6 +754,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Drawing Gantt Charts in \LaTeX{} with TikZ}
+      \true{nocite}
       \verb{urlraw}
       \verb http://osl.ugr.es/CTAN/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf
       \endverb
@@ -660,6 +822,35 @@
       \verb http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf
       \endverb
     \endentry
+    \entry{miottaupcfig}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5b3ddc414b406b545dca691ec468c30f}{%
+           family={Valles},
+           familyi={V\bibinitperiod},
+           given={Josep\bibnamedelima Pegueroles},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b3ddc414b406b545dca691ec468c30f}
+      \strng{fullhash}{5b3ddc414b406b545dca691ec468c30f}
+      \strng{bibnamehash}{5b3ddc414b406b545dca691ec468c30f}
+      \strng{authorbibnamehash}{5b3ddc414b406b545dca691ec468c30f}
+      \strng{authornamehash}{5b3ddc414b406b545dca691ec468c30f}
+      \strng{authorfullhash}{5b3ddc414b406b545dca691ec468c30f}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell System Technical Journal}
+      \field{number}{3}
+      \field{title}{MIoTTA-UPC: Testbed MIoT Configurable para la Evaluacion de Algoritmos de Detección de Ciberataques Basados en Inteligencia Artificial}
+      \field{volume}{27}
+      \field{year}{1948}
+      \field{pages}{379\bibrangedash 423}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1002/j.1538-7305.1948.tb01338.x
+      \endverb
+    \endentry
     \entry{siunitx}{online}{}
       \name{author}{1}{}{%
         {{hash=93c71fed62527d4c8c6ae13ee771fcdd}{%
@@ -678,7 +869,7 @@
       \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{\texttt{siunitx} – A comprehensive (SI) units package}
+      \field{title}{\texttt{siunitx} A comprehensive (SI) units package}
       \field{urlday}{8}
       \field{urlmonth}{11}
       \field{urlyear}{2023}

@@ -23,6 +23,7 @@
   Finalment, és important destacar que la protecció dels sistemes IoMT també ha de ser escalable i adaptable. L’amenaça no és estàtica, i els vectors d’atac evolucionen constantment. Davant d’aquesta realitat, la recerca en ciberseguretat per a l’IoMT s’està orientant cada cop més cap a solucions dinàmiques, com ara sistemes intel·ligents basats en aprenentatge automàtic que permetin detectar patrons anòmals de comportament i actuar de forma proactiva. En aquest sentit, la generació de datasets reals que simulin tant trànsit legítim com maliciós en entorns IoMT esdevé una peça clau per entrenar i validar aquestes solucions emergents. \cite{IoMTexp}
   
   \section{Message Queuing Telemetry Transport (MQTT)}
+  \label{sec:MQTT}
   El Message Queuing Telemetry Transport (MQTT) és un protocol de missatgeria lleuger dissenyat per a la comunicació entre dispositius amb recursos limitats en xarxes poc fiables o amb amplada de banda reduïda. Aquest protocol s’ha convertit en un estàndard de facto en moltes aplicacions IoT, inclòs l’àmbit de l’Internet of Medical Things (IoMT), per la seva eficàcia, simplicitat i facilitat de desplegament.
   
   Desenvolupat originalment per IBM l’any 1999, MQTT segueix un model de comunicació publish/subscribe, que afavoreix la desconnexió temporal dels nodes i la minimització de l’ús de la xarxa, dos requisits habituals en xarxes IoT. 
@@ -50,7 +51,7 @@ Malgrat aquests avantatges, el protocol MQTT no està pensat amb la seguretat co
 
  Donada la seva extensió en entorns IoT i les seves característiques adaptades a dispositius amb recursos limitats, MQTT s’ha triat com a protocol principal per a la simulació de trànsit en aquest treball. El seu ús permet generar escenaris tant de comunicació legítima com maliciosa, en els quals es poden observar comportaments anòmals mitjançant eines d’anàlisi i detecció. Això facilita la creació de datasets realistes per a l’entrenament d’IDS basats en IA.     
   
- \begin{figure}[ht]
+ \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{img/MQTT_IoMT.jpg}
     \caption{Protocol MQTT en un entorn IoMT. Imatge extreta de \cite{mqttfig} i adaptada amb intel·ligència artificial.}
@@ -68,17 +69,30 @@ Malgrat aquests avantatges, el protocol MQTT no està pensat amb la seguretat co
   Per a la realització d’aquest treball s’han emprat diverses eines de codi obert, escollides pel seu suport ampliat en entorns de xarxa, la seva flexibilitat i la possibilitat d’automatitzar proves i captures de trànsit en entorns simulats. Algunes d’aquestes eines tenen un enfocament general i són àmpliament utilitzades en proves de penetració en xarxes IP tradicionals, mentre que d’altres presenten característiques específiques que les fan especialment adequades per a entorns IoT o IoMT. A continuació es descriuen les principals fetes servir en aquest projecte: 
 
     \subsection{Mosquitto}
+    \label{sec:mosquitto}
       Mosquitto és una de les implementacions més conegudes del protocol MQTT. Es tracta d’un broker MQTT lleuger, de codi obert i altament configurable i compatible amb les especificacions MQTT 3.1 i 5.0 que permet la configuració de les funcionalitats bàsiques del protocol com definir tòpics, limitacions en l'ús de recursos, ACLs I encriptat TLS. També permet desplegar clients MQTT mitjançant mosquitto-clients i poder realitzar el procés de subscriure’s a un tòpic en un broker concret (mosquitto-sub) on publicar missatges en aquest tòpic (mosquitto-pub). Adicionalment, disposa de les configuracions bàsiques de MQTT com els paràmetres de QoS, retain o presistance. \cite{Mosquittoexp}
 
        En l’entorn acadèmic, la seva simplicitat fa que sigui una excel·lent opció per a desplegar laboratoris d’IoMT. 
 
     \subsection{Docker}
+    \label{sec:docker}
     Docker és una plataforma de virtualització lleugera basada en contenidors que permet desplegar entorns complexos de manera ràpida, reproduïble i aïllada. Els seus principals avantatges són: \cite{dockerexp}
     \begin{itemize}  
       \item \textbf{Escalabilitat i control:} És possible desplegar ràpidament desenes de dispositius virtuals, amb configuracions personalitzades, IPs xes i comportaments diferenciats. 
       \item \textbf{Ús d'orquestradors:} Gràcies a Docker Compose, es poden definir tots els serveis i la seva configuració en un sol fitxer YAML, cosa que permetent la reproducció exacta de l’escenari en qualsevol màquina o entorn.
       \item \textbf{Monitoratge de xarxa simplificat:} Docker permet definir xarxes virtuals internes, facilitant la simulació d’una infraestructura complexa. 
     \end{itemize}
+
+    \subsection{Kali Linux}
+    Kali Linux és una distribució basada en Debian orientada específicament a seguretat informàtica i proves de penetració (pentesting). Mantinguda per l’equip d’Offensive Security (OFSEC), Kali proporciona un entorn completament equipat amb centenars d’eines preinstal·lades per a l’auditoria de xarxes, anàlisi de vulnerabilitats, enginyeria inversa, sniffing, spoofing, explotació i forense digital. \cite{kaliexp}
+    
+    En aquest treball, Kali Linux s’ha utilitzat com a sistema operatiu base per dur a terme les diferents fases de l’atac, simulant el comportament d’un atacant actiu dins la xarxa IoMT. Aquesta elecció es basa en diversos avantatges claus:
+    \begin{itemize}
+      \item \textbf{Gran nombre d’eines incloses:} Kali inclou eines com Nmap, Masscan, Wireshark, tcpdump, Scapy, aprscan i moltes més, facilitant la realització de proves diverses sense necessitat d’instal·lació addicional.
+      \item \textbf{Entorn controlat i configurable:} Kali pot executar-se de manera virtualitzada (en aquest treball s'ha utilitzat en contenidors Docker), fet que permet recrear escenaris controlats i aïllats per a la simulació d’atacs sense posar en risc cap sistema real.
+      \item \textbf{Actualitzacions contínues i suport actiu de la comunitat:} Es tracta d’una distribució mantinguda amb freqüència, compatible amb la majoria d’arquitectures, i àmpliament utilitzada tant en àmbits acadèmics com professionals.
+      \item \textbf{Automatització i scripting:} El seu entorn Unix-like facilita l’ús d’scripts en bash o python per automatitzar atacs, recollir trànsit o llançar seqüències repetitives d’accions
+    \end{itemize}  
 
     \subsection{Nmap}
     Nmap (Network Mapper) és una eina de “network reconnaissance” i auditoria de xarxes molt utilitzada en l’àmbit del pentesting. Permet identificar dispositius connectats a una xarxa, descobrir serveis oberts, detectar sistemes operatius i obtenir informació sobre les possibles vulnerabilitats de cada node mitjançant scripts NSE personalitzats. \cite{Nmapexp}

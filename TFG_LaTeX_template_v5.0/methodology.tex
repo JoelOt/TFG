@@ -1,55 +1,75 @@
 %%%% PLEASE REPLACE ENTIRELY WITH YOUR OWN CONTENT %%%%
 
-\ifcase\doclanguage
-\or
-  \chapter{Metodologia / desenvolupament del projecte}
+
+\chapter{Metodologia / desenvolupament del projecte}
   
   En aquest capítol es detallarà la metodologia emprada en la realització del treball. Té com a objectiu oferir un compte detallat de les aproximacions i tècniques utilitzades, assegurant la replicabilitat i el rigor acadèmic. No només cobrirà els mètodes de recerca i tècniques de mesurament emprats, sinó que també aprofundirà en les especificitats del desenvolupament de programari i maquinari. Tant si el projecte implica anàlisi qualitativa, mesuraments quantitatius, modelatge computacional com prototipatge físic, aquest capítol hauria d'elucidar com contribueix cada component als objectius generals.
   
   A més de descriure els mètodes en si mateixos, el capítol també proporcionarà justificacions per què es van escollir mètodes particulars enfront d'altres. Per exemple, podria explicar la tria d'un llenguatge de programació específic, prova estadística o configuració experimental. El capítol també abordarà les limitacions de la metodologia i com aquestes s'han mitigat o tingut en compte. Els lectors haurien de sortir amb una comprensió clara de com s'ha dut a terme el desenvolupament del projecte, per què s'han escollit determinades opcions i com aquests mètodes serveixen per complir els objectius establerts inicialment.
-  
-\or
-  \chapter{Metodología / desarrollo del proyecto}
-  En este capítulo se detallará la metodología empleada en la realización del trabajo. Su objetivo es ofrecer un relato detallado de los enfoques y técnicas utilizadas, asegurando la replicabilidad y el rigor académico. No solo cubrirá los métodos de investigación y técnicas de medición empleados, sino que también profundizará en las especificidades del desarrollo de software y hardware. Ya sea que el proyecto implique análisis cualitativo, mediciones cuantitativas, modelado computacional o prototipado físico, este capítulo debería elucidar cómo contribuye cada componente a los objetivos generales.
-  
-  Además de describir los métodos en sí mismos, el capítulo también proporcionará justificaciones sobre por qué se eligieron métodos particulares frente a otros. Por ejemplo, podría explicar la elección de un lenguaje de programación específico, prueba estadística o configuración experimental. El capítulo también abordará las limitaciones de la metodología y cómo estas se han mitigado o tenido en cuenta. Los lectores deberían salir con una comprensión clara de cómo se ha llevado a cabo el desarrollo del proyecto, por qué se han escogido determinadas opciones y cómo estos métodos sirven para cumplir los objetivos establecidos inicialmente.
-  
-\else
-  \chapter{Methodology / project development}
 
-  In this chapter, the methodology used in the completion of the work will be detailed. Its aim is to offer a thorough account of the approaches and techniques used, ensuring replicability and academic rigor. It will not only cover the research methods and measurement techniques employed but will also delve into the specifics of software and hardware development. Whether the project involves qualitative analysis, quantitative measurements, computational modeling, or physical prototyping, this chapter should elucidate how each component contributes to the overall objectives.
-  
-  In addition to describing the methods themselves, the chapter will also provide justifications for why specific methods were chosen over others. For example, it may explain the choice of a particular programming language, statistical test, or experimental setup. The chapter will also address the limitations of the methodology and how these have been mitigated or accounted for. Readers should come away with a clear understanding of how the project's development has been carried out, why certain choices were made, and how these methods serve to fulfill the initially established objectives.
+\section{Escenari utilitzat}
 
-\fi
+  L’escenari presentat en aquest treball està inspirat en el que s'utilitza en el Treball: \textit{" «MIoTTA-UPC: Testbed MIoT Configurable para la Evaluacion de Algoritmos de Detección de Ciberataques Basados en Inteligencia Artificial» "} \cite{miottaupcfig} . L’objectiu principal és poder generar un banc de dades que contingui paquets benignes i maliciosos de diferents atcas per a entrenar un sistema de detecció d’intrusions (IDS) basat en intel·ligència artificial que classifiqui si aquest tràfic és benigne o maliciós. La programació, desplegament i entrenament d’aquest IDS no formen part d’aquest treball. Per a generar aquest testbed és necessari simular atacs coneguts per a una infraestructura com utilitzada de manera realista i amb un escenari que reprodueixi adequadament unes condicions reals.
 
-\ifcase\doclanguage\or
-  \section{Introducció d'expressions matemàtiques}
-    
-  \LaTeX{} és una eina inestimable per a la composició tipogràfica de contingut matemàtic. En aquesta secció mostrem les comandes i entorns \LaTeX{} essencials per a l'escriptura matemàtica. Per a més informació consulteu el capítol 3 de \cite{notsoshort}.
-    
-  \subsection{Matemàtiques en línia i aïllades}
-    
-  Per a expressions en línia, utilitzeu \verb|$ ... $| o \verb|\( ... \)|. Escriviu entre \verb|\[ ... \]| les expressions que s'han de mostrar en una línia apart.
+\section{Topologia general}
+\label{sec:Topologia}
+  Per a la generació i captura del tràfic de xarxa en un IoMT (Internet of Medical Things), s’ha dissenyat i desplegat un escenari experimental que simula una habitació d’hospital interconnectada amb un servidor central i altres dispositius de suport clínic. Aquest entorn busca reproduir amb fidelitat un ecosistema típic d’atenció sanitària digitalitzada, incloent-hi sensors mèdics, passarel·les de comunicació, equips de monitoratge i possibles actors maliciosos.
 
-\or
-  \section{Introducción de expresiones matemáticas}
-  
-  \LaTeX{} es una herramienta inestimable para la composición tipográfica de contenido matemático. En esta sección, mostraremos los comandos y entornos LaTeX esenciales para la escritura matemática. Para más información consultar el capítulo 3 de \cite{notsoshort}.
-  
-  \subsection{Matemáticas en línea y aisladas}
-  
-  Para expresiones en línea, usar \verb|\( ... \)| o \verb|$ ... $|. Escribir entre \verb|\[ ... \]| las expresiones que han de mostrarse en una línea aparte.
 
-\else
-  \section{Writing mathematical expressions}
+  L’escenari està basat en una xarxa LAN Wi-Fi irradiada amb un Access Point, en la qual s’hi connecten tots els dispositius, encara que també pot contenir trams Ethernet si és necessari. Entre els dispositius utilitzats es considera:
+
+  \begin{itemize}
+    \item \textbf{Clients MQTT:} Aquests clients són sensors com ara oxímetres, monitors de ritme cardíac, bombes d’infusió, sensors de glucosa, tensiòmetres o altres sensors utilitzats en l’entorn mèdic. Aquests clients poden actuar tant transmetent informació a altres dispositius com esperant rebre’n o ambdues a la vegada. Una part d’aquests dispositius, s’implementarà de forma simulada i injectada a la xarxa a través d’un node comú, ja que es tracta de dispositius amb gran cost econòmic. En aquest treball s’utilitzarà Docker com és explicat en apartats posteriors.
+    \item \textbf{Broker MQTT:} Connectat a la xarxa, es disposa d’un servidor o broker MQTT amb el el qual s’hi connecten sigui per enviar o rebre informació tots els clients de la xarxa. Actua com un organisme central de la informació i un punt crític de la xarxa.
+    \item \textbf{Atacant:} Dintre aquesta xarxa Wi-Fi, se suposa que es connecta un dispositiu atacant, el qual realitza diversos atacs cap als altres components de la xarxa.
+    \item \textbf{Monitor de trànsit:} S’hi connecta un monitor que captura tot el trànsit dins la xarxa visible des de la seva posició. Aquest actua de forma passiva escoltant tot el trànsit que circula i recopilant tota la informació possible per tal generar el \textit{testbed}, que és el principal objectiu del treball.
+    \item \textbf{Ordinadors I servidors:} Se suposa que en aquesta xarxa hi poden haver connectats altres dispositius que no són especialment utilitzats en l’entorn IoMT com per exemple altres servidors hospitalaris o ordinadors.
+  \end{itemize}
+
+  Dintre aquest escenari, el meu treball se centra en l’apartat de la generació de trànsit simulat així com en l’elaboració d’atacs des de la perspectiva de desplegar clients simulats i fer-los interactuar amb la xarxa real. L’objectiu principal del treball no ha estat la implementació d’aquesta xarxa.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/MIOTTA_UPC.png}
+    \caption{Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite{miottaupcfig}.}
+    \label{fig:MQTT}
+  \end{figure}
+
+\section{Ús del protocol MQTT}
+  Primer de tot, l’elecció del protocol MQTT (Message Queuing Telemetry Transport) està fonamentada en el fet que és un dels protocols més utilitzats en l’àmbit IoT en general i en entorns IoMT en específic.
+
+  És un dels protocols amb més rellevància i eficiència per a dispositius amb recursos limitats, com és el cas d’aquest treball, on l’apartat de les comunicacions no és la seva funció principal. Consta d’una arquitectura \textit{publisher – subscriber} centralitzada en un únic servidor, la qual cosa fa que tota la informació estigui centralitzada en un sol dispositiu, aquest fet el fa vulnerable i, per tant, cal prendre les mesures de seguretat adequades. A més a més, és un protocol altament configurable, ja que s’hi poden configurar mesures de seguretat com ara limitacions de trànsit, Access Lists (ACL) o encriptat TLS.
+
+  Dintre aquest projecte del grup ISG-UPC també es contempla el protocol CoAP, més enfocat a una arquitectura client -servidor semblant a protocols HTTP, però en aquest treball no serà utilitzat.
+
+\section{Ús de Docker per al desplegament de dispositius}
+
+  Per al desplegament dels dispositius simulats (clients) i del servidor MQTT (broker), s’ha optat per l’ús de contenidors Docker en lloc de màquines virtuals (VMs). Aquesta decisió s’ha pres tenint en compte diversos criteris tècnics, pràctics i de rendiment, que fan que Docker sigui una opció més adequada per als objectius del projecte.
+
+  Docker et permet desplegar contenidors seguint una imatge comuna i configurable. D’aquesta manera, podem desplegar els clients simulats o el servidor en qualsevol entorn i sistema que compleixi uns requisits mínims de hardware I software. També permet mantenir una eficiència de recursos òptima, ja que utilitza el propi kernel del sistema hipervisor.
+
+  Alhora, és un sistema aïllat del sistema operatiu principal, per això, podem executar proves de penetració sense veure compromesa realment la seguretat dels nostres equips i amb una gran facilitat de reproduir aquest atac diverses vegades sense haver de configurar novament tot el dispositiu vulnerat, ja que aquests contenidors són fàcilment renovables per còpies idèntiques prèvies a l'atac.
   
-  \LaTeX{} is an invaluable tool for typesetting mathematical content. In this section, we'll cover essential LaTeX commands and environments for mathematical writing. For further information see the chapter 3 of \cite{notsoshort}.
+  A través del seu orquestrador Docker Compose, podem realitzar desplegaments múltiples de dispositius. Amb aquesta eina, podem desplegar en un sol dispositiu físic una gran quantitat de dispositius simulats que comparteixin unes característiques comunes entre ells.
+
+  Dintre dels motius pels quals s’ha escollit aquesta tecnologia, està l’ús de volums, els quals et permeten compartir espai en memòria entre el dispositiu hipervisor i els contenidors. Aquesta funcionalitat ens permet agilitzar la transferència d’arxius entre contenidors, com ara fitxers de configuració, scripts per executar tasques determinades o atacs coordinats (en el cas de contenidors desplegats per l’atacant).
+
+  També he utilitzat l’arquitectura de xarxa de Docker Compose per a poder crear infraestructures de xarxa simulades senceres, mantenint una lògica i rigorositat en les adreces de cada contenidor, d’aquesta manera, per a alguns atacs m’és possible simular una arquitectura com ara una gran quantitat de contenidors connectats a un switch o bé com un seguit de serveis del host per fer una arquitectura de microserveis dintre un mateix dispositiu.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/DockerFig.png}
+    \caption{Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit{The Hacker Way} \cite{miottaupcfig}.}
+    \label{fig:MQTT2}
+  \end{figure}
+
+\section{Introducció d'expressions matemàtiques}
   
-  \subsection{Inline and Display Math}
+\LaTeX{} és una eina inestimable per a la composició tipogràfica de contingut matemàtic. En aquesta secció mostrem les comandes i entorns \LaTeX{} essencials per a l'escriptura matemàtica. Per a més informació consulteu el capítol 3 de "cita borrada".
   
-  For inline expressions, use \verb|\( ... \)| or \verb|$ ... $|. Write between \verb|\[ ... \]| those expressions to be shown in its own line.
-\fi
+\subsection{Matemàtiques en línia i aïllades}
+  
+Per a expressions en línia, utilitzeu \verb|$ ... $| o \verb|\( ... \)|. Escriviu entre \verb|\[ ... \]| les expressions que s'han de mostrar en una línia apart.
 
 
 \ifcase\doclanguage\or
