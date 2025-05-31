@@ -2,25 +2,39 @@
 
 \ifcase\doclanguage
 \or
-  \chapter[Estat de l'art]{Estat de l'art de la tecnologia utilitzada o aplicada en aquest TFG}
-
-  El capítol «Estat de l'Art de la Tecnologia» ofereix una visió detallada dels avenços actuals relacionats amb el tema del vostre treball. Hauria de descriure les teories, models, algorismes clau o desenvolupaments de programari i maquinari, recolzats per articles revisats per experts i altres recursos com ara llibres, patents, informes tècnics, etcètera. Aquest capítol estableix el context i ajuda els lectors a entendre el panorama existent en el camp. En conseqüència, les \textbf{cites a referències bibliogràfiques rellevants} són una part important del contingut.
+  \chapter[Estat de l'art]{Estat de l'art}
   
-  Aquest capítol no només ha de resumir la recerca existent, sinó que també ha de fer-ne una \textbf{avaluació crítica}. Això implica destacar les llacunes o limitacions en la tecnologia actual per preparar el terreny per a les tasques que el TFG abordarà. Al final del capítol els lectors haurien de tenir una comprensió clara del que ja se sap sobre el tema, del que encara queda per aprendre i de com el TFG contribueix a aquesta «conversa acadèmica» en curs.
-
   \section{Internet of Medical Things (IoMT)} 
-  L’Internet of Medical Things (IoMT) representa una evolució natural dins l’ecosistema de l’Internet de les Coses (IoT), aplicat específicament al sector sanitari. Aquest concepte engloba una xarxa de dispositius mèdics connectats que recopilen, processen i transmeten dades clíniques en temps real amb l’objectiu de millorar l’atenció mèdica, optimitzar la gestió hospitalària i afavorir el monitoratge remot dels pacients. 
-  Entre els dispositius més habituals dins l’IoMT trobem monitors cardíacs, pulsòmetres, inhaladors intel·ligents, implants connectats, sistemes de dosificació automatitzada de medicació, etc. 
-  
-  El creixement de l’IoMT ha estat exponencial els darrers anys, impulsat per l’avenç tecnològic, la miniaturització de sensors, la proliferació de la connectivitat sense ls i la necessitat d’una atenció sanitària més eficient i personalitzada. Cada vegada els hospitals estan adoptant més aquestes tecnologies i s’espera que aquesta tendència es mantingui en creixement en els pròxims anys. 
+  L’Internet of Medical Things (IoMT) és una branca específica de l’Internet de les Coses (IoT) aplicada a l’àmbit sanitari. Consisteix en una xarxa creixent de dispositius mèdics intel·ligents que poden recopilar, processar i transmetre dades clíniques amb l’objectiu de millorar la qualitat assistencial, facilitar el monitoratge de pacients i optimitzar els processos hospitalaris.
 
-  Tanmateix, aquesta mateixa expansió comporta un augment significatiu de la superfície d’exposició a ciberatacs. A més a més, s’espera que a mesura que avança la seva adopció, aquests dispositius siguin més determinants en les tasques mèdiques, la qual cosa pot impilcar una major criticitat en cas de ciberatac. 
+  Aquest ecosistema connectat inclou una gran varietat de dispositius, que poden ser tant portables com fixes, i que cobreixen des del seguiment de signes vitals fins al control automatitzat de tractaments. Alguns exemples habituals són:
+
+  \begin{itemize}
+    \item \textbf{Monitors cardíacs:} permeten controlar l’activitat del cor de manera contínua.
+    \item \textbf{Pulsòmetres i termòmetres intel·ligents:} ofereixen dades precises i fàcilment accessibles.
+    \item \textbf{Inhaladors i bombes d’insulina intel·ligents:} poden registrar l’ús i ajudar a ajustar el tractament.
+    \item \textbf{Implants mèdics connectats: } permeten registar l'estat d'un pacient a temps complert. Per exemple marcapassos o neuroestimuladors.
+    \item \textbf{Sistemes de dosificació automàtica de medicació:} especialment útils en pacients amb malalties cròniques.
+    \item \textbf{Equips hospitalaris intel·ligents:} com llits monitoritzats o sistemes de seguiment de pacients dins d’unitats de cures intensives.
+  \end{itemize}
+
+  El creixement de l’IoMT s’ha vist impulsat per diversos factors, com la miniaturització dels sensors, el progrés tecnològic en dispositius mèdics, l’augment de la digitalització sanitària, i la necessitat creixent de models d’atenció centrats en el pacient i orientats a la prevenció i el seguiment continuat. A més, la pandèmia de la COVID-19 va accelerar l’adopció de solucions de monitoratge remot, que han consolidat l’ús d’aquest tipus de dispositius fora dels entorns hospitalaris convencionals.
+
+  L’ús generalitzat d’aquesta tecnologia permet una atenció més personalitzada i basada en dades, alhora que facilita la detecció precoç de complicacions i una millor gestió dels recursos sanitaris. També contribueix a reduir la necessitat de desplaçaments i hospitalitzacions, millorant l’accessibilitat a l’atenció mèdica, especialment en zones rurals o amb menys infraestructures.
   
-  A diferència dels sistemes informàtics convencionals, els dispositius IoMT sovint operen en entorns amb recursos computacionals limitats (processador, memòria, energia), i moltes vegades han estat dissenyats amb una orientació funcional, no pas de seguretat. Això els fa especialment vulnerables a atacants que poden es poden aprofitar de configuracions per defecte, manca d’actualitzacions, credencials febles o vulnerabilitats en els protocols de comunicació. A més, la connexió d’aquests dispositius mitjançant xarxes Wi-Fi o altres canals sense fils exposa el sistema a atacs com l’escolta (sniffing), suplantació de dispositius (spoofing), atacs de denegació de servei (DoS) entre altres. 
+  Amb una adopció creixent tant en entorns clínics com domèstics, s’espera que l’IoMT sigui una peça clau en la transformació digital del sistema sanitari en els pròxims anys, aportant beneficis tant per als pacients com per als professionals de la salut. \cite{IoMTexp}
+
+  \section{Seguretat en entorns IoMT}
+
+  Donat el creixement de l'us de dispositius IoMT, aquesta mateixa expansió comporta un augment significatiu de la superfície d’exposició a ciberatacs. A més a més, s’espera que a mesura que avança la seva adopció, aquests dispositius siguin més determinants en les tasques mèdiques, la qual cosa pot impilcar una major criticitat en cas de ciberatac.
+
+  A diferència dels sistemes informàtics convencionals, els dispositius IoMT sovint operen en entorns amb recursos computacionals limitats (processador, memòria, energia), i moltes vegades han estat dissenyats amb una orientació funcional, no pas de seguretat. Això els fa especialment vulnerables a atacants que poden es poden aprofitar de configuracions per defecte, manca d’actualitzacions, credencials febles o vulnerabilitats en els protocols de comunicació. A més, la connexió d’aquests dispositius mitjançant xarxes Wi-Fi o altres canals sense fils exposa el sistema a atacs com l’escolta (sniffing), suplantació de dispositius (spoofing), atacs de denegació de servei (DoS) entre altres.
   
   Un dels aspectes més crítics del risc en entorns IoMT és la naturalesa de les dades que gestionen. Les dades mèdiques són altament sensibles i personals. Un accés no autoritzat pot vulnerar drets fonamentals com la privacitat i tenir conseqüències legals greus per a les institucions sanitàries. En aquest context, la ciberseguretat en l’àmbit IoMT no es pot considerar un afegit posterior al desplegament dels sistemes, sinó un requisit fonamental des de la fase de disseny. Això, és especialment rellevant en entorns on les conseqüències d’un atac poden tenir un impacte directe sobre la salut i la seguretat física dels pacients.
-  
-  Finalment, és important destacar que la protecció dels sistemes IoMT també ha de ser escalable i adaptable. L’amenaça no és estàtica, i els vectors d’atac evolucionen constantment. Davant d’aquesta realitat, la recerca en ciberseguretat per a l’IoMT s’està orientant cada cop més cap a solucions dinàmiques, com ara sistemes intel·ligents basats en aprenentatge automàtic que permetin detectar patrons anòmals de comportament i actuar de forma proactiva. En aquest sentit, la generació de datasets reals que simulin tant trànsit legítim com maliciós en entorns IoMT esdevé una peça clau per entrenar i validar aquestes solucions emergents. \cite{IoMTexp}
+
+  Però, és important destacar que la protecció dels sistemes IoMT també ha de ser escalable i adaptable. L’amenaça no és estàtica, i els vectors d’atac evolucionen constantment. 
+ 
+  Davant d’aquesta realitat, la recerca en ciberseguretat per a l’IoMT s’està orientant cada cop més cap a solucions dinàmiques, com ara IDS/IRS basats en aprenentatge automàtic que permetin detectar patrons anòmals de comportament i actuar de forma proactiva. En aquest sentit, la generació de datasets reals que simulin tant trànsit legítim com maliciós en entorns IoMT esdevé una peça clau per entrenar i validar aquestes solucions emergents. Aquestes solucions han estat tractades en artícles com \cite{iotthreadsexp}. També la caracterització de vulnerabilitats connegudes ha estat tractada en artícles com \cite{ciciomtexp} o \cite{lowrateDDoSexp} que han estat utlitzats com a referència per a la recopliació d'atacs i la generació de datasets.
   
   \section{Message Queuing Telemetry Transport (MQTT)}
   \label{sec:MQTT}
@@ -30,7 +44,7 @@
   
   En una arquitectura MQTT, el component central és el broker, un servidor que actua com a intermediari entre els dispositius que publiquen dades (publishers) i els que les reben (subscribers). Els dispositius no es comuniquen directament entre ells, sinó que ho fan a través del broker, que rep els missatges publicats en un tema determinat (tòpic) i els redirigeix als clients que s’han subscrit a aquest tema. Aquesta arquitectura desacoblada simplifica el disseny de sistemes escalables i resilients. A l’àmbit IoMT, aquesta estructura és especialment útil per gestionar sensors mèdics que generen dades de manera periòdica, com ara nivells de glucosa, senyals d’electrocardiograma (ECG), o mesures de tensió arterial. Aquests sensors poden publicar lectures de manera eficient al broker MQTT, i altres components del sistema (com bases de dades, aplicacions clíniques o sistemes d’alerta) poden consumir aquesta informació segons les seves necessitats. 
   
-  El protocol MQTT opera habitualment sobre TCP/IP, utilitzant el port 1883 per a connexions no segures i el port 8883 quan es fa servir TLS (Transport Layer Security) per protegir la transmissió. Entre les característiques tècniques més destacades d’MQTT, podem ressaltar:
+  El protocol MQTT opera habitualment sobre TCP/IP, utilitzant el port 1883 per a connexions no segures i el port 8883 quan es fa servir TLS (Transport Layer Security) per protegir la transmissió. Entre les característiques tècniques més destacades d’MQTT, podem ressaltar: 
   
   \begin{itemize}
       \item \textbf{Qualitat del servei (QoS):} MQTT ofereix tres nivells de abilitat en el lliurament de missatges, cosa que permet ajustar el comportament segons els requisits de l’aplicació. 

@@ -12,37 +12,38 @@
 \BOOKMARK [1][-]{section.1.4}{Pla de treball}{chapter.1}% 12
 \BOOKMARK [0][-]{chapter.2}{Estat de l'art}{}% 13
 \BOOKMARK [1][-]{section.2.1}{Internet of Medical Things \(IoMT\)}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.2}{Message Queuing Telemetry Transport \(MQTT\)}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.3}{Altres protocols en l'entorn IoMT}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.4}{Eines per a la simulaci\363 i an\340lisi de tr\340nsit en entorns IoMT}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.4.1}{Mosquitto}{section.2.4}% 18
-\BOOKMARK [2][-]{subsection.2.4.2}{Docker}{section.2.4}% 19
-\BOOKMARK [2][-]{subsection.2.4.3}{Kali Linux}{section.2.4}% 20
-\BOOKMARK [2][-]{subsection.2.4.4}{Nmap}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.5}{TCPDump}{section.2.4}% 22
-\BOOKMARK [0][-]{chapter.3}{Metodologia / desenvolupament del projecte}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Escenari utilitzat}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Topologia general}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{\332s del protocol MQTT}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{\332s de Docker per al desplegament de dispositius}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.5}{Introducci\363 d'expressions matem\340tiques}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.5.1}{Matem\340tiques en l\355nia i a\357llades}{section.3.5}% 29
-\BOOKMARK [2][-]{subsection.3.5.2}{Numeraci\363 i agrupaci\363 d'equacions}{section.3.5}% 30
-\BOOKMARK [2][-]{subsection.3.5.3}{Introducci\363 de matrius}{section.3.5}% 31
-\BOOKMARK [1][-]{section.3.6}{Taules}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.7}{Diagrames}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.8}{Gr\340fiques}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.9}{Llistats de codi}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.10}{Unitats}{chapter.3}% 36
-\BOOKMARK [0][-]{chapter.4}{Desenvolupament d\220un entorn IoMT simulat}{}% 37
-\BOOKMARK [0][-]{chapter.5}{Atacs de reconeixmenet}{}% 38
-\BOOKMARK [0][-]{chapter.6}{Resultats}{}% 39
-\BOOKMARK [1][-]{section.6.1}{Experiments i proves}{chapter.6}% 40
-\BOOKMARK [1][-]{section.6.2}{Visualitzaci\363 de les dades}{chapter.6}% 41
-\BOOKMARK [1][-]{section.6.3}{Limitacions}{chapter.6}% 42
-\BOOKMARK [0][-]{chapter.7}{An\340lisi de sostenibilitat i implicacions \350tiques}{}% 43
-\BOOKMARK [0][-]{chapter.8}{Conclusions i L\355nies Futures}{}% 44
-\BOOKMARK [1][-]{section.8.1}{Conclusions}{chapter.8}% 45
-\BOOKMARK [1][-]{section.8.2}{L\355nies Futures}{chapter.8}% 46
-\BOOKMARK [0][-]{chapter*.14}{Bibliografia}{}% 47
-\BOOKMARK [0][-]{appendix.A}{Un ap\350ndix}{}% 48
+\BOOKMARK [1][-]{section.2.2}{Seguretat en entorns IoMT}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Message Queuing Telemetry Transport \(MQTT\)}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.4}{Altres protocols en l'entorn IoMT}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.5}{Eines per a la simulaci\363 i an\340lisi de tr\340nsit en entorns IoMT}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.5.1}{Mosquitto}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.2}{Docker}{section.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.5.3}{Kali Linux}{section.2.5}% 21
+\BOOKMARK [2][-]{subsection.2.5.4}{Nmap}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.5}{TCPDump}{section.2.5}% 23
+\BOOKMARK [0][-]{chapter.3}{Metodologia / desenvolupament del projecte}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Escenari utilitzat}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{Topologia general}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.3}{\332s del protocol MQTT}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.4}{\332s de Docker per al desplegament de dispositius}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.5}{Introducci\363 d'expressions matem\340tiques}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.5.1}{Matem\340tiques en l\355nia i a\357llades}{section.3.5}% 30
+\BOOKMARK [2][-]{subsection.3.5.2}{Numeraci\363 i agrupaci\363 d'equacions}{section.3.5}% 31
+\BOOKMARK [2][-]{subsection.3.5.3}{Introducci\363 de matrius}{section.3.5}% 32
+\BOOKMARK [1][-]{section.3.6}{Taules}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.7}{Diagrames}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.8}{Gr\340fiques}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.9}{Llistats de codi}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.10}{Unitats}{chapter.3}% 37
+\BOOKMARK [0][-]{chapter.4}{Desenvolupament d\220un entorn IoMT simulat}{}% 38
+\BOOKMARK [0][-]{chapter.5}{Atacs de reconeixmenet}{}% 39
+\BOOKMARK [0][-]{chapter.6}{Resultats}{}% 40
+\BOOKMARK [1][-]{section.6.1}{Experiments i proves}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.2}{Visualitzaci\363 de les dades}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.3}{Limitacions}{chapter.6}% 43
+\BOOKMARK [0][-]{chapter.7}{An\340lisi de sostenibilitat i implicacions \350tiques}{}% 44
+\BOOKMARK [0][-]{chapter.8}{Conclusions i L\355nies Futures}{}% 45
+\BOOKMARK [1][-]{section.8.1}{Conclusions}{chapter.8}% 46
+\BOOKMARK [1][-]{section.8.2}{L\355nies Futures}{chapter.8}% 47
+\BOOKMARK [0][-]{chapter*.14}{Bibliografia}{}% 48
+\BOOKMARK [0][-]{appendix.A}{Un ap\350ndix}{}% 49

@@ -19,6 +19,37 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{iotthreadsexp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=56d229588cd983a8cf7056bcff8e3391}{%
+           family={Ángel\bibnamedelimb Luis\bibnamedelimb Muñoz\bibnamedelima Castañeda},
+           familyi={Á\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Héctor\bibnamedelima Aláiz-Moretón},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinithyphendelim M\bibinitperiod},
+           suffix={José\bibnamedelimb Antonio\bibnamedelimb Aveleira\bibnamedelima Mata},
+           suffixi={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{56d229588cd983a8cf7056bcff8e3391}
+      \strng{fullhash}{56d229588cd983a8cf7056bcff8e3391}
+      \strng{bibnamehash}{56d229588cd983a8cf7056bcff8e3391}
+      \strng{authorbibnamehash}{56d229588cd983a8cf7056bcff8e3391}
+      \strng{authornamehash}{56d229588cd983a8cf7056bcff8e3391}
+      \strng{authorfullhash}{56d229588cd983a8cf7056bcff8e3391}
+      \field{sortinit}{Á}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Complex & Intelligent Systems}
+      \field{number}{01000}
+      \field{title}{Characterization of threats in IoT from an MQTT protocol-oriented dataset}
+      \field{volume}{9}
+      \field{year}{2023}
+      \field{pages}{5281\bibrangedash 5296}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s40747-023-01000-y
+      \endverb
+    \endentry
     \entry{dockerexp}{online}{}
       \name{author}{1}{}{%
         {{hash=c29ccd00bc6f3b6047fafa5e62e0c084}{%
@@ -170,6 +201,36 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S1110016823000881
+      \endverb
+    \endentry
+    \entry{mqttfig}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d690bffdd81f67d3bf0fa503f1510603}{%
+           family={Fatemeh\bibnamedelima Ghorbani},
+           familyi={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Mehdi\bibnamedelima Delrobaei},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           suffix={Mohammad\bibnamedelima Kia},
+           suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d690bffdd81f67d3bf0fa503f1510603}
+      \strng{fullhash}{d690bffdd81f67d3bf0fa503f1510603}
+      \strng{bibnamehash}{d690bffdd81f67d3bf0fa503f1510603}
+      \strng{authorbibnamehash}{d690bffdd81f67d3bf0fa503f1510603}
+      \strng{authornamehash}{d690bffdd81f67d3bf0fa503f1510603}
+      \strng{authorfullhash}{d690bffdd81f67d3bf0fa503f1510603}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Figura adaptada i modificada amb IA}
+      \field{title}{Evaluating the Possibility of Integrating AugmentedReality and Internet of Things Technologies to HelpPatients with Alzheimer’s Disease}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/MQTT-protocol-operation-in-AAL-system_fig1_339906098
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/MQTT-protocol-operation-in-AAL-system_fig1_339906098
       \endverb
     \endentry
     \entry{booktabs}{online}{}
@@ -530,34 +591,6 @@
       \field{year}{1994}
       \true{nocite}
     \endentry
-    \entry{mqttfig}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1fa6b8ef7965d06193ce09abc07e3676}{%
-           family={mateix},
-           familyi={m\bibinitperiod},
-           given={Jo},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \strng{fullhash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \strng{bibnamehash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \strng{authorbibnamehash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \strng{authornamehash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \strng{authorfullhash}{1fa6b8ef7965d06193ce09abc07e3676}
-      \field{sortinit}{m}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Figura adaptada i modificada amb IA}
-      \field{title}{MQTT a IoMT}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://www.researchgate.net/figure/MQTT-protocol-operation-in-AAL-system_fig1_339906098
-      \endverb
-      \verb{url}
-      \verb https://www.researchgate.net/figure/MQTT-protocol-operation-in-AAL-system_fig1_339906098
-      \endverb
-    \endentry
     \entry{latexcompanion}{mvbook}{}
       \name{author}{2}{}{%
         {{hash=9355edd511e3f6fdd880ee98722a53fb}{%
@@ -591,6 +624,35 @@
       \field{title}{The \LaTeX{} Companion}
       \field{volumes}{2}
       \true{nocite}
+    \endentry
+    \entry{lowrateDDoSexp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eb5a1ae57fe4cdd394645499492137c5}{%
+           family={Mustafa\bibnamedelima Al-Fayoumi},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinithyphendelim F\bibinitperiod},
+           given={Qasem\bibnamedelimb Abu\bibnamedelima Al-Haija},
+           giveni={Q\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb5a1ae57fe4cdd394645499492137c5}
+      \strng{fullhash}{eb5a1ae57fe4cdd394645499492137c5}
+      \strng{bibnamehash}{eb5a1ae57fe4cdd394645499492137c5}
+      \strng{authorbibnamehash}{eb5a1ae57fe4cdd394645499492137c5}
+      \strng{authornamehash}{eb5a1ae57fe4cdd394645499492137c5}
+      \strng{authorfullhash}{eb5a1ae57fe4cdd394645499492137c5}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sciencie Direct Journal}
+      \field{number}{100316}
+      \field{title}{Capturing low-rate DDoS attack based on MQTT protocol in software Defined-IoT environment}
+      \field{volume}{19}
+      \field{year}{2023}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.array.2023.100316
+      \endverb
     \endentry
     \entry{notsoshort}{online}{}
       \name{author}{5}{}{%
@@ -672,6 +734,37 @@
       \endverb
       \verb{url}
       \verb https://nmap.org/book/man.html#man-description/
+      \endverb
+    \endentry
+    \entry{ciciomtexp}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2f74be47ee9a8a7edec34eb347131cb1}{%
+           family={Sajjad\bibnamedelima Dadkhah},
+           familyi={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Raphael\bibnamedelima Ferreira},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           suffix={Euclides\bibnamedelimb Carlos\bibnamedelimb Pinto\bibnamedelima Neto},
+           suffixi={E\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \strng{fullhash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \strng{bibnamehash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \strng{authorbibnamehash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \strng{authornamehash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \strng{authorfullhash}{2f74be47ee9a8a7edec34eb347131cb1}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Preprints.org}
+      \field{number}{0898}
+      \field{title}{CICIoMT2024: Attack Vectors in Healthcare devices-A Multi-Protocol Dataset for Assessing IoMT Device Security}
+      \field{volume}{1}
+      \field{year}{2024}
+      \field{pages}{30}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.20944/preprints202402.0898.v1
       \endverb
     \endentry
     \entry{kaliexp}{online}{}

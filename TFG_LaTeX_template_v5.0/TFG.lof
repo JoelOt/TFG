@@ -3,14 +3,14 @@
 \babel@toc {catalan}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Protocol MQTT en un entorn IoMT. Imatge extreta de \cite {mqttfig} i adaptada amb intel·ligència artificial.\relax }}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Protocol MQTT en un entorn IoMT. Imatge extreta de \cite {mqttfig} i adaptada amb intel·ligència artificial.\relax }}{18}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite {miottaupcfig}.\relax }}{22}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit {The Hacker Way} \cite {miottaupcfig}.\relax }}{23}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrames creats usant les ordres del paquet \emph {TikZ} \relax }}{26}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemple de gràfica complexa dibuixada amb ajut del paquet \emph {pgfplots}\relax }}{27}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite {miottaupcfig}.\relax }}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit {The Hacker Way} \cite {miottaupcfig}.\relax }}{24}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagrames creats usant les ordres del paquet \emph {TikZ} \relax }}{27}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemple de gràfica complexa dibuixada amb ajut del paquet \emph {pgfplots}\relax }}{28}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{31}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{32}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
