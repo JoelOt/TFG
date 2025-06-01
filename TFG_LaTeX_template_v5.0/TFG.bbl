@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{mitmproxyexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ec24c396a8baab77a55a0a3d7cbf0380}{%
+           family={Aldo\bibnamedelima Cortesi},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Thomas\bibnamedelima Kriechbaumer},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffix={Maximilian\bibnamedelima Hils},
+           suffixi={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \strng{fullhash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \strng{bibnamehash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \strng{authorbibnamehash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \strng{authornamehash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \strng{authorfullhash}{ec24c396a8baab77a55a0a3d7cbf0380}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{mitmproxy: A Free and Open Source Interactive HTTPS Proxy}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.mitmproxy.org/stable/
+      \endverb
+      \verb{url}
+      \verb https://docs.mitmproxy.org/stable/
+      \endverb
+    \endentry
     \entry{iotthreadsexp}{article}{}
       \name{author}{1}{}{%
         {{hash=56d229588cd983a8cf7056bcff8e3391}{%
@@ -50,6 +83,37 @@
       \verb 10.1007/s40747-023-01000-y
       \endverb
     \endentry
+    \entry{zeekexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=821c988a5930c4fe6880c703a408ba3e}{%
+           family={Cilleruelo},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{821c988a5930c4fe6880c703a408ba3e}
+      \strng{fullhash}{821c988a5930c4fe6880c703a408ba3e}
+      \strng{bibnamehash}{821c988a5930c4fe6880c703a408ba3e}
+      \strng{authorbibnamehash}{821c988a5930c4fe6880c703a408ba3e}
+      \strng{authornamehash}{821c988a5930c4fe6880c703a408ba3e}
+      \strng{authorfullhash}{821c988a5930c4fe6880c703a408ba3e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{¿Qué es Zeek?}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://keepcoding.io/blog/que-es-zeek/
+      \endverb
+      \verb{url}
+      \verb https://keepcoding.io/blog/que-es-zeek/
+      \endverb
+    \endentry
     \entry{dockerexp}{online}{}
       \name{author}{1}{}{%
         {{hash=c29ccd00bc6f3b6047fafa5e62e0c084}{%
@@ -74,11 +138,43 @@
       \field{urlyear}{2025}
       \field{year}{2020}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://www.youtube.com/watchv=eGz9DSaIeY&list=PLIhvC56v63IJlnU4k60d0oFIrsbXEivQo&index=2
       \endverb
       \verb{url}
       \verb https://www.youtube.com/watchv=eGz9DSaIeY&list=PLIhvC56v63IJlnU4k60d0oFIrsbXEivQo&index=2
+      \endverb
+    \endentry
+    \entry{mqttpwnexp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=98838bc215a2e1917ddaf635efba2c72}{%
+           family={Daniel\bibnamedelima Abeles},
+           familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Moshe\bibnamedelima Zioni},
+           giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{98838bc215a2e1917ddaf635efba2c72}
+      \strng{fullhash}{98838bc215a2e1917ddaf635efba2c72}
+      \strng{bibnamehash}{98838bc215a2e1917ddaf635efba2c72}
+      \strng{authorbibnamehash}{98838bc215a2e1917ddaf635efba2c72}
+      \strng{authornamehash}{98838bc215a2e1917ddaf635efba2c72}
+      \strng{authorfullhash}{98838bc215a2e1917ddaf635efba2c72}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Welcome to MQTT-PWN!}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mqtt-pwn.readthedocs.io/en/latest/
+      \endverb
+      \verb{url}
+      \verb https://mqtt-pwn.readthedocs.io/en/latest/
       \endverb
     \endentry
     \entry{wtfexp}{online}{}
@@ -144,34 +240,6 @@
       \verb https://thehackerway.es/2021/11/22/docker-stack-como-desplegar-servicios-de-docker-compose-en-docker-swarm/
       \endverb
     \endentry
-    \entry{einstein}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
-      \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{10}
-      \field{title}{Zur Elektrodynamik bewegter Körper}
-      \field{volume}{322}
-      \field{year}{1905}
-      \field{dateera}{ce}
-      \true{nocite}
-      \field{pages}{891\bibrangedash 921}
-      \range{pages}{31}
-    \endentry
     \entry{IoMTexp}{online}{}
       \name{author}{1}{}{%
         {{hash=a1a1b270944d3b5bb50f0f1c18a46044}{%
@@ -203,6 +271,35 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1110016823000881
       \endverb
     \endentry
+    \entry{mqttmalaria}{online}{}
+      \name{author}{1}{}{%
+        {{hash=127812f8f2e23e9b0f7361e21423afdd}{%
+           family={eTactica},
+           familyi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{127812f8f2e23e9b0f7361e21423afdd}
+      \strng{fullhash}{127812f8f2e23e9b0f7361e21423afdd}
+      \strng{bibnamehash}{127812f8f2e23e9b0f7361e21423afdd}
+      \strng{authorbibnamehash}{127812f8f2e23e9b0f7361e21423afdd}
+      \strng{authornamehash}{127812f8f2e23e9b0f7361e21423afdd}
+      \strng{authorfullhash}{127812f8f2e23e9b0f7361e21423afdd}
+      \field{sortinit}{e}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{mqtt-malaria}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/etactica/mqtt-malaria
+      \endverb
+      \verb{url}
+      \verb https://github.com/etactica/mqtt-malaria
+      \endverb
+    \endentry
     \entry{mqttfig}{misc}{}
       \name{author}{1}{}{%
         {{hash=d690bffdd81f67d3bf0fa503f1510603}{%
@@ -232,108 +329,6 @@
       \verb{url}
       \verb https://www.researchgate.net/figure/MQTT-protocol-operation-in-AAL-system_fig1_339906098
       \endverb
-    \endentry
-    \entry{booktabs}{online}{}
-      \name{author}{1}{}{%
-        {{hash=413eba48fd96db4099753e792e1fc966}{%
-           family={Fear},
-           familyi={F\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{413eba48fd96db4099753e792e1fc966}
-      \strng{fullhash}{413eba48fd96db4099753e792e1fc966}
-      \strng{bibnamehash}{413eba48fd96db4099753e792e1fc966}
-      \strng{authorbibnamehash}{413eba48fd96db4099753e792e1fc966}
-      \strng{authornamehash}{413eba48fd96db4099753e792e1fc966}
-      \strng{authorfullhash}{413eba48fd96db4099753e792e1fc966}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{\texttt{booktabs} Publication quality tables in \LaTeX}
-      \field{urlday}{1}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://mirrors.ctan.org/macros/latex/contrib/booktabs/booktabs.pdf
-      \endverb
-      \verb{url}
-      \verb http://mirrors.ctan.org/macros/latex/contrib/booktabs/booktabs.pdf
-      \endverb
-    \endentry
-    \entry{pgfplots}{online}{}
-      \name{author}{1}{}{%
-        {{hash=54e3dc3174a4975a8b3c659eae485f25}{%
-           family={Feuersänger},
-           familyi={F\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{54e3dc3174a4975a8b3c659eae485f25}
-      \strng{fullhash}{54e3dc3174a4975a8b3c659eae485f25}
-      \strng{bibnamehash}{54e3dc3174a4975a8b3c659eae485f25}
-      \strng{authorbibnamehash}{54e3dc3174a4975a8b3c659eae485f25}
-      \strng{authornamehash}{54e3dc3174a4975a8b3c659eae485f25}
-      \strng{authorfullhash}{54e3dc3174a4975a8b3c659eae485f25}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Manual for Package \textsc{pgfplots}}
-      \field{urlday}{3}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf
-      \endverb
-      \verb{url}
-      \verb http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf
-      \endverb
-    \endentry
-    \entry{feynman1963lectures}{book}{}
-      \name{author}{3}{}{%
-        {{hash=aac54ccf9c76aa4ba4310ed1334be7d8}{%
-           family={Feynman},
-           familyi={F\bibinitperiod},
-           given={Richard\bibnamedelima P.},
-           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=773368378dd55945d3bd474598026757}{%
-           family={Leighton},
-           familyi={L\bibinitperiod},
-           given={Robert\bibnamedelima B.},
-           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=4f87088a881a2ce53ad4cf6dac2c63fb}{%
-           family={Sands},
-           familyi={S\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Reading, Massachusetts}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{6c2091b1797daa148c03a73977b7dd36}
-      \strng{fullhash}{6c2091b1797daa148c03a73977b7dd36}
-      \strng{bibnamehash}{6c2091b1797daa148c03a73977b7dd36}
-      \strng{authorbibnamehash}{6c2091b1797daa148c03a73977b7dd36}
-      \strng{authornamehash}{6c2091b1797daa148c03a73977b7dd36}
-      \strng{authorfullhash}{6c2091b1797daa148c03a73977b7dd36}
-      \field{sortinit}{F}
-      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-0201021165}
-      \field{title}{The Feynman Lectures on Physics}
-      \field{volume}{I-III}
-      \field{year}{1963}
-      \true{nocite}
     \endentry
     \entry{Mosquittoexp}{online}{}
       \name{author}{1}{}{%
@@ -463,168 +458,6 @@
       \verb https://hub.docker.com/r/kalilinux/kali-last-release
       \endverb
     \endentry
-    \entry{biblatex}{online}{}
-      \name{author}{3}{}{%
-        {{hash=518f52ea2d73db1cfac0095db0482363}{%
-           family={Kime},
-           familyi={K\bibinitperiod},
-           given={Philip},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e1cc18b9b6d3955ba487be6c20e4d7db}{%
-           family={Wemheuer},
-           familyi={W\bibinitperiod},
-           given={Moritz},
-           giveni={M\bibinitperiod}}}%
-        {{hash=97afecc8539f253db93a1c737d62212c}{%
-           family={Lehman},
-           familyi={L\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \strng{fullhash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \strng{bibnamehash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \strng{authorbibnamehash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \strng{authornamehash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \strng{authorfullhash}{f2d88e724e6451f7dbcac6df4175bf7e}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The \texttt{biblatex} Package}
-      \field{urlday}{6}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://ctan.org/pkg/biblatex
-      \endverb
-      \verb{url}
-      \verb https://ctan.org/pkg/biblatex
-      \endverb
-    \endentry
-    \entry{knuthwebsite}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=1dd533466eb3313074d496394d319407}{%
-           family={Knuth},
-           familyi={K\bibinitperiod},
-           given={Donald},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{1dd533466eb3313074d496394d319407}
-      \strng{fullhash}{1dd533466eb3313074d496394d319407}
-      \strng{bibnamehash}{1dd533466eb3313074d496394d319407}
-      \strng{authorbibnamehash}{1dd533466eb3313074d496394d319407}
-      \strng{authornamehash}{1dd533466eb3313074d496394d319407}
-      \strng{authorfullhash}{1dd533466eb3313074d496394d319407}
-      \field{extraname}{1}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Knuth: Computers and Typesetting}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://www-cs-faculty.stanford.edu/~knuth/abcde.html
-      \endverb
-      \verb{url}
-      \verb https://www-cs-faculty.stanford.edu/~knuth/abcde.html
-      \endverb
-    \endentry
-    \entry{knuth1986texbook}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ec08e6f01da5f3814f28a70c89c64656}{%
-           family={Knuth},
-           familyi={K\bibinitperiod},
-           given={Donald\bibnamedelima E.},
-           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Reading, Massachusetts}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{ec08e6f01da5f3814f28a70c89c64656}
-      \strng{fullhash}{ec08e6f01da5f3814f28a70c89c64656}
-      \strng{bibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
-      \strng{authorbibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
-      \strng{authornamehash}{ec08e6f01da5f3814f28a70c89c64656}
-      \strng{authorfullhash}{ec08e6f01da5f3814f28a70c89c64656}
-      \field{extraname}{2}
-      \field{sortinit}{K}
-      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0-201-13448-9}
-      \field{title}{The {\TeX}book}
-      \field{year}{1986}
-      \true{nocite}
-    \endentry
-    \entry{lamport1994latex2e}{book}{}
-      \name{author}{1}{}{%
-        {{hash=5d77435450d10a850a5b58577b9a456b}{%
-           family={Lamport},
-           familyi={L\bibinitperiod},
-           given={Leslie},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Reading, Massachusetts}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{fullhash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{bibnamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authorbibnamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authornamehash}{5d77435450d10a850a5b58577b9a456b}
-      \strng{authorfullhash}{5d77435450d10a850a5b58577b9a456b}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0-201-52983-1}
-      \field{title}{{\LaTeX}: A Document Preparation System, 2nd Edition}
-      \field{year}{1994}
-      \true{nocite}
-    \endentry
-    \entry{latexcompanion}{mvbook}{}
-      \name{author}{2}{}{%
-        {{hash=9355edd511e3f6fdd880ee98722a53fb}{%
-           family={Mittelbach},
-           familyi={M\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-        {{hash=d6d562299dfc8afecf465b99cb1b455d}{%
-           family={Fischer},
-           familyi={F\bibinitperiod},
-           given={Ulrike},
-           giveni={U\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Reading, Massachusetts}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \strng{fullhash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \strng{bibnamehash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \strng{authorbibnamehash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \strng{authornamehash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \strng{authorfullhash}{67a85c89a7561a0c9fef05ec3a7b2b29}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{3}
-      \field{title}{The \LaTeX{} Companion}
-      \field{volumes}{2}
-      \true{nocite}
-    \endentry
     \entry{lowrateDDoSexp}{article}{}
       \name{author}{1}{}{%
         {{hash=eb5a1ae57fe4cdd394645499492137c5}{%
@@ -654,57 +487,6 @@
       \verb 10.1016/j.array.2023.100316
       \endverb
     \endentry
-    \entry{notsoshort}{online}{}
-      \name{author}{5}{}{%
-        {{hash=5d11479143005f8afd00a80db661847f}{%
-           family={Oetiker},
-           familyi={O\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod}}}%
-        {{hash=55f504e077a7d1828c4907f0fa0fb8a3}{%
-           family={Serwin},
-           familyi={S\bibinitperiod},
-           given={Marcin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=8ca96670929452aa6904ed514c3b557d}{%
-           family={Partl},
-           familyi={P\bibinitperiod},
-           given={Hubert},
-           giveni={H\bibinitperiod}}}%
-        {{hash=031f631d171b0eed51d498c3a8492529}{%
-           family={Hyna},
-           familyi={H\bibinitperiod},
-           prefix={rene},
-           prefixi={r\bibinitperiod}}}%
-        {{hash=fee52439e42a7c11d0e0236fbedbf793}{%
-           family={Schlegl},
-           familyi={S\bibinitperiod},
-           prefix={isabeth},
-           prefixi={i\bibinitperiod}}}%
-      }
-      \strng{namehash}{febdb7d8cc94bfeec1182be1d0189280}
-      \strng{fullhash}{e8722176a9e06de4cd1c80cbec9e50b4}
-      \strng{bibnamehash}{febdb7d8cc94bfeec1182be1d0189280}
-      \strng{authorbibnamehash}{febdb7d8cc94bfeec1182be1d0189280}
-      \strng{authornamehash}{febdb7d8cc94bfeec1182be1d0189280}
-      \strng{authorfullhash}{e8722176a9e06de4cd1c80cbec9e50b4}
-      \field{sortinit}{O}
-      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The Not So Short Introduction to \LaTeX}
-      \field{urlday}{31}
-      \field{urlmonth}{10}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://tobi.oetiker.ch/lshort/lshort.pdf
-      \endverb
-      \verb{url}
-      \verb https://tobi.oetiker.ch/lshort/lshort.pdf
-      \endverb
-    \endentry
     \entry{Nmapexp}{online}{}
       \name{author}{1}{}{%
         {{hash=e9eb17f8eefed40dd38e40464dd63aba}{%
@@ -729,6 +511,7 @@
       \field{urlyear}{2025}
       \field{year}{2024}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://nmap.org/book/man.html#man-description/
       \endverb
@@ -798,121 +581,35 @@
       \verb https://www.kali.org/docs/introduction/what-is-kali-linux/
       \endverb
     \endentry
-    \entry{shannon1948}{article}{}
+    \entry{mqttsaexp}{online}{}
       \name{author}{1}{}{%
-        {{hash=536c91678d1dde76c9acd47047556291}{%
-           family={Shannon},
-           familyi={S\bibinitperiod},
-           given={Claude\bibnamedelima E.},
-           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \strng{namehash}{536c91678d1dde76c9acd47047556291}
-      \strng{fullhash}{536c91678d1dde76c9acd47047556291}
-      \strng{bibnamehash}{536c91678d1dde76c9acd47047556291}
-      \strng{authorbibnamehash}{536c91678d1dde76c9acd47047556291}
-      \strng{authornamehash}{536c91678d1dde76c9acd47047556291}
-      \strng{authorfullhash}{536c91678d1dde76c9acd47047556291}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Bell System Technical Journal}
-      \field{number}{3}
-      \field{title}{A Mathematical Theory of Communication}
-      \field{volume}{27}
-      \field{year}{1948}
-      \true{nocite}
-      \field{pages}{379\bibrangedash 423}
-      \range{pages}{45}
-      \verb{doi}
-      \verb 10.1002/j.1538-7305.1948.tb01338.x
-      \endverb
-    \endentry
-    \entry{skalagantt}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b04b56c40726eff5a489a1ba8a09444f}{%
-           family={Skala},
-           familyi={S\bibinitperiod},
-           given={Wolfgang},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{b04b56c40726eff5a489a1ba8a09444f}
-      \strng{fullhash}{b04b56c40726eff5a489a1ba8a09444f}
-      \strng{bibnamehash}{b04b56c40726eff5a489a1ba8a09444f}
-      \strng{authorbibnamehash}{b04b56c40726eff5a489a1ba8a09444f}
-      \strng{authornamehash}{b04b56c40726eff5a489a1ba8a09444f}
-      \strng{authorfullhash}{b04b56c40726eff5a489a1ba8a09444f}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Drawing Gantt Charts in \LaTeX{} with TikZ}
-      \true{nocite}
-      \verb{urlraw}
-      \verb http://osl.ugr.es/CTAN/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf
-      \endverb
-      \verb{url}
-      \verb http://osl.ugr.es/CTAN/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf
-      \endverb
-    \endentry
-    \entry{tcolorbox}{online}{}
-      \name{author}{1}{}{%
-        {{hash=3e918ef9a00fed7239130a97d0dde1ac}{%
-           family={Sturm},
-           familyi={S\bibinitperiod},
-           given={Thomas\bibnamedelima F.},
-           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-      }
-      \strng{namehash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \strng{fullhash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \strng{bibnamehash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \strng{authorbibnamehash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \strng{authornamehash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \strng{authorfullhash}{3e918ef9a00fed7239130a97d0dde1ac}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The \texttt{tcolorbox} package}
-      \field{urlday}{5}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://mirrors.ctan.org/macros/latex/contrib/tcolorbox/tcolorbox.pdf
-      \endverb
-      \verb{url}
-      \verb http://mirrors.ctan.org/macros/latex/contrib/tcolorbox/tcolorbox.pdf
-      \endverb
-    \endentry
-    \entry{tikz}{online}{}
-      \name{author}{1}{}{%
-        {{hash=129e88d9b4e0ba07ca911d6e9aebfaca}{%
-           family={Tantau},
+        {{hash=2136fc3f84f6b0ee4668c42c81e17d9b}{%
+           family={Trust},
            familyi={T\bibinitperiod},
-           given={Till},
-           giveni={T\bibinitperiod}}}%
+           given={Security\bibnamedelima &},
+           giveni={S\bibinitperiod\bibinitdelim &\bibinitperiod}}}%
       }
-      \strng{namehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
-      \strng{fullhash}{129e88d9b4e0ba07ca911d6e9aebfaca}
-      \strng{bibnamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
-      \strng{authorbibnamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
-      \strng{authornamehash}{129e88d9b4e0ba07ca911d6e9aebfaca}
-      \strng{authorfullhash}{129e88d9b4e0ba07ca911d6e9aebfaca}
+      \strng{namehash}{2136fc3f84f6b0ee4668c42c81e17d9b}
+      \strng{fullhash}{2136fc3f84f6b0ee4668c42c81e17d9b}
+      \strng{bibnamehash}{2136fc3f84f6b0ee4668c42c81e17d9b}
+      \strng{authorbibnamehash}{2136fc3f84f6b0ee4668c42c81e17d9b}
+      \strng{authornamehash}{2136fc3f84f6b0ee4668c42c81e17d9b}
+      \strng{authorfullhash}{2136fc3f84f6b0ee4668c42c81e17d9b}
       \field{sortinit}{T}
       \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The TikZ and PGF Packages}
-      \field{urlday}{2}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
+      \field{title}{MQTTSA}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2024}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf
+      \verb https://github.com/stfbk/mqttsa
       \endverb
       \verb{url}
-      \verb http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf
+      \verb https://github.com/stfbk/mqttsa
       \endverb
     \endentry
     \entry{miottaupcfig}{article}{}
@@ -942,36 +639,6 @@
       \range{pages}{45}
       \verb{doi}
       \verb 10.1002/j.1538-7305.1948.tb01338.x
-      \endverb
-    \endentry
-    \entry{siunitx}{online}{}
-      \name{author}{1}{}{%
-        {{hash=93c71fed62527d4c8c6ae13ee771fcdd}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={Joseph},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \strng{fullhash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \strng{bibnamehash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \strng{authorbibnamehash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \strng{authornamehash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \strng{authorfullhash}{93c71fed62527d4c8c6ae13ee771fcdd}
-      \field{sortinit}{W}
-      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{\texttt{siunitx} A comprehensive (SI) units package}
-      \field{urlday}{8}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ctan.org/pkg/siunitx
-      \endverb
-      \verb{url}
-      \verb https://ctan.org/pkg/siunitx
       \endverb
     \endentry
   \enddatalist

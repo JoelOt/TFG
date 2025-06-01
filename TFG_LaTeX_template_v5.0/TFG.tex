@@ -107,7 +107,7 @@
 \clearpage
 \newcommand\AbbrvName{\ifcase\doclanguage\or Sigles i acrònims\or Siglas y acrónimos\else Abbreviations\fi}
 \addcontentsline{toc}{section}{\AbbrvName}
-\printacronyms[
+\printacronyms[include=all][
   heading=chapter*,
   display=all,
   include=abbrev,

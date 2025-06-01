@@ -1,5 +1,4 @@
 \chapter{Desenvolupament d’un entorn IoMT simulat}
-
 Per al desplegament d’un entorn IoMT simulat seguint l’arquitectura explicada a \ref{sec:Topologia} he elaborat un entorn a través de contenidors Docker i l’orquestrador per defecte Docker Compose.
 
 Per a la realització dels clients, que representen el trànsit benigne, he utilitzat una imatge d’Ubuntu, aquesta ha estat modificada (i renombrada com a mqttclient) on mitjançant el gestor de paquets APT  s'ha instal·lat mosquitto-clients 2.0.20 {ref imatge}. Amb aquesta aplicació podem fer actuar aquest contenidor d'Ubuntu com un client MQTT i tenir les seves funcions principals com subscriure’s i publicar a un tòpic d’un broker concret i utilitzar totes les funcionalitats descrites. {ref mosquitto}
@@ -13,9 +12,9 @@ Pel que fa al Broker, he utilitzat l’imatge oficial de mosquitto anomenada ecl
 
 Respecte a configuració de Docker, he mapejat els ports 1883 i 8883 perquè en establir una connexió TCP a un d’aquests ports de l'hipervisor et dirigeixi al mateix port d’aquest contenidor en concret. També he generat 3 volums compartits amb l'hipervisor:
 \begin{itemize}
-    \item Config: on s’ubica el fitxer de configuracions mosquitto.conf
-    \item Data: on opcionalment s'emmagatzemen les dades rebudes en format txt o dintre una base de dades
-    \item Log: on es guarden els logs dels errors ocasionats durant el seu funcionament en fitxers .log
+    \item \textbf{Config:} on s’ubica el fitxer de configuracions mosquitto.conf
+    \item \textbf{Data:} on opcionalment s'emmagatzemen les dades rebudes en format txt o dintre una base de dades
+    \item \textbf{Log:} on es guarden els logs dels errors ocasionats durant el seu funcionament en fitxers .log
 \end{itemize} 
 
 Pel que fa al monitor de trànsit, partint de l’image base Ubuntu (renombrada com a sniffer), s’ha instal·lat tcpdump 4.99.5 i wireshark 4.4.3. Com ha estat explicat a \ref{sec:Topologia}, la seva funcionalitat és emmagatzemar el trànsit per tal de generar el dataset, que aquest és enregistrat amb tcpdump, però, el mateix contenidor també ha estat utilitzat per a l’elaboració i l’estudi de l’impacte dels diferents atacs, és per això que s’utilitza Wireshark, que perquè pugui ser visualitzat s’ha fet servir el socket de X11 de l’hipervisor i així aquest contenidor pugui fer ús de GUI.

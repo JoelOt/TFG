@@ -1,8 +1,6 @@
 %%%% PLEASE REPLACE ENTIRELY WITH YOUR OWN CONTENT %%%%
 
-\ifcase\doclanguage
-\or
-  \chapter[Estat de l'art]{Estat de l'art}
+\chapter[Estat de l'art]{Estat de l'art}
   
   \section{Internet of Medical Things (IoMT)} 
   L’Internet of Medical Things (IoMT) és una branca específica de l’Internet de les Coses (IoT) aplicada a l’àmbit sanitari. Consisteix en una xarxa creixent de dispositius mèdics intel·ligents que poden recopilar, processar i transmetre dades clíniques amb l’objectiu de millorar la qualitat assistencial, facilitar el monitoratge de pacients i optimitzar els processos hospitalaris.
@@ -32,7 +30,7 @@
   
   Un dels aspectes més crítics del risc en entorns IoMT és la naturalesa de les dades que gestionen. Les dades mèdiques són altament sensibles i personals. Un accés no autoritzat pot vulnerar drets fonamentals com la privacitat i tenir conseqüències legals greus per a les institucions sanitàries. En aquest context, la ciberseguretat en l’àmbit IoMT no es pot considerar un afegit posterior al desplegament dels sistemes, sinó un requisit fonamental des de la fase de disseny. Això, és especialment rellevant en entorns on les conseqüències d’un atac poden tenir un impacte directe sobre la salut i la seguretat física dels pacients.
 
-  Però, és important destacar que la protecció dels sistemes IoMT també ha de ser escalable i adaptable. L’amenaça no és estàtica, i els vectors d’atac evolucionen constantment. 
+  Però, és important destacar que la protecció dels sistemes IoMT també ha de ser escalable i adaptable. L’amenaça no és estàtica, i els vectors d’atac evolucionen constantment.
  
   Davant d’aquesta realitat, la recerca en ciberseguretat per a l’IoMT s’està orientant cada cop més cap a solucions dinàmiques, com ara IDS/IRS basats en aprenentatge automàtic que permetin detectar patrons anòmals de comportament i actuar de forma proactiva. En aquest sentit, la generació de datasets reals que simulin tant trànsit legítim com maliciós en entorns IoMT esdevé una peça clau per entrenar i validar aquestes solucions emergents. Aquestes solucions han estat tractades en artícles com \cite{iotthreadsexp}. També la caracterització de vulnerabilitats connegudes ha estat tractada en artícles com \cite{ciciomtexp} o \cite{lowrateDDoSexp} que han estat utlitzats com a referència per a la recopliació d'atacs i la generació de datasets.
   
@@ -69,7 +67,6 @@ Malgrat aquests avantatges, el protocol MQTT no està pensat amb la seguretat co
     \centering
     \includegraphics[width=0.4\textwidth]{img/MQTT_IoMT.jpg}
     \caption{Protocol MQTT en un entorn IoMT. Imatge extreta de \cite{mqttfig} i adaptada amb intel·ligència artificial.}
-    \label{fig:MQTT}
   \end{figure}
 
   \section{Altres protocols en l'entorn IoMT}
@@ -78,51 +75,3 @@ Malgrat aquests avantatges, el protocol MQTT no està pensat amb la seguretat co
   CoAP segueix un model client-servidor similar a HTTP però optimitzat per a entorns embeguts. Utilitza mètodes com GET, POST, PUT i DELETE, i permet observar recursos mitjançant un sistema d’actualitzacions automàtiques (observe). A diferència de MQTT, que és orientat a un model (publish/subscribe), CoAP és més adequat per a interaccions puntuals o consulta de recursos puntuals. En aquest treball, l’ús de CoAP es contempla per generar variabilitat en els escenaris de comunicació i per comparar comportaments de trànsit entre protocols amb estructures diferents. Això pot enriquir el dataset resultant i millorar la capacitat de generalització del sistema d’IA per a la detecció d’intrusions. 
 
   En l’entorn mèdic, també són utilitzats altres protocols d’aplicació com HTTP/HTTPS o bé Extensible Messaging and Presence Protocol (XMPP) Pel que fa a protocols de capa física, també es fa servir Bluetooth Low Energy (BLE), Near Filed Communication (NFC) o bé dades cel·lulars com NB-IoT que no seran usats en aquest treball.
-
-  \section{Eines per a la simulació i anàlisi de trànsit en entorns IoMT}
-  Per a la realització d’aquest treball s’han emprat diverses eines de codi obert, escollides pel seu suport ampliat en entorns de xarxa, la seva flexibilitat i la possibilitat d’automatitzar proves i captures de trànsit en entorns simulats. Algunes d’aquestes eines tenen un enfocament general i són àmpliament utilitzades en proves de penetració en xarxes IP tradicionals, mentre que d’altres presenten característiques específiques que les fan especialment adequades per a entorns IoT o IoMT. A continuació es descriuen les principals fetes servir en aquest projecte: 
-
-    \subsection{Mosquitto}
-    \label{sec:mosquitto}
-      Mosquitto és una de les implementacions més conegudes del protocol MQTT. Es tracta d’un broker MQTT lleuger, de codi obert i altament configurable i compatible amb les especificacions MQTT 3.1 i 5.0 que permet la configuració de les funcionalitats bàsiques del protocol com definir tòpics, limitacions en l'ús de recursos, ACLs I encriptat TLS. També permet desplegar clients MQTT mitjançant mosquitto-clients i poder realitzar el procés de subscriure’s a un tòpic en un broker concret (mosquitto-sub) on publicar missatges en aquest tòpic (mosquitto-pub). Adicionalment, disposa de les configuracions bàsiques de MQTT com els paràmetres de QoS, retain o presistance. \cite{Mosquittoexp}
-
-       En l’entorn acadèmic, la seva simplicitat fa que sigui una excel·lent opció per a desplegar laboratoris d’IoMT. 
-
-    \subsection{Docker}
-    \label{sec:docker}
-    Docker és una plataforma de virtualització lleugera basada en contenidors que permet desplegar entorns complexos de manera ràpida, reproduïble i aïllada. Els seus principals avantatges són: \cite{dockerexp}
-    \begin{itemize}  
-      \item \textbf{Escalabilitat i control:} És possible desplegar ràpidament desenes de dispositius virtuals, amb configuracions personalitzades, IPs xes i comportaments diferenciats. 
-      \item \textbf{Ús d'orquestradors:} Gràcies a Docker Compose, es poden definir tots els serveis i la seva configuració en un sol fitxer YAML, cosa que permetent la reproducció exacta de l’escenari en qualsevol màquina o entorn.
-      \item \textbf{Monitoratge de xarxa simplificat:} Docker permet definir xarxes virtuals internes, facilitant la simulació d’una infraestructura complexa. 
-    \end{itemize}
-
-    \subsection{Kali Linux}
-    Kali Linux és una distribució basada en Debian orientada específicament a seguretat informàtica i proves de penetració (pentesting). Mantinguda per l’equip d’Offensive Security (OFSEC), Kali proporciona un entorn completament equipat amb centenars d’eines preinstal·lades per a l’auditoria de xarxes, anàlisi de vulnerabilitats, enginyeria inversa, sniffing, spoofing, explotació i forense digital. \cite{kaliexp}
-    
-    En aquest treball, Kali Linux s’ha utilitzat com a sistema operatiu base per dur a terme les diferents fases de l’atac, simulant el comportament d’un atacant actiu dins la xarxa IoMT. Aquesta elecció es basa en diversos avantatges claus:
-    \begin{itemize}
-      \item \textbf{Gran nombre d’eines incloses:} Kali inclou eines com Nmap, Masscan, Wireshark, tcpdump, Scapy, aprscan i moltes més, facilitant la realització de proves diverses sense necessitat d’instal·lació addicional.
-      \item \textbf{Entorn controlat i configurable:} Kali pot executar-se de manera virtualitzada (en aquest treball s'ha utilitzat en contenidors Docker), fet que permet recrear escenaris controlats i aïllats per a la simulació d’atacs sense posar en risc cap sistema real.
-      \item \textbf{Actualitzacions contínues i suport actiu de la comunitat:} Es tracta d’una distribució mantinguda amb freqüència, compatible amb la majoria d’arquitectures, i àmpliament utilitzada tant en àmbits acadèmics com professionals.
-      \item \textbf{Automatització i scripting:} El seu entorn Unix-like facilita l’ús d’scripts en bash o python per automatitzar atacs, recollir trànsit o llançar seqüències repetitives d’accions
-    \end{itemize}  
-
-    \subsection{Nmap}
-    Nmap (Network Mapper) és una eina de “network reconnaissance” i auditoria de xarxes molt utilitzada en l’àmbit del pentesting. Permet identificar dispositius connectats a una xarxa, descobrir serveis oberts, detectar sistemes operatius i obtenir informació sobre les possibles vulnerabilitats de cada node mitjançant scripts NSE personalitzats. \cite{Nmapexp}
-
-    \subsection{TCPDump}
-    TCPDump és una eina de línia de comandes per a la captura i anàlisi de paquets a nivell de xarxa. Es tracta d’una eina fonamental en entorns de recerca i pentesting, ja que permet registrar amb precisió tot el trànsit que circula per una interfície de xarxa en temps real. \cite{wtfexp}
-    
-    TCPDump permet capturar trànsit benigne i maliciós entre dispositius de la xarxa i crear arxius de captura amb extensió pcap. És una eina similar a Wireshark, però més lleugera, utilitzada a través de terminal i amb capacitat de ser feta servir en automatitzacions.
-    
-    \or
-  \chapter[Estado del arte]{Estado del arte de la tecnología utilizada o aplicada en este TFG}
-
-\else
-  \chapter[State of the art]{State of the art of the technology used or applied in this thesis}
-
-\fi
-
-
-
