@@ -1,0 +1,49 @@
+\babel@toc {catalan}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {catalan}{}
+\contentsline {section}{Resum }{2}{Doc-Start}%
+\contentsline {section}{Agraïments}{4}{chapter*.1}%
+\contentsline {section}{Historial de revisió i aprovació}{5}{chapter*.2}%
+\contentsline {section}{Índex}{6}{chapter*.2}%
+\contentsline {section}{Índex de figures }{8}{chapter*.4}%
+\contentsline {section}{Índex de taules }{9}{chapter*.5}%
+\contentsline {section}{Sigles i acrònims}{10}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introducció}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objectius del treball}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Requisits i especificacions}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Mètodes i procediments}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Pla de treball}{13}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Estat de l'art}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Internet of Medical Things (IoMT)}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Seguretat en entorns IoMT}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Message Queuing Telemetry Transport (MQTT)}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Altres protocols en l'entorn IoMT}{18}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Metodologia / desenvolupament del projecte}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Escenari utilitzat}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Topologia general}{20}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ús del protocol MQTT}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Ús de Docker per al desplegament de dispositius}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Eines utilitzades per a la generació d'atacs}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Nmap}{24}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}TCPDump}{24}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}ArpSpoof i Bettercap}{25}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Mitmproxy}{25}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Mqtt Malaria i MQTTSA}{25}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}MQTT-PWN}{25}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Zeek}{26}{subsection.3.5.7}%
+\contentsline {chapter}{\numberline {4}Desenvolupament d’un entorn IoMT simulat}{27}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Elaboració d'atacs per a la generació de trànsit maliciós}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Atacs de descobriment de dispositius}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Atacs de descobriment d’informació del broker MQTT}{31}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Atacs de descobriment de credencials}{31}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Subscripció a tòpics d'administració}{32}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Resultats}{34}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Experiments i proves}{34}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Visualització de les dades}{34}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Limitacions}{34}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Anàlisi de sostenibilitat i implicacions ètiques}{35}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusions i Línies Futures}{36}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusions}{36}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Línies Futures}{36}{section.8.2}%
+\contentsline {chapter}{Bibliografia}{37}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}Un apèndix}{40}{appendix.A}%

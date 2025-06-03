@@ -1,30 +1,33 @@
-\chapter{Elaboració d'atacs per a la genració de trànsit maliciós}
+\chapter{Elaboració d'atacs per a la generació de trànsit maliciós}
 
 En aquest capítol es presenten els atacs que s'han implementat per a generar trànsit maliciós en l'entorn IoMT descrit a \ref{sec:Topologia}. Aquests atacs tenen com a objectiu comprometre la seguretat dels dispositius connectats o del broker intentant ser fidels a la realitat d'un escenari real. 
 
 S'han utilitzat les eines descrites a \ref{sec:Eines} així com diversos blocs de codi elaborat en Python i funcionalitats pròpies de Linux. 
 
 
-Per tal de generar dades que poden ser utilitzades per a l'entrenament de models de detecció d'intrusions basats en \textit{machine learning}.
+Per tal de generar dades que poden ser fetes servir per a l'entrenament de models de detecció d'intrusions basats en \textit{machine learning}.
 
 
 
 \section{Atacs de descobriment de dispositius}
+\label{sec:Recon}
 
-El primer atac que es sol dur a terme en un entorn IoT és el descobriment de dispositius. Aquest es centra en identificar els dispositius connectats a la xarxa i obtenir informació sobre ells, com ara adreces IP, ports oberts i serveis disponibles. Això permet als atacants coneixer la topología de la xarxa i identificar possibles vulnerabilitats.
+El primer atac que se sol dur a terme en un entorn IoT és el descobriment de dispositius. Aquest se centra en identificar els dispositius connectats a la xarxa i obtenir informació sobre ells, com ara adreces IP, ports oberts i serveis disponibles. Això permet als atacants conèixer la topologia de la xarxa i identificar possibles vulnerabilitats.
 
-Primer de tot, s'ha implementat un atac per aconseguir descobirir l'adreça IP del broker MQTT, ja que és l'element central de la comunicació entre els dispositius IoMT. Per a això, s'ha utilitzat l'eina \textit{nmap} \ref{sec:NMAP} per escanejar la xarxa sencera. Mitjançant Nmap, s'ha aplicat la detecció de ports oberts 1883 i 8883 (en el cas d'ús de TLS), ja que el broker MQTT, per rebre connexións dels clients ha de tenir aquests ports oberts. 
+Primer de tot, s'ha implementat un atac per aconseguir descobrir l'adreça IP del broker MQTT, ja que és l'element central de la comunicació entre els dispositius IoMT. Per a això, s'ha utilitzat l'eina \textit{nmap} \ref{sec:NMAP} per escanejar la xarxa sencera. Mitjançant Nmap, s'ha aplicat la detecció de ports oberts 1883 i 8883 (en el cas d'ús de TLS), ja que el broker MQTT, per rebre connexions dels clients ha de tenir aquests ports oberts.
 
-També, una estratègia interessant és la detecció de serveis mitjançant l'opció -sV en Namp. Aixo ens permet descobrir si en el port 1883 o 8883 escanejat, s'està executant un servei de MQTT com per exemple Mosqitto 3.1.1
+També, una estratègia interessant és la detecció de serveis mitjançant l'opció -sV en Namp. Això ens permet descobrir si en el port 1883 o 8883 escanejat, s'està executant un servei de MQTT com per exemple Mosqitto 3.1.1.
 
-Una execució utilitzada és: 
+Una execució utilitzada és:
 \begin{tcblisting}{colback=white, colframe=black!70, listing only}
     nmap -sV -p 1883,8883 192.168.0.0/24
 \end{tcblisting}
 
-Aquest atac realitzarà una gran quantitat de peticions ARP a totes les IP del rang especificat i, en cas que contestin intentarà iniciar una connexió TCP als ports especificats (1883 i 8883), recopilant la informació de les respostes. Seguidament, mitjançant scripts pròpis de Nmap amb diverses peticions TCP intentarà averiguar quin serveis s'està executant.  
+Aquest atac realitzarà una gran quantitat de peticions ARP a totes les IP del rang especificat i, en cas que contestin intentarà iniciar una connexió TCP als ports especificats (1883 i 8883), recopilant la informació de les respostes. Seguidament, mitjançant scripts propis de Nmap amb diverses peticions TCP intentarà esbrinar quins serveis s'estan executant.  
 
-Però, aquesta execució no és del tot realista ja que és fàcilment detectable. Per això per a poder generar trànsit maliciós de forma més reaista, s'han d'utilitzar estratègies menys sorolloses, és a dir on es generi menys trànsit i sigui menys detectable.
+\textbf{capt wireshark}
+
+Però aquesta execució no és del tot realista, ja que és fàcilment detectable. Per això per a poder generar trànsit maliciós de forma més realista, s'han d'utilitzar estratègies menys sorolloses, és a dir on es generi menys trànsit i sigui menys detectable.
 
 Una opció és utilitzar inicialment un escaneig general arp o icmp més lent per tal de recopilar les IPs actives, i llavors fer un escaneig més específic a les IPs que han respost. Així, es redueix el trànsit generat i es fa més difícil la detecció de l'atac.
 
@@ -36,15 +39,19 @@ Llavors, per a fer el segon escaneig més específic, es pot utilitzar l'opció 
     nmap -Pn -sV -sS -p 1883,8883 IPs-actives.txt  #segon escaneig amb la llista d'IPs actives obtinguda del primer escaneig.
 \end{tcblisting}
 
-Per a fer l'esaneig més ràpid, també he utilitzat masscan (ref masscan) per a la detecció del broker, peró no és tant eficient i és menys sigilós. 
+\textbf{capt wireshark}
+
+Per a fer l'esaneig més ràpid, també he utilitzat masscan per a la detecció del broker, però no és tant eficient i és menys sigilós.
 
 \begin{tcblisting}{colback=white, colframe=black!70, listing only}
     masscan 192.168.0.0/24 -p1883,8883 --rate 1000 -oG masscan.txt
 \end{tcblisting}
 
-Per a la detecció dels clients IoMT, amb el primer escaneig ja veiem els dispositius actius a la xarxa, però no podem saber si realment son dispositius IoMT, per això podem utilitzar la detecció de \textit{fingerprint} dels dispositius, referit a extreure tota la informació possible que descriu i diferència un dispositiu. 
+\textbf{capt wireshark?}
 
-El fingerprint es pot aconseguir mitjançant l'opció -O de Nmap que detecta el sistema operatiu o també scripts NSE com "banner" o "fingerprint-settings", encara que, son mètodes molt intrusius i per tant, molt detectables. També es pot optar per a utilitzar datasets públics d'adreces MAC connegudes de fabricants com ara Raspberry Pi, Philips Health, Siemens o altres marques dispositius embeguts que tinguin adreces MAC relacionades entre elles.
+Per a la detecció dels clients IoMT, amb el primer escaneig ja veiem els dispositius actius a la xarxa, però no podem saber si realment són dispositius IoMT, per això podem utilitzar la detecció de \textit{fingerprint} dels dispositius, referit a extreure tota la informació possible que descriu i diferència un dispositiu. 
+
+El fingerprint es pot aconseguir mitjançant l'opció \textit{-o} de Nmap que detecta el sistema operatiu o també scripts NSE com \textit{"banner"} o \textit{"fingerprint-settings"}, encara que, són mètodes molt intrusius i, per tant, molt detectables. També es pot optar per a utilitzar datasets públics d'adreces MAC conegudes de fabricants com ara Philips Health, Siemens Healthcare o també Raspberry Pi i altres marques dispositius embeguts que siguin usualment utilitzats com a clients IoMT.
 
 \begin{table}[H]
 \centering
@@ -63,6 +70,6 @@ MA-S & 8C1F64804 & Siemens Healthcare Diagnostics \\
 MA-S & 8C1F6454A & Sound Health Systems \\
 \bottomrule
 \end{tabular}
-\caption{Petit extret del fitxer "MAC Address Block Large (MA-S)" de \cite{iotmaclist} filtrat per a visualitzar nomès fabricants IoMT on es veuen parelles IniciMAC - Fabricant}  % Peu de figura
+\caption{Petit extret del fitxer "MAC Address Block Large (MA-S)" de \cite{iotmaclist} filtrat per a visualitzar només fabricants IoMT on es veuen parelles IniciMAC - Fabricant}  % Peu de figura
 \label{fig:iot_manufacturers}
 \end{table}

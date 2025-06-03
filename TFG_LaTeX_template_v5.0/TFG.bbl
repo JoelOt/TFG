@@ -394,6 +394,35 @@
       \verb https://pypi.org/project/paho-mqtt/
       \endverb
     \endentry
+    \entry{iotmaclist}{online}{}
+      \name{author}{1}{}{%
+        {{hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={IEEE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IEEE Registration Authority: Assignments}
+      \field{urlday}{1}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries
+      \endverb
+      \verb{url}
+      \verb https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries
+      \endverb
+    \endentry
     \entry{mosquittoimg}{online}{}
       \name{author}{1}{}{%
         {{hash=0a6e82dfd0df55343233c1768adf738c}{%

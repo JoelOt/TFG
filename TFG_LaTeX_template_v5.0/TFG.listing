@@ -1,1 +1,1 @@
-    masscan 192.168.0.0/24 -p1883,8883 --rate 1000 -oG masscan.txt
+    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.22

@@ -1,0 +1,58 @@
+\section{Atacs de descobriment d’informació del broker MQTT}
+
+En aquest apartat es descriuen diferents atacs que permeten descobrir diferent informació interessant per a l'atacant explotant vulnerabilitats del broker MQTT. Per a realitzar aquests atacs, s'ha suposat coneguda l'adreça IP i port del broker MQTT així com altres dades que poden ser trobades mitjançant els atacs utilitzats en l'apartat anterior (\ref{sec:Recon}).
+
+
+\subsection{Atacs de descobriment de credencials}
+
+Una de les mesures de seguretat més comunes per als brokers MQTT és l'autenticació mitjançant nom d'usuari i contrasenya que queden enregistrats en una ACL i limita per cada tòpic quins usuaris amb la seva respectiva contrasenya poden accedir a cada tòpic. Per tant, un atac comú és intentar descobrir aquestes credencials per accedir als tòpics utilitzats. 
+
+Una opció és el sniffing de credencials mitjançant l'ús d'eines com TCPDump (\ref{sec:TCPDump}), ja que si no s'utilitza encriptat TLS, les credencials es transmeten en clar.
+
+Però, també es poden utilitzar eines especialitzades com ara MQTT-SA (\ref{sec:MQTTSA}) que permeten realitzant d'igual manera una tècnica de sniffing, elaboren llistes dels usuaris i credencials recopilats i les validen contra el broker MQTT. Un exemple d'execució és:
+
+\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+mqttsa ...
+\end{tcblisting}
+
+Un altre atac possible és el descobriment de credencials mitjançant força bruta. Aquest procés es basa en comprovar una gran quantitat de combinacions de nom d'usuari i contrasenya per tal d'accedir al broker MQTT i recopilant la seva validesa en un fitxer de sortida.
+
+Per aquest atac, s'ha utilitzat l'eina MQTT-PWN (\ref{sec:MQTTPWN}) que permet mitjançant un fitxer de diccionari, provar totes aquestes combinacions i recopilar els resultats.
+Un exemple d'execució és:
+
+\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+mqttpwn ...
+\end{tcblisting}
+
+Aquest atac genera grans quantitats de paquets MQTT connect en direcció al broker. 
+\textbf{capt wireshark}
+
+
+
+\subsection{Subscripció a tòpics d'administració}
+
+Una característica dels brokers MQTT, és l'ús de tòpics d'administració anomenats \textbf{\$SYS} que permeten als clients obtenir informació sensible sobre l'estat del broker i dels clients.
+
+Per a la realització d'aquest atac, s'ha utilitzat un script de NMAP anomenat mqtt-subscribe que recopila tota aquesta informació subscrivint-se a tots els tòpics d'administració possibles. 
+Una execució d'aquest atac per a un broker amb IP 192.168.0.22 és la següent:
+
+\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.22
+\end{tcblisting}
+
+Amb aquest atac a un broker mosquitto com l'utilitzat en aquest treball, s'obté informació com ara:
+
+\begin{itemize}
+    \item Informació de la versió del broker i configuració general del broker.
+    \item Nom d'usuari, estat de la connexió i keep alive dels clients.
+    \item Nombre màxim de clients simultanis amb els quals pot treballar el broker.
+    \item Mètriques de rendiment: bits enviats per segon, bits rebuts per segon, latència, etc
+    \item Estadístiques de missatges enviats i rebuts.
+    \item Llista de tòpics publicats i subscrits.
+    \item Diversos errors i advertències del broker.
+\end{itemize}
+
+En aquest atac, el kali linux l'atacant genera un gran nombre de paquets MQTT subscribe per a subscrire's a aquests tòpics. 
+
+\textbf{capt wireshark}
+
