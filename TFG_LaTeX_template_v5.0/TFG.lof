@@ -3,13 +3,16 @@
 \babel@toc {catalan}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Protocol MQTT en un entorn IoMT. Imatge extreta de \cite {mqttfig} i adaptada amb intel·ligència artificial.\relax }}{18}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Protocol MQTT en un entorn IoMT. Imatge extreta de \cite {mqttfig} i adaptada amb intel·ligència artificial.\relax }}{17}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite {miottaupcfig}.\relax }}{21}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit {The Hacker Way} \cite {miottaupcfig}.\relax }}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite {miottaupcfig}.\relax }}{20}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit {The Hacker Way} \cite {miottaupcfig}.\relax }}{22}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{28}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{27}{figure.caption.9}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish explicat anteriorment.\relax }}{33}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish amb modificació del paràmetre Client ID.\relax }}{34}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei Distribuït. El DDoS Traffic es refereix a trànsit generat amb una estructura similar al de la figura \ref {fig:DoSsimple}.\relax }}{35}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

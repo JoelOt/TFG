@@ -709,6 +709,17 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.listing
 INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.listing
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/dos.tex
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/dos.tex
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSsimple.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSsimple.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSsimple.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSclientID.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSclientID.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSclientID.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DDoS.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DDoS.png
+INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/img/DDoS.png
 INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/results.tex
 INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/results.tex
 INPUT /workspaces/TFG/TFG_LaTeX_template_v5.0/sustainability.tex
