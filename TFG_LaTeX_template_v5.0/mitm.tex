@@ -1,0 +1,37 @@
+\section{Atacs de suplantació d'identitat}
+
+En aquest apartat s'expliquen atacs de suplantació d'identitat que poden ser realitzats contra una xarxa MQTT. Aquests atacs tenen com a objectiu suplantar la identitat d'un client legítim per tal d'enviar missatges al broker MQTT o rebre'n, fent que el broker no pugui distingir entre clients legítims i clients maliciosos. També el fet de modificar informació legítima a través de sistemes de Man In The Middle. 
+
+Primer de tot, s'ha estudiat el funcionament d'atacs de ARP Spoofing, per entendre'ls és necessari conèixer el protocol ARP en profunditat.
+
+El Protocol de Resolució d'Adreces (ARP) és un mecanisme fonamental en xarxes IP que permet als dispositius d'una xarxa local associar adreces IP amb adreces MAC corresponents. Quan un dispositiu necessita enviar un paquet a una adreça IP dins de la seva mateixa xarxa local, emet una petició ARP a través de difusió (broadcast), sol·licitant quina adreça MAC està associada a aquella IP. El dispositiu propietari d’aquesta adreça IP respon amb la seva adreça MAC, i aquesta informació queda temporalment registrada a la taula ARP del dispositiu que ha fet la sol·licitud. Tot i la seva simplicitat i eficiència, ARP no incorpora cap mecanisme d'autenticació, la qual cosa el fa vulnerable a diversos tipus d’atacs, entre els quals destaca l’ARP spoofing.
+
+L’ARP spoofing, també conegut com a ARP poisoning, és una tècnica d’atac que aprofita la manca de verificació en el protocol ARP per introduir entrades falses en les taules ARP dels dispositius de la xarxa. L’objectiu principal és enganyar aquests dispositius perquè associïn una adreça IP legítima (habitualment la del gateway o la d’una víctima específica) amb l’adreça MAC de l’atacant. Això permet a l’atacant interceptar el tràfic que, en condicions normals, es dirigiria directament al gateway o a un altre dispositiu. D’aquesta manera, es crea una situació de tipus Man-in-the-Middle (MitM), en què l’atacant pot monitoritzar, modificar o redirigir el tràfic entre dispositius.
+
+
+El funcionament bàsic d’un atac ARP spoofing es pot resumir en els passos següents:
+
+\begin{itemize}
+    \item L’atacant envia respostes ARP falsificades a la víctima, fent-se passar pel gateway de la xarxa.
+    \item Simultàniament, envia respostes ARP falsificades al gateway, fent-se passar per la víctima.
+    \item Tant la víctima com el gateway actualitzen les seves taules ARP amb les associacions falses proporcionades per l’atacant.
+    \item A partir d’aquest moment, el tràfic entre ambdós dispositius es redirigeix a través de l’atacant, que pot actuar com a passarel·la transparent (forwarder) o bé manipular els paquets segons el seu objectiu.
+\end{itemize}
+
+En aquest treball, inicialment s'ha utilitzat l'eina arpspoof del paquet dsniff per realitzar l'atac ARP spoofing. Aquesta eina permet enviar respostes ARP falsificades a la víctima i el broker o el gateway, fent que ambdós dispositius actualitzin les seves taules ARP amb les associacions falses proporcionades per l'atacant tal i com s'ha explicat anteriorment.
+
+Un exemple d'execució utilitzada on client real víctima té l'adreça IP 192.168.0.41 i és:
+
+\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+    arpspoof -i wlp42s0 192.168.0.41
+\end{tcblisting}
+
+Amb aquesta execució aconseguim que el missatges que envia el broker MQTT al client real es redirigeixin a l'atacan. D'aquesta manera, si el client està subscrit a un tòpic concret, podem fer que l'atacant rebi aquests missatges, com per exemple podrien ser mesures de ritme cardíac o pressió sanguínia que deixen d'arribar a un monitoritzador mèdic. 
+
+Però, aquest atac és fàcilment detectable. Per això, cal implementar un atac bidireccional, fent que tant el broker com el client enviin els missatges a l'adreça MAC de l'atacant, generant una situació de MITM. Ho podem aconseguir amb una execució similar a la següent on s'afageix l'adreça IP del broker MQTT 192.168.0.40 amb el paràmetre -r:
+
+\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+    arpspoof -i wlp42s0 -t 192.168.0.41 -r 192.168.0.40
+\end{tcblisting}
+
+Per al perfeccionament de l'atac APR Spoofing, he utilitzat l'eina better

@@ -1,1 +1,1 @@
-    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.22
+    arpspoof -i wlp42s0 -t 192.168.0.41 -r 192.168.0.40
