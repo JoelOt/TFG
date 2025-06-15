@@ -8,11 +8,20 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema de l'arquitectura utilitzada. Imatge extreta del treball \cite {miottaupcfig}.\relax }}{20}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la generació de contenidors amb Docker Compose. Imatge extreta de \textit {The Hacker Way} \cite {miottaupcfig}.\relax }}{22}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{27}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces La figura mostra el comportament dels diferents drivers de xarxa de Docker (excloent el mode host on directament actua en nom de l'hipervisor).\relax }}{26}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish explicat anteriorment.\relax }}{33}{figure.caption.11}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish amb modificació del paràmetre Client ID.\relax }}{34}{figure.caption.12}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei Distribuït. El DDoS Traffic es refereix a trànsit generat amb una estructura similar al de la figura \ref {fig:DoSsimple}.\relax }}{35}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sortida de l'atac de força bruta amb MQTT-SA. S'observa com s'ha trobat l'usuari "tfg" amb la contrasenya "1234" adequadament. Apareix la IP amb el nom de "broker" degut a l'utilització de DHCP dintre els l'entorn de contneidors.\relax }}{30}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish explicat anteriorment.\relax }}{32}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei MQTT Publish amb modificació del paràmetre Client ID.\relax }}{33}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esquema del trànsit generat per l'atac de denegació de servei Distribuït. El DDoS Traffic es refereix a trànsit generat amb una estructura similar al de la figura \ref {fig:DoSsimple}.\relax }}{34}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Arxiu yml utilitzat per Docker Compose per al desplegament de l'atac Low-Rate DDoS. S'utilitza un gran nombre de clients que executen peticions MQTT Publish mitjançant MQTT Malaria al broker amb IP 192.168.0.15 a un ritme realista.\relax }}{35}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Esquema del trànsit generat per l'atac de Man In The Middle mitjançant un broker MQTT desplegat per l'atacant. S'observa un tall de la connexió entre el client i el broker legítim.\relax }}{37}{figure.caption.16}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Esquema del trànsit generat per l'atac de Man In The Middle mitjançant un proxy TCP. S'observa que la connexió entre el client i el broker legítim no es trenca però si es canvien les respectives adreces IP.\relax }}{38}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Captura de la interfície de mitmproxy on s'observa un trànsit TCP des de la IP 192.168.0.25 (client) a la IP 192.168.0.15 (broker).\relax }}{39}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Esquema del trànsit generat per l'atac de Man In The Middle mitjançant un proxy TCP transparent. S'observa que la connexió entre el client i el broker legítim no es trenca ni es canvien les respectives adreces IP, donant un efecte de continuïtat en el flux de dades.\relax }}{40}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Captura de l'aplicació Android MQTT Terminal utilitzada com a client MQTT, es connecta al broker 192.168.0.15 (que està actuant com a servidor echo) passant pel proxy mitmproxy. S'observa un exemple de funcionament de l'script de modificació de trànsit al modificar el valor de la variable "test" enviada.\relax }}{41}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Sortida d'execució de l'eina automatitzada. A l'esquerra es pot veure una part de la sortida dels atacs de reconeixement mentre que a la dreta la sortida dels atacs de DDoS.\relax }}{43}{figure.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

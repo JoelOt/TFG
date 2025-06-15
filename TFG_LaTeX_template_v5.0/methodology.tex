@@ -46,10 +46,12 @@
   Mosquitto és una de les implementacions més conegudes del protocol MQTT. Es tracta d’un broker MQTT lleuger, de codi obert i altament configurable i compatible amb les especificacions MQTT 3.1 i 5.0 que permet la configuració de les funcionalitats bàsiques del protocol com definir tòpics, limitacions en l'ús de recursos, ACLs I encriptat TLS. També permet desplegar clients MQTT mitjançant mosquitto-clients i poder realitzar el procés de subscriure’s a un tòpic en un broker concret (mosquitto-sub) on publicar missatges en aquest tòpic (mosquitto-pub). Adicionalment, disposa de les configuracions bàsiques de MQTT com els paràmetres de QoS, retain o presistance. \cite{Mosquittoexp}
 
   En l’entorn acadèmic, la seva simplicitat fa que sigui una excel·lent opció per a desplegar laboratoris d’IoMT.
+  \label{sec:Paho-MQTT}
+  També és important destacar la llibreria Paho-MQTT que permet implelentar clients MQTT a través de Pytthon i és molt útil per a tasques d'automatització i scripting en entorns IoT. 
 
 
 \section{Ús de Docker per al desplegament de dispositius}
-
+\label{sec:Docker}
   Per al desplegament dels dispositius simulats (clients) i del servidor MQTT (broker), s’ha optat per l’ús de contenidors Docker en lloc de màquines virtuals (VMs). Aquesta decisió s’ha pres tenint en compte diversos criteris tècnics, pràctics i de rendiment, que fan que Docker sigui una opció més adequada per als objectius del projecte.
 
   Docker et permet desplegar contenidors seguint una imatge comuna i configurable. D’aquesta manera, podem desplegar els clients simulats o el servidor en qualsevol entorn i sistema que compleixi uns requisits mínims de hardware I software. També permet mantenir una eficiència de recursos òptima, ja que utilitza el propi kernel del sistema hipervisor.
@@ -123,12 +125,6 @@
 
     També s'ha utilitzat MQTT Malaria, una eina enfocada en atacs DoS implementada en Python que ens permet un ús més simple i directe que MQTTSA. \cite{mqttmalaria}
     
-    \subsection{MQTT-PWN}
-    \label{sec:MQTTPWN}
-    MQTT-PWN és una eina específica per l’auditoria de seguretat del protocol MQTT. És especialment útil en diversos atacs que engloben tècniques de força bruta. \cite{mqttpwnexp}
-    
-    L’eina MQTT-PWN permet realitzar una sèrie de proves automatitzades contra brokers MQTT, com ara la detecció de tòpics disponibles, la publicació i subscripció no autoritzada mitjançant identificació, la identificació d'usuaris i contrasenyes per defecte, i la comprovació de si el canal de comunicació està obert sense cap tipus d’autenticació ni xifratge. En resum, és una eina molt útil per atacs basats en força bruta. 
-  
     \subsection{Zeek}
     \label{sec:Zeek}
     Zeek (anteriorment conegut com Bro) és una plataforma d’anàlisi de trànsit de xarxa en profunditat (NSM), que també pot ser utilitzada com a IDS. Està orientada a la generació de registres estructurats a partir de captures de paquets (.pcap). \cite{zeekexp}

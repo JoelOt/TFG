@@ -5,38 +5,35 @@ En aquest apartat es descriuen diferents atacs que permeten descobrir diferent i
 
 \subsection{Atacs de descobriment de credencials}
 
-Una de les mesures de seguretat més comunes per als brokers MQTT és l'autenticació mitjançant nom d'usuari i contrasenya que queden enregistrats en una ACL i limita per cada tòpic quins usuaris amb la seva respectiva contrasenya poden accedir a cada tòpic. Per tant, un atac comú és intentar descobrir aquestes credencials per accedir als tòpics utilitzats. 
-
-Una opció és el sniffing de credencials mitjançant l'ús d'eines com TCPDump (\ref{sec:TCPDump}), ja que si no s'utilitza encriptat TLS, les credencials es transmeten en clar.
-
-Però, també es poden utilitzar eines especialitzades com ara MQTT-SA (\ref{sec:MQTTSA}) que permeten realitzant d'igual manera una tècnica de sniffing, elaboren llistes dels usuaris i credencials recopilats i les validen contra el broker MQTT. Un exemple d'execució és:
+Una de les mesures de seguretat més comunes per als brokers MQTT és l'autenticació mitjançant nom d'usuari i contrasenya. Mosquitto, d'igual manera que la majoria de brokers MQTT comercials disposa d'un sistema per a generar fitxers de credencials d'usuari. Per a la realització d'aquest atac, he configurat el broker solament permetent l'entrada de l'usuari "tfg" amb la contrasenya "1234" amb mosquitto-passwd. Aquest genera un fitxer passwd on es guarda usuari:contrasenya amb la contrasenya encriptada amb bcrypt. \cite{bcryptexp}. Per altra banda, he generat un fitxer anomenat acl que genera una Access Control List que habilita o no a subscriure's (read) o publicar (write) a un tòpic específic (en aquest cas tfg/\#). El seu format és el següent:
 
 \begin{tcblisting}{colback=white, colframe=black!70, listing only}
-mqttsa ...
+user tfg
+topic readwrite tfg/#
 \end{tcblisting}
 
-Un altre atac possible és el descobriment de credencials mitjançant força bruta. Aquest procés es basa en comprovar una gran quantitat de combinacions de nom d'usuari i contrasenya per tal d'accedir al broker MQTT i recopilant la seva validesa en un fitxer de sortida.
-
-Per aquest atac, s'ha utilitzat l'eina MQTT-PWN (\ref{sec:MQTTPWN}) que permet mitjançant un fitxer de diccionari, provar totes aquestes combinacions i recopilar els resultats.
-Un exemple d'execució és:
+Per a descobrir credencials, s'ha elaborat un atac de força bruta mitjançant MQTT-SA (\ref{sec:MQTTSA}), una eina especialitzada en el protocol MQTT que permeten mitjançant llistes dels usuaris i credencials comprovar una gran quantitat de combinacions per tal d'accedir al broker i recopilar la validesa d'aquestes en un fitxer de sortida. Un exemple d'execució és:
 
 \begin{tcblisting}{colback=white, colframe=black!70, listing only}
-mqttpwn ...
+ python3 mqttsa.py -u "tfg" -w ./psw.txt -t 5 -mp 255 -mq 1000 192.168.0.40
 \end{tcblisting}
 
-Aquest atac genera grans quantitats de paquets MQTT connect en direcció al broker. 
-\textbf{capt wireshark}
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/mqttsa.png}
+    \caption{Sortida de l'atac de força bruta amb MQTT-SA. S'observa com s'ha trobat l'usuari "tfg" amb la contrasenya "1234" adequadament. Apareix la IP amb el nom de "broker" degut a l'utilització de DHCP dintre els l'entorn de contneidors.}
+    \label{fig:MqttsaBruteforce}
+\end{figure}
 
 \subsection{Subscripció a tòpics d'administració}
 
 Una característica dels brokers MQTT, és l'ús de tòpics d'administració anomenats \textbf{\$SYS} que permeten als clients obtenir informació sensible sobre l'estat del broker i dels clients.
 
 Per a la realització d'aquest atac, s'ha utilitzat un script de NMAP anomenat mqtt-subscribe que recopila tota aquesta informació subscrivint-se a tots els tòpics d'administració possibles. 
-Una execució d'aquest atac per a un broker amb IP 192.168.0.22 és la següent:
+Una execució d'aquest atac per a un broker amb IP 192.168.0.40 és la següent:
 
 \begin{tcblisting}{colback=white, colframe=black!70, listing only}
-    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.22
+    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.40
 \end{tcblisting}
 
 Amb aquest atac a un broker mosquitto com l'utilitzat en aquest treball, s'obté informació com ara:

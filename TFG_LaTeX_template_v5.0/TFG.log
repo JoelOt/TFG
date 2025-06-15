@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.4.30)  13 JUN 2025 10:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.4.30)  15 JUN 2025 09:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1773,10 +1773,6 @@ LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/bold/sc' will be
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/LibertinusSans-TLF/bold/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/it' aliased to
-(Font)              `T1/LibertinusSans-TLF/regular/it' on input line 45.
-LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/regular/it' will be
-(Font)              scaled to size 12.0pt on input line 45.
 <img/logos/Logo_UPC_ETSETB_tight.pdf, id=16, 606.70775pt x 117.92917pt>
 File: img/logos/Logo_UPC_ETSETB_tight.pdf Graphic file (type pdf)
 <use img/logos/Logo_UPC_ETSETB_tight.pdf>
@@ -1909,7 +1905,7 @@ LaTeX Font Info:    Font shape `TS1/LibertinusSerif-TLF/bold/n' will be
 [13
 
 ] [14] [15]
-<img/MQTT_IoMT.jpg, id=126, 1027.84pt x 1541.76pt>
+<img/MQTT_IoMT.jpg, id=125, 1027.84pt x 1541.76pt>
 File: img/MQTT_IoMT.jpg Graphic file (type jpg)
 <use img/MQTT_IoMT.jpg>
 Package pdftex.def Info: img/MQTT_IoMT.jpg  used on input line 68.
@@ -1929,7 +1925,7 @@ Underfull \vbox (badness 2846) has occurred while \output is active []
  [18
 
 ]
-<img/MIOTTA_UPC.png, id=150, 716.6775pt x 428.35031pt>
+<img/MIOTTA_UPC.png, id=149, 716.6775pt x 428.35031pt>
 File: img/MIOTTA_UPC.png Graphic file (type png)
 <use img/MIOTTA_UPC.png>
 Package pdftex.def Info: img/MIOTTA_UPC.png  used on input line 33.
@@ -1938,55 +1934,55 @@ Package pdftex.def Info: img/MIOTTA_UPC.png  used on input line 33.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19] [20 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/MIOTTA_UPC.png>]
-<img/DockerFig.png, id=167, 548.0475pt x 214.55156pt>
+<img/DockerFig.png, id=166, 548.0475pt x 214.55156pt>
 File: img/DockerFig.png Graphic file (type png)
 <use img/DockerFig.png>
-Package pdftex.def Info: img/DockerFig.png  used on input line 67.
+Package pdftex.def Info: img/DockerFig.png  used on input line 69.
 (pdftex.def)             Requested size: 426.79135pt x 167.08435pt.
 
-Underfull \vbox (badness 6412) has occurred while \output is active []
+Underfull \vbox (badness 1400) has occurred while \output is active []
 
  [21] [22 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DockerFig.png>]
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' aliased to
-(Font)              `T1/LibertinusSerif-TLF/regular/n' on input line 94.
+(Font)              `T1/LibertinusSerif-TLF/regular/n' on input line 96.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 94.
+(Font)              scaled to size 14.4pt on input line 96.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' aliased to
-(Font)              `T1/LibertinusSerif-TLF/bold/n' on input line 94.
+(Font)              `T1/LibertinusSerif-TLF/bold/n' on input line 96.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 94.
+(Font)              scaled to size 14.4pt on input line 96.
 
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
- [23] [24]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/entorn.tex [25]
+ [23]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/entorn.tex [24]
 Cap\'{\i }tol 4.
 
-LaTeX Warning: Reference `sec:Topologia' on page 26 undefined on input line 2.
+LaTeX Warning: Reference `sec:Topologia' on page 25 undefined on input line 2.
 
 
-LaTeX Warning: Reference `sec:mosquitto' on page 26 undefined on input line 11.
+LaTeX Warning: Reference `sec:mosquitto' on page 25 undefined on input line 11.
 
-[26
+[25
 
 ]
 
-LaTeX Warning: Reference `sec:Topologia' on page 27 undefined on input line 20.
+LaTeX Warning: Reference `sec:Topologia' on page 26 undefined on input line 20.
 
-<img/DockerNetworks.png, id=227, 682.80093pt x 259.7203pt>
+<img/DockerNetworks.png, id=219, 682.80093pt x 259.7203pt>
 File: img/DockerNetworks.png Graphic file (type png)
 <use img/DockerNetworks.png>
 Package pdftex.def Info: img/DockerNetworks.png  used on input line 32.
 (pdftex.def)             Requested size: 426.79135pt x 162.3446pt.
-) (/workspaces/TFG/TFG_LaTeX_template_v5.0/recon.tex [27 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DockerNetworks.png>]
+) (/workspaces/TFG/TFG_LaTeX_template_v5.0/recon.tex [26 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DockerNetworks.png>]
 Cap\'{\i }tol 5.
 
-LaTeX Warning: Reference `sec:Topologia' on page 28 undefined on input line 3.
+LaTeX Warning: Reference `sec:Topologia' on page 27 undefined on input line 3.
 
 
-LaTeX Warning: Reference `sec:Eines' on page 28 undefined on input line 5.
+LaTeX Warning: Reference `sec:Eines' on page 27 undefined on input line 5.
 
 
-LaTeX Warning: Reference `sec:NMAP' on page 28 undefined on input line 17.
+LaTeX Warning: Reference `sec:NMAP' on page 27 undefined on input line 17.
 
 \openout4 = `TFG.listing'.
 
@@ -2019,7 +2015,7 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-iso-8859-1.def
 File: se-iso-8859-1.def 2019/11/29 v1.12 stringenc: ISO-8859-1
-) [28
+) [27
 
 ]
 
@@ -2044,101 +2040,91 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [29]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/infobroker.tex
+) [28]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/infobroker.tex
 Overfull \hbox (26.22433pt too wide) in paragraph at lines 1--1
 |[]\T1/LibertinusSerif-TLF/bold/n/17.28 Atacs de des-co-bri-ment d'in-for-ma-ci� del broker MQTT| 
  []
 
 
-LaTeX Warning: Reference `sec:Recon' on page 30 undefined on input line 3.
-
-
-LaTeX Warning: Reference `sec:TCPDump' on page 30 undefined on input line 10.
-
-
-LaTeX Warning: Reference `sec:MQTTSA' on page 30 undefined on input line 12.
+LaTeX Warning: Reference `sec:Recon' on page 29 undefined on input line 3.
 
 \openout4 = `TFG.listing'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [30]
+) [29]
 
-LaTeX Warning: Reference `sec:MQTTPWN' on page 31 undefined on input line 20.
+LaTeX Warning: Reference `sec:MQTTSA' on page 30 undefined on input line 15.
 
 \openout4 = `TFG.listing'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
+<img/mqttsa.png, id=255, 445.665pt x 474.77374pt>
+File: img/mqttsa.png Graphic file (type png)
+<use img/mqttsa.png>
+Package pdftex.def Info: img/mqttsa.png  used on input line 23.
+(pdftex.def)             Requested size: 298.75264pt x 318.27061pt.
+ [30 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/mqttsa.png>]
 \openout4 = `TFG.listing'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [31]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/dos.tex
+)) (/workspaces/TFG/TFG_LaTeX_template_v5.0/dos.tex
 
-LaTeX Warning: Reference `sec:Recon' on page 32 undefined on input line 5.
+LaTeX Warning: Reference `sec:Recon' on page 31 undefined on input line 5.
 
 
-LaTeX Warning: Reference `sec:Topologia' on page 32 undefined on input line 9.
+LaTeX Warning: Reference `sec:Topologia' on page 31 undefined on input line 9.
 
-<img/DoSsimple.png, id=273, 757.83125pt x 539.01375pt>
+[31]
+
+LaTeX Warning: Reference `sec:Paho-MQTT' on page 32 undefined on input line 13.
+
+<img/DoSsimple.png, id=277, 757.83125pt x 539.01375pt>
 File: img/DoSsimple.png Graphic file (type png)
 <use img/DoSsimple.png>
 Package pdftex.def Info: img/DoSsimple.png  used on input line 17.
 (pdftex.def)             Requested size: 426.79135pt x 303.56459pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `sec:MQTT' on page 32 undefined on input line 25.
 
- [32]
-
-LaTeX Warning: Reference `sec:MQTT' on page 33 undefined on input line 25.
-
+[32 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSsimple.png>]
 
 LaTeX Warning: Reference `sec:mosquitto' on page 33 undefined on input line 27.
 
-
-/workspaces/TFG/TFG_LaTeX_template_v5.0/dos.tex:29: Package inputenc Error: Unicode character ǹ (U+01F9)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 ...he explicat anteriorment, es perd eficieǹ
-                                                  cia comparat amb l'atac an...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[33 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSsimple.png>]
-<img/DoSclientID.png, id=287, 780.9175pt x 545.03625pt>
+<img/DoSclientID.png, id=285, 780.9175pt x 545.03625pt>
 File: img/DoSclientID.png Graphic file (type png)
 <use img/DoSclientID.png>
 Package pdftex.def Info: img/DoSclientID.png  used on input line 33.
 (pdftex.def)             Requested size: 426.79135pt x 297.87468pt.
 
+LaTeX Warning: Reference `fig:DockerNetworks' on page 33 undefined on input line 38.
 
-LaTeX Warning: Reference `fig:DockerNetworks' on page 34 undefined on input line 38.
-
-<img/DDoS.png, id=288, 857.2025pt x 636.3775pt>
+[33 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSclientID.png>]
+<img/DDoS.png, id=292, 857.2025pt x 636.3775pt>
 File: img/DDoS.png Graphic file (type png)
 <use img/DDoS.png>
 Package pdftex.def Info: img/DDoS.png  used on input line 43.
 (pdftex.def)             Requested size: 426.79135pt x 316.84795pt.
 
-LaTeX Warning: Reference `fig:DoSsimple' on page 34 undefined on input line 44.
-
 
 LaTeX Warning: Reference `fig:DoSsimple' on page 34 undefined on input line 44.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `fig:DoSsimple' on page 34 undefined on input line 44.
 
- [34 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DoSclientID.png>]
 
-LaTeX Warning: Reference `sec:MQTTPWN' on page 35 undefined on input line 48.
+LaTeX Warning: Reference `sec:MQTTSA' on page 34 undefined on input line 48.
 
-[35 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DDoS.png>]) (/workspaces/TFG/TFG_LaTeX_template_v5.0/mitm.tex [36]
+[34 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/DDoS.png>]
+<img/lrDDoS.png, id=300, 1628.0825pt x 386.44376pt>
+File: img/lrDDoS.png Graphic file (type png)
+<use img/lrDDoS.png>
+Package pdftex.def Info: img/lrDDoS.png  used on input line 58.
+(pdftex.def)             Requested size: 426.79135pt x 101.30443pt.
+) (/workspaces/TFG/TFG_LaTeX_template_v5.0/mitm.tex [35 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/lrDDoS.png>]
 \openout4 = `TFG.listing'.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
@@ -2148,27 +2134,121 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-)) (/workspaces/TFG/TFG_LaTeX_template_v5.0/results.tex [37]
+)
+
+LaTeX Warning: Reference `sec:ARPSpoof' on page 36 undefined on input line 38.
+
+[36]
+\openout4 = `TFG.listing'.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+
+LaTeX Warning: Reference `sec:mosquitto' on page 37 undefined on input line 50.
+
+<img/mitmbroker.png, id=320, 881.2925pt x 327.2225pt>
+File: img/mitmbroker.png Graphic file (type png)
+<use img/mitmbroker.png>
+Package pdftex.def Info: img/mitmbroker.png  used on input line 58.
+(pdftex.def)             Requested size: 426.79135pt x 158.46805pt.
+[37 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/mitmbroker.png>]
+
+LaTeX Warning: Reference `sec:MITMProxy' on page 38 undefined on input line 69.
+
+\openout4 = `TFG.listing'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+<img/mitmproxy.png, id=330, 881.2925pt x 327.2225pt>
+File: img/mitmproxy.png Graphic file (type png)
+<use img/mitmproxy.png>
+Package pdftex.def Info: img/mitmproxy.png  used on input line 77.
+(pdftex.def)             Requested size: 426.79135pt x 158.46805pt.
+<img/mitmcapt.png, id=331, 757.83125pt x 407.5225pt>
+File: img/mitmcapt.png Graphic file (type png)
+<use img/mitmcapt.png>
+Package pdftex.def Info: img/mitmcapt.png  used on input line 84.
+(pdftex.def)             Requested size: 426.79135pt x 229.51067pt.
+ [38 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/mitmproxy.png>]
+\openout4 = `TFG.listing'.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)
+<img/mitmproxytransp.png, id=340, 881.2925pt x 327.2225pt>
+File: img/mitmproxytransp.png Graphic file (type png)
+<use img/mitmproxytransp.png>
+Package pdftex.def Info: img/mitmproxytransp.png  used on input line 104.
+(pdftex.def)             Requested size: 426.79135pt x 158.46805pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/mitmcapt.png>]
+<img/captmqttclient.jpg, id=350, 1224.575pt x 1102.1175pt>
+File: img/captmqttclient.jpg Graphic file (type jpg)
+<use img/captmqttclient.jpg>
+Package pdftex.def Info: img/captmqttclient.jpg  used on input line 115.
+(pdftex.def)             Requested size: 298.75264pt x 268.86919pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/mitmproxytransp.png>] (/workspaces/TFG/TFG_LaTeX_template_v5.0/tool.tex [41 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/captmqttclient.jpg>]
 Cap\'{\i }tol 6.
-) (/workspaces/TFG/TFG_LaTeX_template_v5.0/sustainability.tex [38
+
+LaTeX Warning: Reference `sec:TCPDump' on page 42 undefined on input line 9.
+
+
+LaTeX Warning: Reference `sec:Recon' on page 42 undefined on input line 11.
+
+
+LaTeX Warning: Reference `fig:DDoS' on page 42 undefined on input line 13.
+
+
+LaTeX Warning: Reference `sec:MQTTSA' on page 42 undefined on input line 13.
+
+[42
 
 ]
+
+LaTeX Warning: Reference `sec:MITM' on page 43 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:spoofing' on page 43 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:MITMProxy' on page 43 undefined on input line 15.
+
+
+LaTeX Warning: Reference `sec:Zeek' on page 43 undefined on input line 17.
+
+<img/tool.png, id=368, 952.55875pt x 257.96375pt>
+File: img/tool.png Graphic file (type png)
+<use img/tool.png>
+Package pdftex.def Info: img/tool.png  used on input line 21.
+(pdftex.def)             Requested size: 426.79135pt x 115.5827pt.
+) (/workspaces/TFG/TFG_LaTeX_template_v5.0/results.tex [43 </workspaces/TFG/TFG_LaTeX_template_v5.0/img/tool.png>]
 Cap\'{\i }tol 7.
-) (/workspaces/TFG/TFG_LaTeX_template_v5.0/conclusions.tex [39
+) (/workspaces/TFG/TFG_LaTeX_template_v5.0/sustainability.tex [44
 
 ]
 Cap\'{\i }tol 8.
-) [40
+) (/workspaces/TFG/TFG_LaTeX_template_v5.0/conclusions.tex [45
 
 ]
-Overfull \hbox (5.31952pt too wide) in paragraph at lines 193--193
+Cap\'{\i }tol 9.
+) [46
+
+]
+Overfull \hbox (5.31952pt too wide) in paragraph at lines 195--195
 []\T1/LibertinusSerif-TLF/regular/n/12 (-20) Podeu mo-di-fi-car (o su-pri-mir) aques-ta no-ta edi-tant la ma-cro \T1/DejaVuSansMono-TLF/m/n/12 \defbibnote \T1/LibertinusSerif-TLF/regular/n/12 (-20) al fit-xer ^^STFG.tex^^T. 
  []
 
-/workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.tex:193: Misplaced alignment tab character &.
+/workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.tex:195: Misplaced alignment tab character &.
 <argument> Complex &
                      Intelligent Systems
-l.193 ...phy[heading=bibintoc,prenote={bib-intro}]
+l.195 ...phy[heading=bibintoc,prenote={bib-intro}]
                                                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2178,21 +2258,21 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (9.27524pt too wide) in paragraph at lines 193--193
+Overfull \hbox (9.27524pt too wide) in paragraph at lines 195--195
 \T1/DejaVuSansMono-TLF/m/n/12 youtube . com / watchv = eGz9DSaIeY & list = PLIhvC56v63IJlnU4k60d0oFIrsbXEivQo &
  []
 
-[41
+[47
 
 ]
-Overfull \hbox (2.00198pt too wide) in paragraph at lines 193--193
+Overfull \hbox (2.00198pt too wide) in paragraph at lines 195--195
 []\T1/LibertinusSerif-TLF/regular/n/12 (-20) Docker Inc. \T1/LibertinusSerif-TLF/regular/it/12 Docker Hub: kalilinux/kali-last-release\T1/LibertinusSerif-TLF/regular/n/12 (-20) . 2025. \T1/LibertinusSerif-TLF/regular/sc/12 url\T1/LibertinusSerif-TLF/regular/n/12 (-20) : [][]$\T1/DejaVuSansMono-TLF/m/n/12 https : / / hub . docker .
  []
 
-/workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.tex:193: Misplaced alignment tab character &.
+/workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.tex:195: Misplaced alignment tab character &.
 \namepartgiven ->Security\bibnamedelima &
                                          
-l.193 ...phy[heading=bibintoc,prenote={bib-intro}]
+l.195 ...phy[heading=bibintoc,prenote={bib-intro}]
                                                   
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2201,16 +2281,16 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[42] (/workspaces/TFG/TFG_LaTeX_template_v5.0/appendices.tex [43]
+[48] (/workspaces/TFG/TFG_LaTeX_template_v5.0/appendices.tex [49]
 Ap\`endix A.
-) [44
+) [50
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (/workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 
 
 Package rerunfilecheck Warning: File `TFG.out' has changed.
@@ -2219,7 +2299,7 @@ Package rerunfilecheck Warning: File `TFG.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `TFG.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0C1FF0E3DEE58F2C93816ECEFE2748F0;3600.
+(rerunfilecheck)             After:  845979A82D3BDECD36A38577789873AC;3800.
 
 LaTeX Warning: There were undefined references.
 
@@ -2236,18 +2316,18 @@ Package logreq Info: Writing requests to 'TFG.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66691 strings out of 481239
- 1620845 string characters out of 5920377
- 2629342 words of memory out of 5000000
- 80639 multiletter control sequences out of 15000+600000
- 672090 words of font info for 182 fonts, out of 8000000 for 9000
+ 66827 strings out of 481239
+ 1623202 string characters out of 5920377
+ 2629973 words of memory out of 5000000
+ 80737 multiletter control sequences out of 15000+600000
+ 666757 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,15n,153p,1232b,3242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_vcrloh.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_xt3ev3.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_oeoa22.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_hvvyjb.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.pdf (45 pages, 1167008 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_vcrloh.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_xt3ev3.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_oeoa22.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on /workspaces/TFG/TFG_LaTeX_template_v5.0/TFG.pdf (51 pages, 1450375 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 145 named destinations out of 1000 (max. 500000)
- 17978 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 539 PDF objects out of 1000 (max. 8388607)
+ 438 compressed objects within 5 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 17506 words of extra memory for PDF output out of 20736 (max. 10000000)
 
