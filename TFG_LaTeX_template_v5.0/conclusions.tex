@@ -1,55 +1,8 @@
 %%%% PLEASE REPLACE ENTIRELY WITH YOUR OWN CONTENT %%%%
 
-\ifcase\doclanguage\or
 \chapter{Conclusions i Línies Futures}
-  \section{Conclusions}
-    \begin{itemize}
-      \item Resumiu els resultats principals del vostre treball.
-      \item Discutiu el grau d'assoliment en relació amb els objectius marcats a l'inici del treball.
-      \item Destaqueu les contribucions del vostre treball al camp d'estudi.
-    \end{itemize}
-  
-  \section{Línies Futures}
-    \begin{itemize}
-      \item Identifiqueu àrees per a futures investigacions o desenvolupament basades en el vostre treball.
-      \item Discutiu possibles vies per ampliar o millorar el projecte.
-      \item Considereu les preguntes que han quedat sense resposta i les oportunitats per a futures exploracions.
-    \end{itemize}
 
-\or
-\chapter{Conclusiones y Líneas Futuras}
-  \section{Conclusiones}
-    \begin{itemize}
-      \item Resuman los resultados principales de su trabajo.
-      \item Discutan el grado de logro en relación con los objetivos establecidos al inicio del trabajo.
-      \item Destaquen las contribuciones de su trabajo al campo de estudio.
-    \end{itemize}
-  
-  \section{Líneas Futuras}
-    \begin{itemize}
-      \item Identifiquen áreas para futuras investigaciones o desarrollo basadas en su trabajo.
-      \item Discutan posibles formas de ampliar o mejorar el proyecto.
-      \item Consideren las preguntas que han quedado sin respuesta y las oportunidades para futuras exploraciones.
-    \end{itemize}
-
-\else
-\chapter{Conclusions and Future Work}
-  \section{Conclusions}
-    \begin{itemize}
-      \item Summarize the main results of your work.
-      \item Discuss the degree of achievement in relation to the objectives set at the beginning of the work.
-      \item Highlight the contributions of your work to the field of study.
-    \end{itemize}
-  
-  \section{Future Directions}
-    \begin{itemize}
-      \item Identify areas for future research or development based on your work.
-      \item Discuss possible ways to expand or improve the project.
-      \item Consider questions that remained unanswered and opportunities for future exploration.
-    \end{itemize}
-
-\fi
-
+\section{Conclusions}
 Aquest treball s’ha centrat en la generació de cibertatacs sobre entorns mèdics basats en dispositius d'internet de les coses, amb l’objectiu d’exposar vulnerabilitats específiques dels sistemes IoMT i aportar una eina que permeti automatitzar la creació de trànsit maliciós per a l’entrenament de sistemes de detecció d’intrusions basats en machine learning. La contribució més significativa del projecte ha estat el disseny i execució controlada d’atacs contra el protocol MQTT i la infraestructura típica d'una habitació d'hospital, amb èmfasi en la simulació realista d’escenaris compromesos, però sobretot en la facilitat amb què aquests atacs poden tenir èxit en absència de proteccions bàsiques.
 
 Un dels resultats més rellevants ha estat la comprovació de com de vulnerable és un sistema MQTT quan no s’ha configurat adequadament. En el cas dels atacs de reconeixement, s'ha pogut veure que aquests dispositius són fàcilent caracteritzables i al tenir recursos limitats, és poc freqüent que disposin de seguretat i protcols robustos. També, respecte als atacs de força bruta per al descobriment de credencials, s’ha evidenciat que molts serveis MQTT operen amb credencials per defecte o sistemes d’autenticació molt febles. Amb eines molt accessibles, l’atacant pot obtenir accés al broker en pocs segons, especialment si aquest no limita intents ni incorpora sistemes de detecció. L’eina automatitzada desenvolupada ha permès realitzar aquestes proves de forma repetida i consistent, posant en relleu la necessitat d’autenticació robusta i de sistemes de bloqueig automàtic.
@@ -64,10 +17,11 @@ Tots aquests atacs han estat executats de manera automàtica mitjançant un sist
 
 També cal destacar que aquest treball ha contribuït exitosament en la generació de datasets amb trànsit benigne i maliciós, que poden ser utilitzats per entrenar models de detecció d’intrusions. Aquests datasets són fonamentals per a la investigació en seguretat IoMT, ja que permeten desenvolupar i validar sistemes de seguretat més robustos. Com és el cas del projecte del grup de recerca "Information Security Group" dins el qual s'ha dut a terme aquest treball.
 
-\section{Línies futures}
+
+\section{Línies Futures}
 
 Pel que fa a les línies futures, una de les prioritats estudiar la configuració de la infraestructura per tal que sigui més segura i donar ues pràctiques recomanades per a evitar els riscos de seguretat estudaits en aquest treball, que poden englobar la incorporació de mètodes d’autenticació forts, xifratge TLS, i una política clara de permisos mitjançant ACLs per restringir l’accés a tòpics sensibles. També es proposa millorar la resiliència del sistema a atacs de denegació de servei, per exemple limitant connexions, aplicant filtres de QoS, o implementant sistemes de detecció precoç.
 
-Una altra direcció rellevant serà ampliar i modularitzar l’eina automatitzada, afegint-hi més tipus d’atacs i i suport per escenaris més diversos, incloent diferents protocols i topologies de xarxa. Aquesta eina pot esdevenir una plataforma comuna per a la generació de trànsit maliciós en entorns IoMT, amb finalitats tant de recerca com docents.
+Una altra direcció rellevant serà ampliar i modularitzar l’eina automatitzada, afegint-hi més tipus d’atacs i i suport per escenaris més diversos, incloent diferents protocols com podrien ser CoAP o HTTP i topologies de xarxa diverses. Aquesta eina pot esdevenir una plataforma comuna per a la generació de trànsit maliciós en entorns IoMT, amb finalitats tant de recerca com docents.
 
 En conclusió, aquest treball ha evidenciat que els sistemes mèdics connectats són especialment vulnerables si no s’implementen mesures de seguretat des del disseny. Els resultats obtinguts demostren que la seguretat en IoMT no pot ser un afegit posterior, sinó un component estructural essencial, i que l’existència d’entorns com el desenvolupat aquí és clau per posar en evidència aquestes mancances i avançar cap a sistemes més segurs.

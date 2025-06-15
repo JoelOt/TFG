@@ -58,7 +58,7 @@ Malgrat aquests avantatges, el protocol MQTT no està pensat amb la seguretat co
       \item \textbf{Flooding i sobrecàrrega:} Un ús malitencionat del QoS i grans volums de dades, poden causar sobrecàrregues en el broker i saturar el sistema.
       \item \textbf{Control d’accés deficient:} En moltes implementacions, si no es configuren polítiques d’ACL (Access Control List), qualsevol client pot publicar o subscriure’s a qualsevol tema.
       \item \textbf{Manca d’autenticació forta:} MQTT deneix només un sistema bàsic d’autenticació mitjançant username i password, sense mecanismes d’autenticació mútua ni suport nadiu per a protocols d’identitat moderna (com OAuth 2.0). Si el canal de comunicació no es protegeix amb TLS/SSL, tant les dades com les credencials es transmeten en text pla.
-      \item \textbf{Lack of message integrity:} Si no s’utilitza TLS, tampoc hi ha garanties que els missatges no hagin estat modificats durant el trànsit.
+      \item \textbf{Manca d’integritat dels missatges:} Si no s’utilitza TLS, tampoc hi ha garanties que els missatges no hagin estat modificats durant el trànsit.
   \end{itemize}
 
  Donada la seva extensió en entorns IoT i les seves característiques adaptades a dispositius amb recursos limitats, MQTT s’ha triat com a protocol principal per a la simulació de trànsit en aquest treball. El seu ús permet generar escenaris tant de comunicació legítima com maliciosa, en els quals es poden observar comportaments anòmals mitjançant eines d’anàlisi i detecció. Això facilita la creació de datasets realistes per a l’entrenament d’IDS basats en IA.     

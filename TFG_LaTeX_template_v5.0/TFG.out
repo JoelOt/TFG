@@ -15,39 +15,33 @@
 \BOOKMARK [1][-]{section.2.3}{Message Queuing Telemetry Transport \(MQTT\)}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.4}{Altres protocols en l'entorn IoMT}{chapter.2}% 16
 \BOOKMARK [0][-]{chapter.3}{Metodologia / desenvolupament del projecte}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Escenari utilitzat}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Topologia general}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{\332s del protocol MQTT}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{\332s de Docker per al desplegament de dispositius}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.5}{Eines utilitzades per a la generaci\363 d'atacs}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.5.1}{Nmap}{section.3.5}% 23
-\BOOKMARK [2][-]{subsection.3.5.2}{TCPDump}{section.3.5}% 24
-\BOOKMARK [2][-]{subsection.3.5.3}{ArpSpoof i Bettercap}{section.3.5}% 25
-\BOOKMARK [2][-]{subsection.3.5.4}{Mitmproxy}{section.3.5}% 26
-\BOOKMARK [2][-]{subsection.3.5.5}{Mqtt Malaria i MQTTSA}{section.3.5}% 27
-\BOOKMARK [2][-]{subsection.3.5.6}{Zeek}{section.3.5}% 28
-\BOOKMARK [0][-]{chapter.4}{Desenvolupament d\220un entorn IoMT simulat}{}% 29
-\BOOKMARK [0][-]{chapter.5}{Elaboraci\363 d'atacs per a la generaci\363 de tr\340nsit malici\363s}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Atacs de descobriment de dispositius}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.2}{Atacs de descobriment d\220informaci\363 del broker MQTT}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.2.1}{Atacs de descobriment de credencials}{section.5.2}% 33
-\BOOKMARK [2][-]{subsection.5.2.2}{Subscripci\363 a t\362pics d'administraci\363}{section.5.2}% 34
-\BOOKMARK [1][-]{section.5.3}{Atacs de denegaci\363 de servei \(DoS\)}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.3.1}{Denegaci\363 de servei MQTT Publish}{section.5.3}% 36
-\BOOKMARK [2][-]{subsection.5.3.2}{Denegaci\363 de servei Distribu\357da \(DDoS\)}{section.5.3}% 37
-\BOOKMARK [2][-]{subsection.5.3.3}{Low-Rate DDoS}{section.5.3}% 38
-\BOOKMARK [1][-]{section.5.4}{Atacs de suplantaci\363 d'identitat}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.4.1}{Atacs de ARP Spoofing}{section.5.4}% 40
-\BOOKMARK [2][-]{subsection.5.4.2}{Atacs de MITM}{section.5.4}% 41
-\BOOKMARK [0][-]{chapter.6}{Elaboraci\363 d'una eina automatitzada per a la generaci\363 d'atacs en entorns MQTT}{}% 42
-\BOOKMARK [0][-]{chapter.7}{Resultats}{}% 43
-\BOOKMARK [1][-]{section.7.1}{Experiments i proves}{chapter.7}% 44
-\BOOKMARK [1][-]{section.7.2}{Visualitzaci\363 de les dades}{chapter.7}% 45
-\BOOKMARK [1][-]{section.7.3}{Limitacions}{chapter.7}% 46
-\BOOKMARK [0][-]{chapter.8}{An\340lisi de sostenibilitat i implicacions \350tiques}{}% 47
-\BOOKMARK [0][-]{chapter.9}{Conclusions i L\355nies Futures}{}% 48
-\BOOKMARK [1][-]{section.9.1}{Conclusions}{chapter.9}% 49
-\BOOKMARK [1][-]{section.9.2}{L\355nies Futures}{chapter.9}% 50
-\BOOKMARK [1][-]{section.9.3}{L\355nies futures}{chapter.9}% 51
-\BOOKMARK [0][-]{chapter*.23}{Bibliografia}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Un ap\350ndix}{}% 53
+\BOOKMARK [1][-]{section.3.1}{Topologia general}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{\332s del protocol MQTT}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{\332s de Docker per al desplegament de dispositius}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Eines utilitzades per a la generaci\363 d'atacs}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.4.1}{Nmap}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.2}{TCPDump}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.3}{ArpSpoof i Bettercap}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.4}{Mitmproxy}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.5}{Mqtt Malaria i MQTTSA}{section.3.4}% 26
+\BOOKMARK [2][-]{subsection.3.4.6}{Zeek}{section.3.4}% 27
+\BOOKMARK [0][-]{chapter.4}{Desenvolupament d\220un entorn IoMT simulat}{}% 28
+\BOOKMARK [0][-]{chapter.5}{Elaboraci\363 d'atacs per a la generaci\363 de tr\340nsit malici\363s}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Atacs de descobriment de dispositius}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Atacs de descobriment d\220informaci\363 del broker MQTT}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.2.1}{Atacs de descobriment de credencials}{section.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.2.2}{Subscripci\363 a t\362pics d'administraci\363}{section.5.2}% 33
+\BOOKMARK [1][-]{section.5.3}{Atacs de denegaci\363 de servei \(DoS\)}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.3.1}{Denegaci\363 de servei MQTT Publish}{section.5.3}% 35
+\BOOKMARK [2][-]{subsection.5.3.2}{Denegaci\363 de servei Distribu\357da \(DDoS\)}{section.5.3}% 36
+\BOOKMARK [2][-]{subsection.5.3.3}{Low-Rate DDoS}{section.5.3}% 37
+\BOOKMARK [1][-]{section.5.4}{Atacs de suplantaci\363 d'identitat}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.4.1}{Atacs de ARP Spoofing}{section.5.4}% 39
+\BOOKMARK [2][-]{subsection.5.4.2}{Atacs de MITM}{section.5.4}% 40
+\BOOKMARK [0][-]{chapter.6}{Elaboraci\363 d'una eina automatitzada per a la generaci\363 d'atacs en entorns MQTT}{}% 41
+\BOOKMARK [0][-]{chapter.7}{An\340lisi de sostenibilitat i implicacions \350tiques}{}% 42
+\BOOKMARK [0][-]{chapter.8}{Conclusions i L\355nies Futures}{}% 43
+\BOOKMARK [1][-]{section.8.1}{Conclusions}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.2}{L\355nies Futures}{chapter.8}% 45
+\BOOKMARK [0][-]{chapter*.24}{Bibliografia}{}% 46
+\BOOKMARK [0][-]{appendix.A}{Un ap\350ndix}{}% 47

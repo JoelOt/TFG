@@ -1,7 +1,7 @@
 \chapter{Desenvolupament d’un entorn IoMT simulat}
-Per al desplegament d’un entorn IoMT simulat seguint l’arquitectura explicada a \ref{sec:Topologia} he elaborat un entorn a través de contenidors Docker i l’orquestrador per defecte Docker Compose.
+Per al desplegament d’un entorn IoMT simulat seguint l’arquitectura explicada a \ref{sec:Topologia} ha estat elaborat a través de contenidors Docker i l’orquestrador per defecte Docker Compose.
 
-Per a la realització dels clients, que representen el trànsit benigne, he utilitzat una imatge d’Ubuntu, aquesta ha estat modificada (i renombrada com a mqttclient) on mitjançant el gestor de paquets APT  s'ha instal·lat mosquitto-clients 2.0.20 {ref imatge}. Amb aquesta aplicació podem fer actuar aquest contenidor d'Ubuntu com un client MQTT i tenir les seves funcions principals com subscriure’s i publicar a un tòpic d’un broker concret i utilitzar totes les funcionalitats descrites. {ref mosquitto}
+Per a la realització dels clients, que representen el trànsit benigne, he utilitzat una imatge d’Ubuntu, aquesta ha estat modificada (i renombrada com a mqttclient) on mitjançant el gestor de paquets APT  s'ha instal·lat mosquitto-clients 2.0.20 \cite{ubuntuimg}. Amb aquesta aplicació podem fer actuar aquest contenidor d'Ubuntu com un client MQTT i tenir les seves funcions principals com subscriure’s i publicar a un tòpic d’un broker concret i utilitzar totes les funcionalitats descrites a \ref{sec:mosquitto}
 
 També he instal·lat Python 3.13.2 i Paho-mqtt 2.0.0 \cite{pahoexp} per a poder generar paquets de forma personalitzada. Amb aquesta llibreria de Python podem modificar aspectes molt més concrets de les nostres connexions MQTT i paquets, canviant els valors de les dades o la freqüència d’enviament de les publicacions. Gràcies a aquesta eina, al ser una llibreria de Python, podem córrer els clients de manera automatitzada utilitzant les eines pròpies del llenguatge.
 
@@ -21,7 +21,7 @@ Pel que fa al monitor de trànsit, partint de l’image base Ubuntu (renombrada 
 
 Per l’atacant, parteix de la imatge kalilinux/kali-last-release \cite{kaliimg} (renombrada com a atacker) amb l’instal·lació dels paquets kali-linux-headless i que conté les eines més utilitzades de kali linux i depenent de l’atac s’ha instal·lat altres eines de pentesting.
 
-Tots aquests contenidors, s’han integrat mitjançant un fitxer .yaml de Docker-Compose que ens permet definir volums i fer ús de configuracions de xarxa personalitzades. El nombre de clients utilitzats és variable, però tots disposen d’un sol volum vinculat a l'hipervisor.
+Tots aquests contenidors, s’han integrat mitjançant un fitxer .yml de Docker-Compose que ens permet definir volums i fer ús de configuracions de xarxa personalitzades. El nombre de clients utilitzats és variable, però tots disposen d’un sol volum vinculat a l'hipervisor.
 
 S’ha creat una xarxa personalitzada (bridge) on es disposen tots els contenidors i tenen connectivitat entre ells com si es tractés d'una xarxa LAN privada. 
 Per utilitzar un model híbrd entre dispositius simulats i dispositius reals (o bé dispositius simulats en hosts diferents), s’ha utilitzat la configuració MACVLAN que permet connectar els contenidors a la xarxa física amb adreces IP i MAC diferent (cal evitar conflictes amb altres adreces de la xarxa física), amb un efecte similar al que tindríem connectant un switch a la xarxa amb tots els seus contenidors. Amb aquesta configuració m'he coordinat amb altres membres del grup ISG-UPC per a poder integrar el meu treball al projecte. 

@@ -103,15 +103,15 @@
 %\lstlistoflistings
 
 
-%%%% ACRONYMS %%%% <<<<<< PLEASE DEFINE YOUR ACRONYMS IN "acronyms.tex"
+%%%% ACRONYMS %%%% 
 \clearpage
 \newcommand\AbbrvName{\ifcase\doclanguage\or Sigles i acrònims\or Siglas y acrónimos\else Abbreviations\fi}
 \addcontentsline{toc}{section}{\AbbrvName}
-\printacronyms[include=all][
-  heading=chapter*,
-  display=all,
-  include=abbrev,
+\printacronyms[
   name=\AbbrvName,
+  heading=chapter*,
+  include-classes=abbrev,
+  display=all
 ]
 
 
@@ -149,7 +149,7 @@
 \input{tool}
 %%%% RESULTS %%%%
 % Results chapter. Please replace "results.tex" entirely with your own content written in the desired language.
-\input{results}
+%\input{results}
 
 
 %%%% BUDGET %%%%
@@ -173,24 +173,6 @@
 % Supress this macro (or modify its contents to suit your needs).
 \defbibnote{bib-intro}{%
 \ifcase\doclanguage\or
-  El sistema \textit{biblatex} simplifica la gestió de la bibliografia en treballs científics, proporcionant automatització i personalització en el format de les citacions. Això permet a l'autor del document enfocar-se en el contingut sense haver de preocupar-se per l'estil de les referències, estalviant temps i reduint errors.
-  
-  La base de dades de referències bibliogràfiques és al fitxer «TFG.bib» i és allà on heu d'afegir les vostres referències. Consulteu el manual del \texttt{biblatex}, secció «Database Guide», per conèixer els tipus de referències i camps disponibles.
-  
-  Podeu modificar (o suprimir) aquesta nota editant la macro \texttt{\textbackslash defbibnote} al fitxer «TFG.tex».
-  \par\hfil\rule[3pt]{.5\textwidth}{0.4pt}\hfil\par\or
-  El sistema \textit{biblatex} simplifica la gestión de la bibliografía en trabajos científicos, proporcionando automatización y personalización en el formato de las citas. Esto permite al autor del documento enfocarse en el contenido sin tener que preocuparse por el estilo de las referencias, ahorrando tiempo y reduciendo errores.
-  
-  La base de datos de referencias bibliográficas está en el archivo «TFG.bib» y es allí donde se deben añadir vuestras referencias. Consultar el manual de \texttt{biblatex}, sección «Database Guide», para conocer los tipos de referencias y campos disponibles.
-  
-  Podéis modificar (o suprimir) esta nota editando la macro \texttt{\textbackslash defbibnote} en el archivo «TFG.tex».
-  \par\hfil\rule[3pt]{.5\textwidth}{0.4pt}\hfil\par\else
-  The \textit{biblatex} system simplifies the management of the bibliography in scientific works, providing automation and customization in the format of citations. This allows the document's author to focus on the content without having to worry about the style of the references, saving time and reducing errors.
-  
-  The bibliographic references database is in the file “TFG.bib”, and this is where you should add your references. Consult the \texttt{biblatex} manual, section “Database Guide”, to learn about the available types of references and fields.
-  
-  You can modify (or delete) this note by editing the \texttt{\textbackslash defbibnote} macro in the file “TFG.tex”.
-  \par\hfil\rule[3pt]{.5\textwidth}{0.4pt}\hfil\par\fi%
 }
 \printbibliography[heading=bibintoc,prenote={bib-intro}]
 

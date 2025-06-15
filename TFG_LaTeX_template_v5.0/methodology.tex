@@ -7,14 +7,14 @@
   
   A més de descriure els mètodes en si mateixos, el capítol també proporcionarà justificacions per què es van escollir mètodes particulars enfront d'altres. Per exemple, podria explicar la tria d'un llenguatge de programació específic, prova estadística o configuració experimental. El capítol també abordarà les limitacions de la metodologia i com aquestes s'han mitigat o tingut en compte. Els lectors haurien de sortir amb una comprensió clara de com s'ha dut a terme el desenvolupament del projecte, per què s'han escollit determinades opcions i com aquests mètodes serveixen per complir els objectius establerts inicialment.
 
-\section{Escenari utilitzat}
-
-  L’escenari presentat en aquest treball està inspirat en el que s'utilitza en el Treball: \textit{" «MIoTTA-UPC: Testbed MIoT Configurable para la Evaluacion de Algoritmos de Detección de Ciberataques Basados en Inteligencia Artificial» "} \cite{miottaupcfig} . L’objectiu principal és poder generar un banc de dades que contingui paquets benignes i maliciosos de diferents atcas per a entrenar un sistema de detecció d’intrusions (IDS) basat en intel·ligència artificial que classifiqui si aquest tràfic és benigne o maliciós. La programació, desplegament i entrenament d’aquest IDS no formen part d’aquest treball. Per a generar aquest testbed és necessari simular atacs coneguts per a una infraestructura com utilitzada de manera realista i amb un escenari que reprodueixi adequadament unes condicions reals.
-
 \section{Topologia general}
 \label{sec:Topologia}
-  Per a la generació i captura del tràfic de xarxa en un IoMT (Internet of Medical Things), s’ha dissenyat i desplegat un escenari experimental que simula una habitació d’hospital interconnectada amb un servidor central i altres dispositius de suport clínic. Aquest entorn busca reproduir amb fidelitat un ecosistema típic d’atenció sanitària digitalitzada, incloent-hi sensors mèdics, passarel·les de comunicació, equips de monitoratge i possibles actors maliciosos.
 
+  L’escenari presentat en aquest treball està inspirat en el que s'utilitza en el Treball: \textit{" «MIoTTA-UPC: Testbed MIoT Configurable para la Evaluacion de Algoritmos de Detección de Ciberataques Basados en Inteligencia Artificial» "} \cite{miottaupcfig} . L’objectiu principal és poder generar un banc de dades que contingui paquets benignes i maliciosos de diferents atcas per a entrenar un sistema de detecció d’intrusions (IDS) basat en intel·ligència artificial que classifiqui si aquest tràfic és benigne o maliciós. La programació, desplegament i entrenament d’aquest IDS no formen part d’aquest treball. 
+  
+  Per a generar aquest testbed és necessari simular atacs coneguts per a l'infraestructura utilitzada de manera realista i amb un escenari que reprodueixi adequadament unes condicions reals.
+
+  Per a aquesta generació i captura del trànsit de xarxa en un IoMT (Internet of Medical Things), s’ha dissenyat i desplegat un escenari experimental que simula una habitació d’hospital interconnectada amb un servidor central i altres dispositius de suport clínic. Aquest entorn busca reproduir amb fidelitat un ecosistema típic d’atenció sanitària digitalitzada, incloent-hi sensors mèdics, passarel·les de comunicació, equips de monitoratge i possibles actors maliciosos.
 
   L’escenari està basat en una xarxa LAN Wi-Fi irradiada amb un Access Point, en la qual s’hi connecten tots els dispositius, encara que també pot contenir trams Ethernet si és necessari. Entre els dispositius utilitzats es considera:
 
@@ -26,7 +26,7 @@
     \item \textbf{Ordinadors I servidors:} Se suposa que en aquesta xarxa hi poden haver connectats altres dispositius que no són especialment utilitzats en l’entorn IoMT com per exemple altres servidors hospitalaris o ordinadors.
   \end{itemize}
 
-  Dintre aquest escenari, el meu treball se centra en l’apartat de la generació de trànsit simulat així com en l’elaboració d’atacs des de la perspectiva de desplegar clients simulats i fer-los interactuar amb la xarxa real. L’objectiu principal del treball no ha estat la implementació d’aquesta xarxa.
+  Dintre aquest escenari, el meu treball se centra en l’apartat de la generació de trànsit simulat així com en l’elaboració d’atacs des de la perspectiva de desplegar clients simulats i fer-los interactuar amb la xarxa real. L’objectiu principal del treball no ha estat la implementació d’aquesta xarxa física.
 
   \begin{figure}[H]
     \centering

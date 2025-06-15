@@ -44,7 +44,7 @@ bettercap -iface wlp42s0 -eval \"mac.changer on; set arp.spoof.internal true; se
 \end{tcblisting}
 
 \subsection{Atacs de MITM}
-
+\label{sec:MITM}
 Un cop es disposa de l'atac d'ARP spoofing implementat, es pot utilitzar per a realitzar diversos atacs de Man In The Middle (MITM). 
 
 El primer atac de MITM implementat, es basa a desplegar un broker MQTT mitjançant Mosquitto \ref{sec:mosquitto}. Al desplegar un broker entremig, el que aconseguim és que el client cregui que està enviant els missatges al broker legítim, però en realitat els missatges són enviats a l'atacant i aquest pot respondre a aquest pot rebre i publicar en el mateix tòpic al qual el client està publicant o subscrivint-se.

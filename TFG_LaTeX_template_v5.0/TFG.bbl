@@ -209,6 +209,37 @@
       \verb https://www.tcpdump.org/
       \endverb
     \endentry
+    \entry{ubuntuimg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4bd3b392874c74fba4ed57a24eae0ac1}{%
+           family={Docker},
+           familyi={D\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{fullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{bibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorbibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authornamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorfullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Hub: Ubuntu image}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://hub.docker.com/_/ubuntu
+      \endverb
+      \verb{url}
+      \verb https://hub.docker.com/_/ubuntu
+      \endverb
+    \endentry
     \entry{dockerfig}{online}{}
       \name{author}{1}{}{%
         {{hash=81cd50d3708a4d833337cceebc2655f6}{%
