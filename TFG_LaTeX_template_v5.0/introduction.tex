@@ -1,127 +1,46 @@
-%%%% PLEASE REPLACE ENTIRELY WITH YOUR OWN CONTENT %%%%
+\chapter{Introducció}
 
-\ifcase\doclanguage
-\or
-  \chapter{Introducció}
-\or
-  \chapter{Introducción}
-\else
-  \chapter{Introduction}
-\fi
+\section{L'Internet de les Coses en l'àmbit sanitari}
+L’Internet de les Coses (IoT) ha experimentat una expansió notable en els darrers anys, especialment en l’àmbit sanitari, donant lloc a l’anomenat Internet of Medical Things (IoMT). Aquesta branca integra dispositius mèdics interconnectats capaços de captar, processar i transmetre dades clíniques en temps real, amb l’objectiu de millorar l’eficiència assistencial i la qualitat del seguiment de pacients. No obstant això, aquesta creixent interconnexió també comporta una exposició més gran a vulnerabilitats i amenaces de seguretat, especialment en entorns on la disponibilitat, la integritat i la confidencialitat de les dades són crucials.
 
-\ifcase\doclanguage
-\or
-  Una Introducció que estableix clarament la justificació de la tesi que inclogui:
-\or
-  Una Introducción que establece claramente la justificación de la tesis que incluya:
-\else
-  An Introduction that clearly states the rationale of the thesis that includes:
-\fi
+Aquest Treball de Fi de Grau s’insereix dins aquesta problemàtica i té com a objectiu principal el desenvolupament d’un entorn de proves (testbed) per a la generació de trànsit de xarxa en escenaris IoMT, tant legítim com maliciós. Aquest entorn ha de permetre la creació de datasets realistes orientats a l’entrenament i validació de sistemes de detecció d’intrusions (IDS) basats en tècniques d’intel·ligència artificial.
 
-\begin{enumerate}
-  \ifcase\doclanguage
-  \or
-    \item Objectius del treball.
-  \or
-    \item Objetivos del trabajo.
-  \else
-    \item Statement of purpose (objectives).
-  \fi
+El nucli del projecte rau en la simulació i automatització d’atacs cibernètics dirigits a una infraestructura mèdica basada en IoT. S'han dissenyat i implementat diversos atacs, com ara descobriment de dispositius, força bruta per credencials, suplantació d’identitat (spoofing i MITM) i atacs de denegació de servei (DoS i DDoS), amb l’objectiu de reproduir escenaris realistes que posen de manifest les debilitats de seguretat habituals en aquest tipus de xarxes.
 
-  \ifcase\doclanguage
-  \or
-    \item Requisits i especificacions.
-  \or
-    \item Requisitos y especificaciones.
-  \else
-    \item Requirements and specifications.
-  \fi
+Per simular l’entorn, s’han utilitzat tecnologies com Docker per al desplegament de dispositius virtualitzats, i el protocol MQTT (Message Queuing Telemetry Transport) com a principal canal de comunicació entre dispositius. MQTT és àmpliament utilitzat en entorns IoT per la seva lleugeresa i eficiència, però presenta importants limitacions de seguretat si no s’acompanya de mecanismes de protecció adequats, com ara autenticació forta, control d’accés o xifratge TLS.
 
-  \ifcase\doclanguage
-  \or
-    \item Mètodes i procediments, citant si aquest treball és una continuació d'un altre projecte o utilitza aplicacions, algoritmes, programari o maquinari desenvolupat anteriorment per altres autors.
-  \or
-    \item Métodos y procedimientos, citando si este trabajo es una continuación de otro proyecto o utiliza aplicaciones, algoritmos, software o hardware desarrollado anteriormente por otros autores.
-  \else
-    \item Methods and procedures, citing if this work is a continuation of another project or it uses applications, algorithms, software or hardware previously developed by other authors.
-  \fi
+D’aquesta manera, el treball no només aporta una plataforma per a la generació de trànsit en entorns mèdics simulats, sinó que també posa en evidència els riscos de seguretat inherents a l’ús de tecnologies IoT en àmbits crítics com el sanitari. 
 
-  \ifcase\doclanguage
-  \or
-    \item Pla de treball amb tasques, fites i un diagrama de Gantt.
-  \or
-    \item Plan de trabajo con tareas, hitos y un diagrama de Gantt.
-  \else
-    \item Work plan with tasks, milestones and a Gantt diagram.
-  \fi
+\section{Information Security Group - UPC i projecte MIoTTA-UPC}
 
-  \ifcase\doclanguage
-  \or
-    \item Descripció de les desviacions del pla inicial i incidències que poden haver ocorregut.
-  \or
-    \item Descripción de las desviaciones del plan inicial e incidencias que pueden haber ocurrido.
-  \else
-    \item Description of the deviations from the initial plan and incidences that may have occurred.
-  \fi
-\end{enumerate}
+Aquest projecte s’emmarca dins la línia de recerca del grup ISG-UPC (Information Security Group) de la Universitat Politècnica de Catalunya, centrat en la seguretat en sistemes distribuïts, xarxes IoT i tècniques de detecció d’intrusions basades en intel·ligència artificial. En aquest context, el treball aquí presentat dona continuïtat i complementa el projecte MIoTTA-UPC, un banc de proves configurable per a la generació de trànsit en entorns IoMT orientat a la validació d’algoritmes de detecció de ciberatacs.
 
-\ifcase\doclanguage
-\or
-  Els capítols mínims que aquest document de TFE hauria de tenir es descriuen a continuació; no obstant això, poden tenir noms diferents i es poden afegir més capítols.
-\or
-  Los capítulos mínimos que este documento de TFE debería tener se describen a continuación, sin embargo, pueden tener nombres diferentes y se pueden agregar más capítulos.
-\else
-  The minimum chapters that this thesis document should have are described below, nevertheless they can have different names and more chapters can be added.
-\fi
+Tot i que MIoTTA-UPC contempla l’arquitectura general del sistema i l’anàlisi de trànsit, aquest treball se centra específicament en la generació d’atacs i de trànsit maliciós generat a partir de dispositius simulats, aportant una eina pràctica i automatitzada per a reproduir escenaris d’amenaça de forma realista i replicable. També s’ha tingut en compte la coordinació amb altres membres del grup de recerca per tal de garantir la compatibilitat i integració dels sistemes simulats amb entorns IoMT reals i altres components del projecte col·lectiu, com poden ser els sistemes d’anàlisi o detecció.
 
-\ifcase\doclanguage
-\or
-  \section{Objectius del treball}
-\or
-  \section{Objectivos del trabajo}
-\else
-  \section{Work goals}
-\fi
+El disseny de l’entorn simulat desenvolupat en aquest treball s’ha realitzat seguint l’arquitectura definida pel projecte MIoTTA-UPC, representada a la Figura 1. Aquest esquema conceptualitza un escenari típic d’un entorn hospitalari digitalitzat, on múltiples dispositius mèdics interconnectats com oxímetres, monitors de ritme cardíac, bombes d’infusió o sensors de pressió arterial es comuniquen amb un gateway central que actua com a broker MQTT. Aquest ecosistema inclou també un ordinador d’infermeria, un monitor de trànsit de xarxa i un node maliciós per simular l’activitat d’un atacant.
 
-\lipsum[1]
+Tot aquest entorn ha estat virtualitzat mitjançant contenidors Docker, els quals reprodueixen el comportament dels dispositius i serveis presents a l’escenari original, facilitant així la generació de trànsit de xarxa realista. L’ús d’aquest model ha permès reproduir situacions d’amenaça de forma controlada i replicable, tot mantenint una estructura fidel als escenaris clínics reals, amb la finalitat d’alimentar sistemes d’anàlisi i detecció de ciberatacs.
 
-\ifcase\doclanguage
-\or
-  \section{Requisits i especificacions}
-\or
-  \section{Requisitos y especificaciones}
-\else
-  \section{Requirements and specifications}
-\fi
+Gràcies a aquesta col·laboració, el present treball contribueix al desenvolupament d’un entorn més complet i modular per a la recerca en ciberseguretat aplicada a dispositius mèdics, tot facilitant la creació de datasets públics i realistes que puguin ser utilitzats tant en l’àmbit acadèmic com en l’entrenament d’algoritmes reals de detecció.
 
-\lipsum[2-4]
 
-\ifcase\doclanguage
-\or
-  \section{Mètodes i procediments}
-\or
-  \section{Métodos y procedimientos}
-\else
-  \section{Methods and procedures}
-\fi
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{img/MIOTTA_UPC.png}
+    \caption{Arquitectura del projecte MIoTTA-UPC. Dintre aquesta arquitectura, el treball s'ha centrat en l'entorn simulat visible a la part baixa dreta de la figura, amb una funcionalitat smilar a l'IoT Flock. \cite{miottaupcfig}}
+    \label{fig:tool}
+  \end{figure}
 
-\lipsum[5-6]
+\section{Objectius del treball}
 
-\ifcase\doclanguage
-\or
-  \section{Pla de treball}
-\or
-  \section{Plan de trabajo}
-\else
-  \section{Work plan}
-\fi
-\label{sec:workplan}
+Els objectius principals d’aquest treball són els següents:
+\begin{itemize}
+    \item 1- Desenvolupar un entorn de proves (testbed) per a la generació de trànsit de xarxa en escenaris IoMT, tant legítim com maliciós mitjançant la simulació de dispositius mèdics i la seva comunicació a través del protocol MQTT integrable dintre de l'entorn general del projecte MIoTTA-UPC.
+    \item 2- Implementar diversos atacs cibernètics comuns en entorns IoMT per tal d'entendre els riscos de seguretat associats a xarxes IoT i adquirir coneixements sobre els vectors d'atac més habituals en aquests entorns.
+    \item 3- Desenvolupar una eina automatitzada per a la generació de trànsit maliciós en l'entorn descrit i la captura de dades de trànsit per a l'anàlisi posterior, facilitant així la creació de datasets realistes orientats a l'entrenament i validació de sistemes de detecció d'intrusions (IDS) basats en tècniques d'intel·ligència artificial.
 
-\ifcase\doclanguage
-\or
-  Normalment les figures i taules es col·loquen en els entorns \verb|\figure| i \verb|\table|, que poden flotar lliurement en el document. Pots identificar cada flotant amb un \verb|\label|
-\or
-  Normalmente las figuras y tablas se colocan en los entornos \verb|\figure| y \verb|\table|, que pueden flotar libremente en el documento. Puedes identificar cada flotante con un \verb|\label|
-\else
-  Normally the figures and tables are put in \verb|\figure| and \verb|\table| environments, that can float freely in the document. You can identify each float with a \verb|\label|
-\fi
+
+
+
+
+
