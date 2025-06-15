@@ -1,1 +1,3 @@
-    nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.40
+  iptables -t nat -A PREROUTING -p tcp --dport 1883 -j REDIRECT
+  iptables -t nat -A POSTROUTING -p tcp --dport 1883 -j SNAT --to-source 192.168.0.41
+  
