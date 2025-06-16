@@ -1,27 +1,130 @@
-%%%% PLEASE REPLACE ENTIRELY WITH YOUR OWN CONTENT %%%%
-
-\ifcase\doclanguage\or
 \chapter{Anàlisi de sostenibilitat i implicacions ètiques}
-Des del curs 2023-24, la normativa de TFG de l'ETSETB demana la inclusió d'un informe de sostenibilitat a la memòria del treball. Aquesta anàlisi consisteix en una valoració dels impactes ambientals, socials i econòmics, i les possibles implicacions ètiques que ha comportat la realització del TFG. En el cas que el TFG plantegi un producte/servei/sistema/edifici/etc., que podria arribar a implementar-se, l’anàlisi també ha de realitzar-se sobre els impactes que tindria la proposta en la seva execució durant les diferents etapes del seu cicle de vida.
 
-A la plataforma ATENEA trobareu un document separat amb les instruccions detallades de què ha de contenir i com cal confeccionar l'informe de sostenibilitat.
+\section{Matriu de sostenibilitat}
 
-{\bigskip\bfseries {\large IMPORTANT:} Noteu que l'antic capítol de «Pressupost del projecte» ara queda integrat en l'anàlisi de sostenibilitat, concretament en les cel·les «Econòmic/Desenvolupament del TFG» i «Econòmic/Execució del projecte».}
+\begin{table}[ht]
+\centering
+\begin{tabularx}{\textwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+\textbf{Perspectiva} & \textbf{Desenvolupament del TFG} & \textbf{Execució del projecte} & \textbf{Riscos i limitacions} \\
+\midrule
 
-\or
-\chapter{Análisis de sostenibilidad e implicaciones éticas}
-A partir del curso 2023-24, la normativa de TFG de la ETSETB solicita la inclusión de un informe de sostenibilidad en la memoria del trabajo. Este análisis consiste en una evaluación de los impactos ambientales, sociales y económicos, así como las posibles implicaciones éticas derivadas de la realización del TFG. En el caso de que el TFG plantee un producto/servicio/sistema/edificio, etc., que pudiera llegar a implementarse, el análisis también debe abordar los impactos que la propuesta tendría durante las diferentes etapas de su ciclo de vida.
+% Perspectiva ambiental
+\multirow{}{}{Ambiental} 
+& Impacte ambiental & Impacte ambiental & Riscos i limitacions ambientals \\
+\addlinespace
 
-En la plataforma ATENEA encontrarán un documento aparte con instrucciones detalladas sobre lo que debe contener y cómo elaborar el informe de sostenibilidad.
+% Perspectiva econòmica
+\multirow{}{}{Econòmica}
+& Cost & Anàlisi de viabilitat & Riscos i limitacions econòmics \\
+\addlinespace
 
-{\bigskip\bfseries {\large IMPORTANTE:} Tener en cuenta que el antiguo capítulo de «Presupuesto del proyecto» ahora se integra en el análisis de sostenibilidad, específicamente en las celdas «Económico/Desarrollo del TFG» y «Económico/Ejecución del proyecto».}
+% Perspectiva social
+\multirow{}{}{Social}
+& Impacte personal & Impacte social & Riscos i limitacions socials \\
+\bottomrule
+\end{tabularx}
+\caption{Matriu de sostenibilitat del Treball de Fi de Grau (TFG)}
+\label{tab:analisi}
+\end{table}
 
-\else
-\chapter{Sustainability Analysis and Ethical Implications}
-Starting from the academic year 2023-24, the TFG regulations of ETSETB require the inclusion of a sustainability report in the project's documentation. This analysis involves an assessment of environmental, social, and economic impacts, as well as potential ethical implications resulting from the completion of the TFG. In the case where the TFG involves a product/service/system/building, etc., that could be implemented, the analysis should also address the impacts that the proposal would have during the various stages of its lifecycle.
 
-Detailed instructions on what the sustainability report should contain and how to prepare it can be found on the ATENEA platform.
+\subsection{Perspectiva ambiental}
 
-{\bigskip\bfseries {\large IMPORTANT:} Please note that the previous chapter on "Project Budget" is now integrated into the sustainability analysis, specifically in the cells "Economic Cell/Development of BT" and "Economic Cell/Project Execution".}
+\textbf{Impacte ambiental}
 
-\fi
+Aquest projecte es desenvolupa íntegrament en entorns digitals, i el seu impacte ambiental principal es deriva del consum elèctric dels equips emprats durant el desenvolupament i execució del TFG. Es consideren les següents fonts d’emissió de CO₂:
+
+\begin{itemize}
+     \item Ordinador portàtil personal
+     \item Execució de simulacions en màquina virtual local
+     \item  Emissions derivades de reunions virtuals i correus electrònics
+\end{itemize}
+
+\textbf{Emissions per portàtil personal:} Portàtil Acer Aspire amb adaptador de 65 W:
+\begin{itemize}
+    \item Potència mitjana: 65 W
+    \item Temps d'ús diari: 4 hores
+    \item Consum mensual: 65 W/h × 4 h × 30 dies = 7.800 Wh = 7,8 kWh
+    \item Durada del projecte: 5 mesos
+    \item Consum total estimat: 5 × 7,8 = 39 kWh
+\end{itemize}
+
+Sabent que cada kWh generat produeix uns 91 g de CO₂:
+\begin{itemize}
+    \item Emissions per portàtil personal: 39 kWh × 91 g CO₂/kWh = 3.549 Kg CO₂
+\end{itemize}
+
+\textbf{Execució local de simulacions:} PC de sobretaula amb CPU AMD Ryzen i consum mitjà de 300 W:
+\begin{itemize}
+    \item Potència mitjana: 300 W
+    \item Temps d'ús diari: 5 hores durant 2 mesos
+    \item Consum mensual: 300 W/h × 5 h × 30 dies = 45.000 Wh = 45 kWh
+    \item Consum total estimat: 2 × 45 = 90 kWh
+\end{itemize}
+
+Sabent que cada kWh generat produeix uns 91 g de CO₂:
+\begin{itemize}
+    \item Emissions per PC de sobretaula: 90 kWh × 91 g CO₂/kWh = 8.190 Kg CO₂
+\end{itemize}
+
+\textbf{Emissions derivades de reunions virtuals i correus electrònics:}
+\begin{itemize}
+    \item Correus electrònics amb adjunts: 20 × 50 g = 1 kg de CO₂
+    \item Correus sense adjunts: 40 × 0,3 g = 0,012 kg de CO₂
+    \item Reunions virtuals (Meet): 10 sessions × 2 persones × 270 g = 5,4 kg de CO₂
+\end{itemize}
+
+\textbf{Petjada de carboni total estimada:}
+3.549 + 8.190 + 5.4 = 17.139 Kg de CO₂
+
+Un arbre absorbeix aproximadament 25 kg de CO₂ l'any, per tant la petjada generada equival a menys d’un arbre per any.
+
+\textbf{Riscos i limitacions ambientals}
+
+Les principals limitacions són les estimacions de consum elèctric i emissions, ja que no s’han pogut obtenir mesures exactes de tots els equips ni de les hores d’ús específiques. Tampoc s’ha utilitzat cap servidor extern ni s’ha fet ús intensiu de GPU, per tant l’impacte ambiental és limitat, però no nul.
+
+\subsection{Perspectiva econòmica}
+\textbf{Cost econòmic}
+
+Aquest projecte no ha requerit cap despesa directa en maquinari o llicències de programari, ja que s’ha utilitzat únicament equip personal i eines lliures (com Python, Mosquitto, Kali Linux, etc.). L’únic cost atribuïble és el de l’equip personal:
+\begin{itemize}
+    \item Portàtil personal: 600 € (valor estimat)
+    \item PC de sobretaula: 2000 € (valor estimat)
+    \item Total cost estimat de l'equip: 600 € + 2000 € = 2600 €
+\end{itemize}
+
+Costos laborals estimats:
+\begin{itemize}
+    \item Cost estudiant: 600 hores × 10 €/hora estudiant = 6.000 €
+    \item Cost professor: 50 hores × 25 €/hora professor = 1.250 €
+    \item Total costos laborals: 6.000 € + 1.250 € = 7.250 €
+\end{itemize}
+\textbf{Impacte econòmic total estimat:} 2600 € + 7250 € = 9850 €
+
+\textbf{Riscos i limitacions econòmics}
+
+La principal limitació és la manca de dades reals sobre el cost dels recursos computacionals si s’executés en entorns de producció, especialment en sistemes IoMT reals. Això impedeix fer una anàlisi precisa de viabilitat econòmica a gran escala. A més, les hores estimades són aproximades i poden variar segons el ritme de treball real.
+
+\subsection{Perspectiva social}
+\textbf{Impacte social}
+Aquest projecte m’ha permès aprofundir en el coneixement sobre ciberseguretat, especialment en entorns mèdics connectats (IoMT). He après a generar tràfic maliciós controlat, identificar vulnerabilitats en protocols com MQTT i comprendre la importància d'entrenar sistemes de detecció d’intrusions realistes.
+
+Aquest procés ha reforçat el meu interès per la recerca en seguretat aplicada a l’àmbit sanitari i ha posat de manifest la necessitat d’enfocar el desenvolupament tecnològic amb responsabilitat i visió ètica.
+
+\textbf{Impacte social}
+
+L’impacte social potencial és rellevant: en un futur, els sistemes de detecció d’intrusions entrenats amb les dades generades podrien contribuir a millorar la seguretat dels dispositius mèdics connectats, reduint el risc per a pacients i personal sanitari.
+
+A més, el projecte fomenta la consciència sobre la ciberseguretat en l’àmbit sanitari, sovint desatesa, i obre la porta a més recerca i col·laboració entre enginyers, investigadors i professionals de la salut.
+
+\textbf{Riscos i limitacions socials}
+Tot i que el projecte es realitza en un entorn simulat, cal tenir en compte que treballar amb dades mèdiques o simular atacs pot generar dilemes ètics si no s’aplica en contextos adequats. Caldria establir mesures de control estrictes per evitar un mal ús de les eines generades.
+
+\section{Implicacions ètiques}
+Aquest projecte es centra en la generació d’atacs per entrenar sistemes de detecció, però s’ha tingut cura que tot es realitzés en entorns controlats i ficticis, sense cap dada real de pacients ni accés a sistemes mèdics reals.
+
+Tanmateix, en un context real, la privacitat de les dades i la seguretat dels dispositius mèdics són qüestions crítiques. Per això, qualsevol aplicació futura d’aquest projecte hauria de complir amb marcs legals com el RGPD i tenir en compte el consentiment informat i la protecció de dades sensibles.
+
+\section{Relació amb els Objectius de Desenvolupament Sostenible}
+Aquest treball s’alinea principalment amb l’ODS 3: Salut i benestar, ja que contribueix a reforçar la seguretat dels sistemes mèdics connectats, un factor clau per garantir una assistència mèdica segura i de qualitat. També es relaciona amb l’ODS 9: Indústria, innovació i infraestructura, en promoure la recerca tecnològica i la seguretat digital dins del sector sanitari.
