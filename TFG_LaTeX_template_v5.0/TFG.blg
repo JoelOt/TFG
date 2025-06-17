@@ -1,0 +1,16 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'TFG.blg'
+[73] biber:322> INFO - === Tue Jun 17, 2025, 15:39:17
+[84] Biber.pm:415> INFO - Reading 'TFG.bcf'
+[139] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[149] Biber.pm:4256> INFO - Processing section 0
+[149] Utils.pm:75> INFO - Globbing data source 'TFG.bib'
+[150] Utils.pm:91> INFO - Globbed data source 'TFG.bib' to TFG.bib
+[159] Biber.pm:4455> INFO - Looking for bibtex format file 'TFG.bib' for section 0
+[160] bibtex.pm:1653> INFO - LaTeX decoding ...
+[175] bibtex.pm:1471> INFO - Found BibTeX data source 'TFG.bib'
+[305] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[305] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[305] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'ca-AD'
+[330] bbl.pm:652> INFO - Writing 'TFG.bbl' with encoding 'UTF-8'
+[339] bbl.pm:755> INFO - Output to TFG.bbl
