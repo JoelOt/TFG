@@ -223,6 +223,7 @@
       \strng{authorbibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
       \strng{authornamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
       \strng{authorfullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \field{extraname}{1}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
       \field{labelnamesource}{author}
@@ -238,6 +239,38 @@
       \endverb
       \verb{url}
       \verb https://hub.docker.com/_/ubuntu
+      \endverb
+    \endentry
+    \entry{zeekimg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4bd3b392874c74fba4ed57a24eae0ac1}{%
+           family={Docker},
+           familyi={D\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{fullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{bibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorbibnamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authornamehash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \strng{authorfullhash}{4bd3b392874c74fba4ed57a24eae0ac1}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Docker Hub: Zeek image}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://hub.docker.com/r/zeek/zeek
+      \endverb
+      \verb{url}
+      \verb https://hub.docker.com/r/zeek/zeek
       \endverb
     \endentry
     \entry{dockerfig}{online}{}

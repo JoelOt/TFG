@@ -1,0 +1,56 @@
+\babel@toc {catalan}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {catalan}{}
+\contentsline {section}{Resum }{2}{Doc-Start}%
+\contentsline {section}{Agraïments}{3}{chapter*.1}%
+\contentsline {section}{Historial de revisió i aprovació}{4}{chapter*.2}%
+\contentsline {section}{Índex}{5}{chapter*.2}%
+\contentsline {section}{Índex de figures }{8}{chapter*.4}%
+\contentsline {section}{Índex de fragments de codi }{9}{chapter*.5}%
+\contentsline {section}{Sigles i acrònims}{10}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introducció}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}L'Internet de les Coses en l'àmbit sanitari}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Information Security Group - UPC i projecte MIoTTA-UPC}{12}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objectius del treball}{13}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Estat de l'art}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Internet of Medical Things (IoMT)}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Seguretat en entorns IoMT}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Message Queuing Telemetry Transport (MQTT)}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Altres protocols en l'entorn IoMT}{18}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Metodologia / desenvolupament del projecte}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Topologia general}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Ús del protocol MQTT}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ús de Docker per al desplegament de dispositius}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Eines utilitzades per a la generació d'atacs}{24}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Nmap}{25}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}TCPDump}{25}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}ArpSpoof i Bettercap}{26}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Mitmproxy}{26}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Mqtt Malaria i MQTTSA}{26}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Zeek}{26}{subsection.3.4.6}%
+\contentsline {chapter}{\numberline {4}Desenvolupament d’un entorn IoMT simulat}{28}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Elaboració d'atacs per a la generació de trànsit maliciós}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Atacs de descobriment de dispositius}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Atacs de descobriment d’informació del broker MQTT}{33}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Atacs de descobriment de credencials}{33}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Subscripció a tòpics d'administració}{35}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Atacs de denegació de servei (DoS)}{36}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Denegació de servei MQTT Publish}{36}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Denegació de servei Distribuïda (DDoS)}{37}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Low-Rate DDoS}{39}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Atacs de suplantació d'identitat}{40}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Atacs de ARP Spoofing}{40}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Atacs de MITM}{42}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Elaboració d'una eina automatitzada per a la generació d'atacs en entorns MQTT}{47}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Anàlisi de sostenibilitat i implicacions ètiques}{49}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Matriu de sostenibilitat}{49}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Perspectiva ambiental}{49}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Perspectiva econòmica}{50}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Perspectiva social}{51}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Implicacions ètiques}{52}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Relació amb els Objectius de Desenvolupament Sostenible}{52}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusions i Línies Futures}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusions}{53}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Línies Futures}{54}{section.8.2}%
+\contentsline {chapter}{Bibliografia}{56}{chapter*.26}%
+\contentsline {chapter}{\numberline {A}Apèndix}{58}{appendix.A}%

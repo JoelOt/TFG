@@ -23,25 +23,25 @@ En aquest treball, inicialment s'ha utilitzat l'eina arpspoof del paquet dsniff 
 
 Un exemple d'execució utilitzada on client real víctima té l'adreça IP 192.168.0.41 i és:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Execució Arpspoof}, label=lst:arpspoof]
     arpspoof -i wlp42s0 192.168.0.41
-\end{tcblisting}
+\end{lstlisting}
 
 Amb aquesta execució aconseguim que els missatges que envia el broker MQTT al client real es redirigeixin a l'atacant. D'aquesta manera, si el client està subscrit a un tòpic concret, podem fer que l'atacant rebi aquests missatges, com per exemple podrien ser mesures de ritme cardíac o pressió sanguínia que deixen d'arribar a un monitoritzador mèdic. 
 
 Però, aquest atac és fàcilment detectable. Per això, cal implementar un atac bidireccional, fent que tant el broker com el client enviïn els missatges a l'adreça MAC de l'atacant, generant una situació de MITM. Ho podem aconseguir amb una execució similar a la següent on s'afegeix l'adreça IP del broker MQTT 192.168.0.40 amb el paràmetre -r:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Execució Arpspoof bidireccional}, label=lst:arpspoof_bidireccional]
     arpspoof -i wlp42s0 -t 192.168.0.41 -r 192.168.0.40
-\end{tcblisting}
+\end{lstlisting}
 
 Per al perfeccionament de l'atac APR Spoofing, he utilitzat l'eina Bettercap \ref{sec:ARPSpoof} que permet personalitzar les estratègies d'ARP spoofing i fer que l'atac sigui més difícil de detectar per un IDS i així poder generar trànsit més realista. 
 
 Una de les configuracions addicionals que podem utilitzar amb aquesta eina és l'opció \textit{mac.changer} per fer que l'atacant canviï la seva adreça MAC de forma aleatòria, fent més difícil la detecció de l'atac per mac repetida. També amb l'opció "arp.spoof.targets" els paquets ARP van dirigits aquests dispositius en concret en comptes de a tota la xarxa, de manera que no es genera tant trànsit broadcast que és molt més detectable. Un exemple d'execució és:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
-bettercap -iface wlp42s0 -eval \"mac.changer on; set arp.spoof.internal true; set arp.spoof.targets 192.168.0.41,192.168.0.40; arp.spoof on\" 
-\end{tcblisting}
+\begin{lstlisting}[language=bash, caption={Execució Bettercap}, label=lst:bettercap]
+bettercap -iface wlp42s0 -eval \"mac.changer on; set arp.spoof.internal true; set arp.spoof.targets 192.168.0.41,192.168.0.40; arp.spoof on\"
+\end{lstlisting}
 
 \subsection{Atacs de MITM}
 \label{sec:MITM}
@@ -68,9 +68,9 @@ Per a la implementació d'aquest atac, és necessari haver perpetrat un atac d'A
 
 Per al desplegament del proxy, s'ha utilitzat l'eina \textit{mitmproxy} \ref{sec:MITMProxy}. La configuració usada permet interceptar el trànsit TCP al port 1883 (port per defecte MQTT) i el paràmetre \textit{--tcp-hosts '.*'} permet que el proxy intercepti tot el trànsit TCP, independentment de la IP sense filtrar per a un client específic (es pot configurar si sols es vol interceptar un client, però al realitzar l'atac d'ARP spoofing focalitzat, no és necessari). També, per al reenviament del trànsit cap al broker legítim o cap al client en sentit contrari és important habilitar el reenviament de paquets IP en el host atacant amb \textit{sysctl -w net.ipv4.ip\_forward=1}. D'aquesta manera el host actua com a router i reenvia els paquets IP rebuts per diferents interfícies de xarxa.
 
-  \begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Execució Mitmproxy}, label=lst:mitmproxy]
   mitmproxy --listen-port 1883 --tcp-hosts '.*'
-  \end{tcblisting}
+  \end{lstlisting}
 
   \begin{figure}[H]
     \centering
@@ -90,10 +90,10 @@ Finalment, s'ha actualitzat la implementació anterior per tal que el proxy actu
 
 Per a què el proxy actuï com a proxy transparent, s'han utilitzat les següents regles de firewall IPTABLES:
 
-  \begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Execució iptables}, label=lst:iptables]
   iptables -t nat -A PREROUTING -p tcp --dport 1883 -j REDIRECT
   iptables -t nat -A POSTROUTING -p tcp --dport 1883 -j SNAT --to-source 192.168.0.41
-  \end{tcblisting}
+  \end{lstlisting}
 
   Amb la primera regla s'especifica que tot el trànsit TCP que arriba al port 1883 (port per defecte MQTT) serà redirigit al proxy mitmproxy. La segona regla especifica que l'adreça IP d'origen dels missatges serà la del client legítim, fent que el broker legítim no pugui distingir entre el trànsit legítim i el trànsit interceptat pel proxy.
 
@@ -106,10 +106,11 @@ Per a què el proxy actuï com a proxy transparent, s'han utilitzat les següent
     \label{fig:MITMproxyTransparent}
   \end{figure}
 
-  Un cop implementats els atacs de MITM, s'ha utilitzat el motor d'scripting de mitmproxy per tal de manipular els missatges transmesos. Aquest motor permet escriure scripts en Python que poden modificar, enregistrar o bloquejar els missatges MQTT que passen pel proxy. Això obre la porta a una àmplia gamma de possibles atacs i manipulacions del trànsit MQTT, com ara la injecció de missatges maliciosos o la modificació de les dades transmeses. En aquest treball, s'ha implementat un script senzill que registra els missatges en direcció al client i en trobar un camp concret en format JSON, modifica el seu valor. També s'ha implementat un segon script que mitjançant una modificació de baix nivell, modifica el cos del missatge MQTT Publish bit a bit, sigui quin sigui el seu contingut. Aquests scripts es poden afegir a l'execució del proxy mitmproxy amb el paràmetre \textit{-s}.
+  Un cop implementats els atacs de MITM, s'ha utilitzat el motor d'scripting de mitmproxy per tal de manipular els missatges transmesos. Aquest motor permet escriure scripts en Python que poden modificar, enregistrar o bloquejar els missatges MQTT que passen pel proxy. Això obre la porta a una àmplia gamma de possibles atacs i manipulacions del trànsit MQTT, com ara la injecció de missatges maliciosos o la modificació de les dades transmeses. En aquest treball, s'ha implementat un script senzill que registra els missatges en direcció al client i en trobar un camp concret en format JSON, modifica el seu valor (codi: \ref{lst:ScriptMITM}). També s'ha implementat un segon script que mitjançant una modificació de baix nivell, modifica el cos del missatge MQTT Publish bit a bit, sigui quin sigui el seu contingut (codi: \ref{lsb:ScriptMITM2}). Aquests scripts es poden afegir a l'execució del proxy mitmproxy amb el paràmetre \textit{-s}.
 
   De forma alternativa, també s'ha utilitzat Bettercap per a implementar l'atac d'ARP spoofing i MITM de forma unificada, però el seu motor d'scripting en JavaScript és molt més limitat i no perment manipular els missatges MQTT, ja que no té suport per aquest protocol de forma nativa ni permet la modificació a baix nivell.
 
+  S'han testejat els scripts explicats anteriorment enviant missatges des de clients, en la següent figura es pot observar un missatge enviat a un servidor d'eco i la seva modificació a al missatge retornat. 
     \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{img/captmqttclient.jpg}

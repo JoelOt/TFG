@@ -19,13 +19,11 @@ Primer de tot, s'ha implementat un atac per aconseguir descobrir l'adreça IP de
 També, una estratègia interessant és la detecció de serveis mitjançant l'opció -sV en Namp. Això ens permet descobrir si en el port 1883 o 8883 escanejat, s'està executant un servei de MQTT com per exemple Mosqitto 3.1.1.
 
 Una execució utilitzada és:
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Escaneig Nmap}, label=Escaneig Nmap]
     nmap -sV -p 1883,8883 192.168.0.0/24
-\end{tcblisting}
+\end{lstlisting}
 
 Aquest atac realitzarà una gran quantitat de peticions ARP a totes les IP del rang especificat i, en cas que contestin intentarà iniciar una connexió TCP als ports especificats (1883 i 8883), recopilant la informació de les respostes. Seguidament, mitjançant scripts propis de Nmap amb diverses peticions TCP intentarà esbrinar quins serveis s'estan executant.  
-
-\textbf{capt wireshark}
 
 Però aquesta execució no és del tot realista, ja que és fàcilment detectable. Per això per a poder generar trànsit maliciós de forma més realista, s'han d'utilitzar estratègies menys sorolloses, és a dir on es generi menys trànsit i sigui menys detectable.
 
@@ -34,20 +32,16 @@ Una opció és utilitzar inicialment un escaneig general arp o icmp més lent pe
 Per a fer el primer escaneig més silenciós es pot utilitzar l'opciṕo -T per ajustar la velocitat (un valor -T2 per una xarxa /24 pot trigar uns 10 minuts). També podem afegir l'opció -n per evitar la resolució de noms DNS, ja que al ser una xarxa local no és necessari. 
 
 Llavors, per a fer el segon escaneig més específic, es pot utilitzar l'opció -Pn per evitar el ping (ja que ja sabem que el dispositiu està actiu gràcies al primer escaneig). També es pot afegir -sS per evitar completar el handshake TCP i així ser menys detectable. Ara podem afegir els ports específics i la detecció de serveis. Un exemple seria: 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Escaneig en dos fases}, label=Escaneig en dos fases]
     nmap -sn -n -T2 192.168.0.0/24   #primer escaneig.
     nmap -Pn -sV -sS -p 1883,8883 IPs-actives.txt  #segon escaneig amb la llista d'IPs actives obtinguda del primer escaneig.
-\end{tcblisting}
-
-\textbf{capt wireshark}
+\end{lstlisting}
 
 Per a fer l'esaneig més ràpid, també he utilitzat masscan per a la detecció del broker, però no és tant eficient i és menys sigilós.
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Escaneig Masscan}, label=Escaneig Masscan]
     masscan 192.168.0.0/24 -p1883,8883 --rate 1000 -oG masscan.txt
-\end{tcblisting}
-
-\textbf{capt wireshark?}
+\end{lstlisting}
 
 Per a la detecció dels clients IoMT, amb el primer escaneig ja veiem els dispositius actius a la xarxa, però no podem saber si realment són dispositius IoMT, per això podem utilitzar la detecció de \textit{fingerprint} dels dispositius, referit a extreure tota la informació possible que descriu i diferència un dispositiu. 
 

@@ -7,16 +7,16 @@ En aquest apartat es descriuen diferents atacs que permeten descobrir diferent i
 
 Una de les mesures de seguretat més comunes per als brokers MQTT és l'autenticació mitjançant nom d'usuari i contrasenya. Mosquitto, d'igual manera que la majoria de brokers MQTT comercials disposa d'un sistema per a generar fitxers de credencials d'usuari. Per a la realització d'aquest atac, he configurat el broker solament permetent l'entrada de l'usuari "tfg" amb la contrasenya "1234" amb mosquitto-passwd. Aquest genera un fitxer passwd on es guarda usuari:contrasenya amb la contrasenya encriptada amb bcrypt. \cite{bcryptexp}. Per altra banda, he generat un fitxer anomenat acl que genera una Access Control List que habilita o no a subscriure's (read) o publicar (write) a un tòpic específic (en aquest cas tfg/\#). El seu format és el següent:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Access Control List}, label=lst:ACL]
 user tfg
 topic readwrite tfg/#
-\end{tcblisting}
+\end{lstlisting}
 
 Per a descobrir credencials, s'ha elaborat un atac de força bruta mitjançant MQTT-SA (\ref{sec:MQTTSA}), una eina especialitzada en el protocol MQTT que permeten mitjançant llistes dels usuaris i credencials comprovar una gran quantitat de combinacions per tal d'accedir al broker i recopilar la validesa d'aquestes en un fitxer de sortida. Un exemple d'execució és:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={Execució de MQTT-SA}, label=lst:MQTTSAExec]
  python3 mqttsa.py -u "tfg" -w ./psw.txt -t 5 -mp 255 -mq 1000 192.168.0.40
-\end{tcblisting}
+\end{lstlisting}
 
 \begin{figure}[H]
     \centering
@@ -32,9 +32,9 @@ Una característica dels brokers MQTT, és l'ús de tòpics d'administració ano
 Per a la realització d'aquest atac, s'ha utilitzat un script de NMAP anomenat mqtt-subscribe que recopila tota aquesta informació subscrivint-se a tots els tòpics d'administració possibles. 
 Una execució d'aquest atac per a un broker amb IP 192.168.0.40 és la següent:
 
-\begin{tcblisting}{colback=white, colframe=black!70, listing only}
+\begin{lstlisting}[language=bash, caption={NSE script Nmap}, label=lst:NmapScript]
     nmap -Pn --script mqtt-subscribe -p 1883 -oG info_broker.txt 192.168.0.40
-\end{tcblisting}
+\end{lstlisting}
 
 Amb aquest atac a un broker mosquitto com l'utilitzat en aquest treball, s'obté informació com ara:
 
@@ -50,7 +50,10 @@ Amb aquest atac a un broker mosquitto com l'utilitzat en aquest treball, s'obté
 
 En aquest atac, el kali linux l'atacant genera un gran nombre de paquets MQTT subscribe per a subscrire's a aquests tòpics. 
 
-\textbf{capt wireshark}
-
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/nmapNSE.png}
+    \caption{Petita part de la sortida de l'execució del script Nse "mqtt-subscribe".}
+    \label{fig:NmapNSE}
+\end{figure}
 

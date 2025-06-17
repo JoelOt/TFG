@@ -162,3 +162,33 @@
   colorlinks=true,    % CHANGE TO "true" IF YOU WANT COLORED TEXT LINKS INSTEAD OF BEING SURROUNDED BY A BORDER.
 %  hidelinks,          % UNCOMMENT IF YOU WANT TO REMOVE COLOR AND BORDER AROUND THE LINKS.
 }
+
+\lstdefinestyle{mystyle}{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red},
+    showstringspaces=false,
+    breaklines=true,
+    frame=tb,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\lstdefinelanguage{yaml}{
+    keywords={true, false, null},
+    sensitive=false,
+    comment=[l]{\#},
+    morestring=[b]",
+    morestring=[b]',
+    morecomment=[s]{/*}{*/}
+}
+\lstdefinelanguage{bash}{
+    alsoletter={-,_},
+    morekeywords={sudo, apt, install, update, upgrade, echo, python3, pip},
+    morecomment=[l]{\#},
+    morestring=[b]"
+}

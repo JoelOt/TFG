@@ -10,7 +10,7 @@ Inicialment, he implementat un atac de denegació de servei en el qual s'envia u
 
 Amb aquest client, s'envien peticions MQTT Publish de forma contínua mitjançant un script de bash en format bucle infinit. Amb aquest atac, en cas de protecció nul·la del broker, aquest se satura, perquè no té un sistema de preferències per a gestionar les peticions i no pot atendre les peticions legítimes dels clients.
 
-Una actualització d'aquest atac va ser l'elaboració d'un script de Python que, mitjançant la llibreria Paho-MQTT \ref{sec:Paho-MQTT}, permet connectar el client al tòpic especificat i enviar un gran nombre de missatges MQTT Publish de forma contínua però amb camps de dades diferents cada vegada. L'ús d'aquesta llibreria en comptes de mosquitto-clients millora l'eficiència, ja que permet generar trànsit amb més velocitat, això ho aconsegueix generant un gran nombre de threads diferents, els quals envien simultàniament missatges al broker en un bucle infinit.
+Una actualització d'aquest atac va ser l'elaboració d'un script de Python que, mitjançant la llibreria Paho-MQTT \ref{sec:Paho-MQTT}, permet connectar el client al tòpic especificat i enviar un gran nombre de missatges MQTT Publish de forma contínua però amb camps de dades diferents cada vegada (script: \ref{lst:DoSScript} ). L'ús d'aquesta llibreria en comptes de mosquitto-clients millora l'eficiència, ja que permet generar trànsit amb més velocitat, això ho aconsegueix generant un gran nombre de threads diferents, els quals envien simultàniament missatges al broker en un bucle infinit.
 
   \begin{figure}[H]
     \centering
@@ -35,7 +35,7 @@ El client ID és un identificador únic per a cada client MQTT que es connecta a
     \label{fig:DoSclientId}
   \end{figure}
 
-El darrer mètode per a realitzar l'atac de denegació de servei distribuït amb Client ID diferents és mitjançant arquitectures de xarxa personalitzades amb Docker, concretament una arquitectura MACVLAN, on cada contenidor té una adreça IP diferent \ref{fig:DockerNetworks}. En aquesta versió de l'atac DDoS, generem un gran nombre de contenidors Docker i en cadascun despleguem un client MQTT. Aquests clients estableixen una connexió persistent amb el broker (amb Client ID diferents entre ells) i realitzen l'ataca de denegació de servei com els anteriors. Aquesta estratègia té una complexitat més elevada, però permet generar un gran nombre de connexions diferents però mantenint la persistència. D'aquesta manera, es s'aconsegueix un efecte similar a un DDoS amb diversos clients reals però utilitzant eines de virtualització com Docker.
+El darrer mètode per a realitzar l'atac de denegació de servei distribuït amb Client ID diferents és mitjançant arquitectures de xarxa personalitzades amb Docker, concretament una arquitectura MACVLAN, on cada contenidor té una adreça IP diferent \ref{fig:DockerNetworks}. En aquesta versió de l'atac DDoS, generem un gran nombre de contenidors Docker i en cadascun despleguem un client MQTT. Aquests clients estableixen una connexió persistent amb el broker (amb Client ID diferents entre ells) i realitzen l'ataca de denegació de servei com els anteriors. Aquesta estratègia té una complexitat més elevada, però permet generar un gran nombre de connexions diferents però mantenint la persistència. D'aquesta manera, es s'aconsegueix un efecte similar a un DDoS amb diversos clients reals però utilitzant eines de virtualització com Docker (codi: \ref{lst:DDoS} ).
 
 
   \begin{figure}[H]
@@ -51,11 +51,4 @@ També és molt important escollir el valor de QoS adequat per a l'atac, l'ús d
 
 \subsection{Low-Rate DDoS}
 
-Tal com s'explica a l'article \cite{lowrateDDoSexp}, els atacs de denegació de servei distribuïts (DDoS) poden ser realitzats amb un trànsit baix, és a dir, enviant un nombre reduït de missatges per segon. Aquest tipus d'atac pot ser més difícil de detectar i pot passar desapercebut per les mesures de seguretat del broker MQTT. Per a compensar la baixa taxa de missatges, s'utilitza un gran nombre de contenidors diferents, augmentant el nombre de clients.
-
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{img/lrDDoS.png}
-    \caption{Arxiu yml utilitzat per Docker Compose per al desplegament de l'atac Low-Rate DDoS. S'utilitza un gran nombre de clients que executen peticions MQTT Publish mitjançant MQTT Malaria al broker amb IP 192.168.0.15 a un ritme realista.}
-    \label{fig:LRDoS}
-  \end{figure}
+Tal com s'explica a l'article \cite{lowrateDDoSexp}, els atacs de denegació de servei distribuïts (DDoS) poden ser realitzats amb un trànsit baix, és a dir, enviant un nombre reduït de missatges per segon. Aquest tipus d'atac pot ser més difícil de detectar i pot passar desapercebut per les mesures de seguretat del broker MQTT. Per a compensar la baixa taxa de missatges, s'utilitza un gran nombre de contenidors diferents, augmentant el nombre de clients (codi: \ref{lst:LowRateDDoS} ).
