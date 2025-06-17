@@ -383,7 +383,7 @@ done
 
 \end{lstlisting}
 
-\begin{lstlisting}[language=Python, caption={Script de modificació de missatges en mitmproxy}, label=ScriptMITM]
+\begin{lstlisting}[language=Python, caption={Script de modificació de missatges en mitmproxy}, label=lst:ScriptMITM]
 from mitmproxy import tcp
 
 def tcp_message(flow: tcp.TCPFlow):
@@ -399,7 +399,7 @@ def tcp_message(flow: tcp.TCPFlow):
 \end{lstlisting}
 
 
-\begin{lstlisting}[language=Python, caption={Script de modificació de missatges en mitmproxy en baix nivell}, label=ScriptMITM2]
+\begin{lstlisting}[language=Python, caption={Script de modificació de missatges en mitmproxy en baix nivell}, label=lst:ScriptMITM2]
 from mitmproxy import tcp
 
 def decode_remaining_length(data, offset):

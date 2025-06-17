@@ -10,7 +10,7 @@ Inicialment, he implementat un atac de denegació de servei en el qual s'envia u
 
 Amb aquest client, s'envien peticions MQTT Publish de forma contínua mitjançant un script de bash en format bucle infinit. Amb aquest atac, en cas de protecció nul·la del broker, aquest se satura, perquè no té un sistema de preferències per a gestionar les peticions i no pot atendre les peticions legítimes dels clients.
 
-Una actualització d'aquest atac va ser l'elaboració d'un script de Python que, mitjançant la llibreria Paho-MQTT \ref{sec:Paho-MQTT}, permet connectar el client al tòpic especificat i enviar un gran nombre de missatges MQTT Publish de forma contínua però amb camps de dades diferents cada vegada (script: \ref{lst:DoSScript} ). L'ús d'aquesta llibreria en comptes de mosquitto-clients millora l'eficiència, ja que permet generar trànsit amb més velocitat, això ho aconsegueix generant un gran nombre de threads diferents, els quals envien simultàniament missatges al broker en un bucle infinit.
+Una actualització d'aquest atac va ser l'elaboració d'un script de Python que, mitjançant la llibreria Paho-MQTT ( \ref{sec:Paho-MQTT} ), permet connectar el client al tòpic especificat i enviar un gran nombre de missatges MQTT Publish de forma contínua però amb camps de dades diferents cada vegada (script: \ref{lst:DoSScript} ). L'ús d'aquesta llibreria en comptes de mosquitto-clients millora l'eficiència, ja que permet generar trànsit amb més velocitat, això ho aconsegueix generant un gran nombre de threads diferents, els quals envien simultàniament missatges al broker en un bucle infinit.
 
   \begin{figure}[H]
     \centering
@@ -35,7 +35,7 @@ El client ID és un identificador únic per a cada client MQTT que es connecta a
     \label{fig:DoSclientId}
   \end{figure}
 
-El darrer mètode per a realitzar l'atac de denegació de servei distribuït amb Client ID diferents és mitjançant arquitectures de xarxa personalitzades amb Docker, concretament una arquitectura MACVLAN, on cada contenidor té una adreça IP diferent \ref{fig:DockerNetworks}. En aquesta versió de l'atac DDoS, generem un gran nombre de contenidors Docker i en cadascun despleguem un client MQTT. Aquests clients estableixen una connexió persistent amb el broker (amb Client ID diferents entre ells) i realitzen l'ataca de denegació de servei com els anteriors. Aquesta estratègia té una complexitat més elevada, però permet generar un gran nombre de connexions diferents però mantenint la persistència. D'aquesta manera, es s'aconsegueix un efecte similar a un DDoS amb diversos clients reals però utilitzant eines de virtualització com Docker (codi: \ref{lst:DDoS} ).
+El darrer mètode per a realitzar l'atac de denegació de servei distribuït amb Client ID diferents és mitjançant arquitectures de xarxa personalitzades amb Docker, concretament una arquitectura MACVLAN, on cada contenidor té una adreça IP diferent (explicat a \ref{fig:DockerNetworks} ). En aquesta versió de l'atac DDoS, generem un gran nombre de contenidors Docker i en cadascun despleguem un client MQTT. Aquests clients estableixen una connexió persistent amb el broker (amb Client ID diferents entre ells) i realitzen l'ataca de denegació de servei com els anteriors. Aquesta estratègia té una complexitat més elevada, però permet generar un gran nombre de connexions diferents però mantenint la persistència. D'aquesta manera, es s'aconsegueix un efecte similar a un DDoS amb diversos clients reals però utilitzant eines de virtualització com Docker (codi: \ref{lst:DDoS} ).
 
 
   \begin{figure}[H]
@@ -45,7 +45,7 @@ El darrer mètode per a realitzar l'atac de denegació de servei distribuït amb
     \label{fig:DDoS}
   \end{figure}
 
-Un cop elaborat l'atac, he passat a utilitzar eines ja existents com ara "MQTTSA" i "MQTT Malaria" (\ref{sec:MQTTSA}) que ajuden a obtenir una eficiència més elevada al realitzar atacs DoS amb un codi més optimitzat. Aquestes tenen un funcionament similar al script de Python fet servir anteriorment.
+Un cop elaborat l'atac, he passat a utilitzar eines ja existents com ara "MQTTSA" i "MQTT Malaria" ( \ref{sec:MQTTSA} ) que ajuden a obtenir una eficiència més elevada al realitzar atacs DoS amb un codi més optimitzat. Aquestes tenen un funcionament similar al script de Python fet servir anteriorment.
 
 També és molt important escollir el valor de QoS adequat per a l'atac, l'ús de QoS 0 permet enviar missatges sense esperar confirmació, per tant, permet saturar la xarxa amb mès facilitat, però, amb QoS 1, el processat que ha de realitzar el broker per a cada missatge és més elevat i, doncs, millora l'eficiència pel que fa a saturació del broker. Si s'utilitza QoS 2, aquest processat és encara més elevat i ja comporta una diferència molt notable respecte a QoS 0. Per tant, QoS 2 és l'opció més recomananada per a realitzar l'atac de denegació de servei. 
 

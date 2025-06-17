@@ -14,9 +14,9 @@ Per tal de generar dades que poden ser fetes servir per a l'entrenament de model
 
 El primer atac que se sol dur a terme en un entorn IoT és el descobriment de dispositius. Aquest se centra en identificar els dispositius connectats a la xarxa i obtenir informació sobre ells, com ara adreces IP, ports oberts i serveis disponibles. Això permet als atacants conèixer la topologia de la xarxa i identificar possibles vulnerabilitats.
 
-Primer de tot, s'ha implementat un atac per aconseguir descobrir l'adreça IP del broker MQTT, ja que és l'element central de la comunicació entre els dispositius IoMT. Per a això, s'ha utilitzat l'eina \textit{nmap} \ref{sec:NMAP} per escanejar la xarxa sencera. Mitjançant Nmap, s'ha aplicat la detecció de ports oberts 1883 i 8883 (en el cas d'ús de TLS), ja que el broker MQTT, per rebre connexions dels clients ha de tenir aquests ports oberts.
+Primer de tot, s'ha implementat un atac per aconseguir descobrir l'adreça IP del broker MQTT, ja que és l'element central de la comunicació entre els dispositius IoMT. Per a això, s'ha utilitzat l'eina \textit{nmap} ( \ref{sec:NMAP} ) per escanejar la xarxa sencera. Mitjançant Nmap, s'ha aplicat la detecció de ports oberts 1883 i 8883 (en el cas d'ús de TLS), ja que el broker MQTT, per rebre connexions dels clients ha de tenir aquests ports oberts.
 
-També, una estratègia interessant és la detecció de serveis mitjançant l'opció -sV en Namp. Això ens permet descobrir si en el port 1883 o 8883 escanejat, s'està executant un servei de MQTT com per exemple Mosqitto 3.1.1.
+També, una estratègia interessant és la detecció de serveis mitjançant l'opció -sV en Nmap. Això ens permet descobrir si en el port 1883 o 8883 escanejat, s'està executant un servei de MQTT com per exemple Mosquitto 3.1.1.
 
 Una execució utilitzada és:
 \begin{lstlisting}[language=bash, caption={Escaneig Nmap}, label=Escaneig Nmap]
@@ -47,7 +47,7 @@ Per a la detecció dels clients IoMT, amb el primer escaneig ja veiem els dispos
 
 El fingerprint es pot aconseguir mitjançant l'opció \textit{-o} de Nmap que detecta el sistema operatiu o també scripts NSE com \textit{"banner"} o \textit{"fingerprint-settings"}, encara que, són mètodes molt intrusius i, per tant, molt detectables. També es pot optar per a utilitzar datasets públics d'adreces MAC conegudes de fabricants com ara Philips Health, Siemens Healthcare o també Raspberry Pi i altres marques dispositius embeguts que siguin usualment utilitzats com a clients IoMT.
 
-\begin{table}[H]
+\begin{figure}[H]
 \centering
 \begin{tabular}{@{}lll@{}}
 \toprule
@@ -66,4 +66,4 @@ MA-S & 8C1F6454A & Sound Health Systems \\
 \end{tabular}
 \caption{Petit extret del fitxer "MAC Address Block Large (MA-S)" de \cite{iotmaclist} filtrat per a visualitzar només fabricants IoMT on es veuen parelles IniciMAC - Fabricant}  % Peu de figura
 \label{fig:iot_manufacturers}
-\end{table}
+\end{figure}
